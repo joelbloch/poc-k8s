@@ -1,0 +1,206 @@
+####################################################################
+######################### STATEFUL BACKEND #########################
+# Deployment for pocbackend containers, listening on port 3000
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stateful-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: stateful
+      tier: appserver
+  template:
+    metadata:
+      labels:
+        app: stateful
+        tier: appserver
+    spec:
+       containers:
+       - name: pocbackend
+         image: pocbackend:1.0
+         ports:
+          - name: http-stateful
+            containerPort: 3000
+         env:
+          - name: MY_NODE_NAME
+            valueFrom:
+             fieldRef:
+              fieldPath: spec.nodeName
+          - name: MY_POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+          - name: MY_POD_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP 
+         volumeMounts:
+          - mountPath : /log
+            name: log-volume
+          - mountPath : /config
+            name: config-volume
+       volumes:
+       - name: log-volume
+         hostPath:           
+           path: '/host_mnt/d/dev/poc-k8s/log/stateful'           
+           type: Directory
+       - name: config-volume
+         hostPath:           
+           path: '/host_mnt/d/dev/poc-k8s/config/istio'           
+           type: Directory
+---
+# Service for Stateful containers, listening on port 3000
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-stateful
+spec:
+  selector:
+    app: stateful
+    tier: appserver
+  ports:
+  - port: 3002
+    name: http-stful
+    targetPort: http-stateful  
+---
+#####################################################################
+######################### STATELESS BACKEND #########################
+# Deployment for pocbackend containers, listening on port 3000
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stateless-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: stateless
+      tier: appserver
+  template:
+    metadata:
+      labels:
+        app: stateless
+        tier: appserver
+    spec:
+      containers:
+      - name: pocbackend
+        image: pocbackend:1.0        
+        ports:
+           - name: http-stateless
+             containerPort: 3000
+        env:
+        - name: MY_NODE_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
+        - name: MY_POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name        
+        - name: MY_POD_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP       
+        volumeMounts:
+           - mountPath : /log
+             name: log-volume
+           - mountPath : /config
+             name: config-volume
+      volumes:
+      - name: log-volume
+        hostPath:           
+           path: '/host_mnt/d/dev/poc-k8s/log/stateless'           
+           type: Directory
+      - name: config-volume
+        hostPath:           
+           path: '/host_mnt/d/dev/poc-k8s/config/istio'           
+           type: Directory
+---
+# Service for Stateless containers, listening on port 3000
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-stateless
+spec:
+  selector:
+    app: stateless
+    tier: appserver
+  ports:
+  - port: 3001
+    name: http-stless
+    targetPort: http-stateless   
+---
+#############################################################
+######################### FRONT END #########################
+# deployment of the container pocfrontend listening to port 3500
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-end
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: front
+      tier: webserver
+  template:
+    metadata:
+      labels:
+        app: front
+        tier: webserver
+    spec:
+      containers:
+      - name: pocfrontend
+        image: pocfrontend:1.0               
+        ports:
+           - name: http-front
+             containerPort: 3500      
+        volumeMounts:
+           - mountPath : /log
+             name: log-volume
+           - mountPath : /config
+             name: config-volume
+      volumes:
+      - name: log-volume
+        hostPath:           
+           path: '/host_mnt/d/dev/poc-k8s/log/front'           
+           type: Directory
+      - name: config-volume
+        hostPath:           
+           path: '/host_mnt/d/dev/poc-k8s/config/istio'           
+           type: Directory
+---
+# Service exposing frontend on node port 30000
+apiVersion: v1
+kind: Service
+metadata:
+  name: front-service
+spec:
+  type: NodePort
+  selector:
+    app: front
+    tier: webserver
+  ports:
+  - port: 3500
+    name: http-fr
+    targetPort: http-front
+    nodePort: 30000
+---
+##############################################################
+############ ISTIO PROXY FOR API-STATEFUL SERVICE ############
+##############################################################
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+    name: sticky-svc
+spec:
+    host: api-stateful
+    trafficPolicy:
+     loadBalancer:
+       consistentHash:
+         httpCookie:
+           name: session-id
+           ttl: 20000s
+           

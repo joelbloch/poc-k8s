@@ -1,0 +1,8 @@
+{
+    "appName" : "Central Session Manager",
+    "enableLog" : "true",
+    "port": "3004",
+    "pull": true,
+    "pull-interval" : 1000,
+    "pod-failure-limit" : 3
+}

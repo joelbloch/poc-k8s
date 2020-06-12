@@ -1,0 +1,14 @@
+{
+	"frontEnd" : {
+		"domain" : "http://localhost",
+		"port" : "3500"
+	},
+	"apiStateless" : {
+		"domain" : "http://localhost/stateless",
+		"port" : "80"
+	},
+	"apiStateful" : {
+		"domain" : "http://localhost/stateful",
+		"port" : "80"
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "appName" : "Local Session Manager",
+    "logEnabled": "true",
+    "port" : "3400",
+    "sessionManager" : {
+        "url": "http://localhost:3004",
+        "push" : true,
+        "push-interval" : 1000
+    }
+}

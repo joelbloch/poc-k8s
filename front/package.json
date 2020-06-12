@@ -1,0 +1,21 @@
+{
+  "name": "poc-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js /config/front.config.json",
+    "start-dev" : "node index.js ./front.config.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-docker": "docker build --tag pocfrontend:1.0 .",
+    "docker": "docker run --publish 3500:3500 --detach --name pocfrontend pocfrontend:1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "http-proxy": "^1.18.1"
+  }
+}

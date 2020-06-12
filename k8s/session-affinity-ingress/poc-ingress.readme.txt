@@ -1,0 +1,23 @@
+0) Apply readme.txt
+
+1) Reset Kubernetes Cluster from Docker for PC
+Docker for Desktop => Settings => Kubernetes => Reset Kubernetes Cluster
+
+2) Installation of Nginx controller
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-0.32.0/deploy/static/provider/cloud/deploy.yaml
+
+3) Run the application:
+kubectl apply -f ingress-session-affinity.yaml
+
+4) ensure your application is running
+kubectl get pods
+kubectl get services
+troubleshooting => kubectl log <podname>
+
+5) Test 
+in your browser:
+http://localhost/ping                 => pong from front service
+http://localhost/stateless/ping       => pong from stateless service
+http://localhost/stateful/ping        => pong from stateful service
+http://localhost/stateless/counter    => counter value, should not be consecutive but increasing slowly
+http://localhost/stateful/counter     => counter value, should be consecutive
