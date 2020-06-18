@@ -1,12 +1,28 @@
 ####################################################################
 ######################### STATEFUL BACKEND #########################
+####################################################################
+
+# Service for Stateful containers, listening on port 3002
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-stateful
+spec:
+  selector:
+    app: stateful
+    tier: appserver
+  ports:
+  - port: 3002
+    name: http-stful
+    targetPort: http-stateful
+---
 # Deployment for pocbackend containers, listening on port 3000
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: stateful-backend
 spec:
-  replicas: 3
+  replicas: 1 
   selector:
     matchLabels:
       app: stateful
@@ -31,7 +47,7 @@ spec:
        - name: localsessionmanager
          image: localsessionmanager:1.0
          ports:
-          - name: http-local-manager
+          - name: http-lmgt
             containerPort: 3400
          env:
           - name: MY_NODE_NAME
@@ -45,7 +61,7 @@ spec:
           - name: MY_POD_IP
             valueFrom:
               fieldRef:
-                fieldPath: status.podIP 
+                fieldPath: status.podIP
          volumeMounts:
           - mountPath : /log
             name: log-volume-session
@@ -68,38 +84,25 @@ spec:
          hostPath:           
            path: '/host_mnt/d/dev/poc-k8s/config/session'           
            type: Directory
----
-# Service for Stateful containers, listening on port 3002
-apiVersion: v1
-kind: Service
-metadata:
-  name: api-stateful
-spec:
-  selector:
-    app: stateful
-    tier: appserver
-  ports:
-  - port: 3002
-    name: http-stful
-    targetPort: http-stateful
----
 ##############################################################
 ################# CENTRAL SESSION SERVICE ####################
 ##############################################################
-
+---
 # Service for Local Session Containers, listening on port 3400
 apiVersion: v1
 kind: Service
 metadata:
   name: session-managment
 spec:
+  type: NodePort
   selector:
     app: session-management
     tier: appserver
   ports:
   - port: 3004
     name: http-session-management
-    targetPort: http-central-session-manager
+    targetPort: http-cmgt
+    nodePort: 30001
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -121,7 +124,7 @@ spec:
       - name: sessionmanager
         image: sessionmanager:1.0        
         ports:
-           - name: http-central-session-manager
+           - name: http-cmgt
              containerPort: 3004
         volumeMounts:
            - mountPath : /log
@@ -138,9 +141,9 @@ spec:
            path: '/host_mnt/d/dev/poc-k8s/config/session'           
            type: Directory
 ---
-##############################################################
-############ ISTIO PROXY FOR API-STATEFUL SERVICE ############
-##############################################################
+#############################################################
+########### ISTIO PROXY FOR API-STATEFUL SERVICE ############
+#############################################################
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:

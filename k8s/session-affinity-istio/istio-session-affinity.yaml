@@ -6,7 +6,7 @@ kind: Deployment
 metadata:
   name: stateful-backend
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: stateful
@@ -73,7 +73,7 @@ kind: Deployment
 metadata:
   name: stateless-backend
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: stateless

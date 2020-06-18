@@ -4,7 +4,7 @@
     "port" : "3400",
     "sessionManager" : {
         "url": "http://localhost:3004",
-        "push" : true,
+        "push" : false,
         "push-interval" : 1000
     }
 }

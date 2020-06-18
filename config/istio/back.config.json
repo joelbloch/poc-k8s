@@ -2,5 +2,5 @@
 	"port" : "3000",
 	"enableLog" : true,
 	"session-manager" : "http://localhost:3400",
-	"session-timeout" : 20
+	"session-timeout" : 0
 }

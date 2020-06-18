@@ -12,9 +12,15 @@ const configPath = process.argv.slice(2)[0];
 var config = require(configPath);
 
 function log(msg) {
-    console.log(msg);
+
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var msgWithDate = date + ' ' + time + ' - ' + msg;
+    
+    console.log(msgWithDate);
     if(logEnabled) {
-        fs.appendFile('/log/back-log.txt',msg + '\n');
+        fs.appendFileSync('/log/session-log.txt', msgWithDate + '\n');
     }
 }
 

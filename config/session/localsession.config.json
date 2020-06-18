@@ -1,10 +1,10 @@
 {
     "appName" : "Local Session Manager",
-    "logEnabled": "true",
+    "enableLog": "true",
     "port" : "3400",
     "sessionManager" : {
-        "url": "http://session-manager:3004",
-        "push" : false,
-        "push-interval" : 1000
+        "url": "http://session-managment:3004",
+        "push" : "true",
+        "push-interval" : 3000
     }
 }

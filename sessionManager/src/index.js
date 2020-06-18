@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const process = require('process');
 const request = require('request');
+const fs = require('fs');
 
 const app = express();
 
@@ -11,29 +12,52 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
 
 const configPath = process.argv.slice(2)[0];
-var config = require(configPath);
-
+const config = require(configPath);
+const logEnabled = config.enableLog;
 const router = express.Router();
 
 var SessionsByPod = {};
 var PodBySessions = {};
 var Pods = {};
 
-function evictPod(podName) {
-    console.log("Attempt to evict pod " + podName);
-    if(Pods[podName]) {
-        const podIP = Pods[podName].podIp;
+function log(msg) {
 
-        SessionsByPod[podIP] = {};
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var msgWithDate = date + ' ' + time + ' - ' + msg;
+    
+    console.log(msgWithDate);
+    if(logEnabled) {
+        fs.appendFileSync('/log/session-log.txt', msgWithDate + '\n');
+    }
+}
+
+function evictPod(podName) {
+    log("Evicting pod " + podName);
+    if(Pods[podName]) {       
+        SessionsByPod[podName] = {};
 
         Object.keys(PodBySessions)
-        .filter((sessionId => PodBySessions[sessionId] = podIp))
+        .filter((sessionId => PodBySessions[sessionId] = podName))
         .forEach(sessionId => delete PodBySessions[sessionId]);
 
-        console.log("Pod has been evicted " + podName);
+        log("Pod has been evicted " + podName);
     } else {
-        console.log("Pod " + podName + " is not registered");
+        log("Pod " + podName + " is not registered");
     }
+}
+
+function registerPod(podName, nodeName, pushRate) {
+
+    Pods[podName] = {
+        podName: podName,       
+        nodeName: nodeName,
+        failure: 0,
+        timeout : setTimeout(function() {
+            evictPod(podName);
+        }, pushRate * 1.5)
+    };
 }
 
 /**
@@ -42,17 +66,10 @@ function evictPod(podName) {
  */
  
 router.post("*/pod/:podName", (req, res) => {
-    const podName = req.params.podName;
-    const podIp = req.body.podIp;
-    const nodeName = req.body.nodeName;
+    log("Registring Pod " + req.params.podName);  
 
-    console.log("Registring Pod " + podName);
-    Pods[podName] = {
-        podName: podName,
-        podIp: podIp,
-        nodeName: nodeName,
-        failure: 0
-    };
+    registerPod(req.params.podName, req.body.nodeName, req.body.pushRate);
+    res.status(200).send("pod registered");
 });
 
 /**
@@ -63,21 +80,15 @@ router.get("*/pods", (req, res) => {
     res.status(200).send(Pods);
 });
 
-/**
- * DELETE /pod/:podname
- * Delete pod entry
- */
-router.delete("*/pod/:podName", (req, res) => {
-    const podName = req.params.podName;
-    evictPod(podName);
-});
 
-function processPodInfo(podName, podIp, nodeName, sessions) {
+function processPodInfo(podName, nodeName, sessions, pushRate) {
+    log(podName + " - Adding sessions infos");
 
-    SessionsByPod[podIp] = {        
-        podName : podName,
-        podIp : podIp,        
-        nodeName : nodeName,
+    registerPod(podName, nodeName, pushRate);
+
+    SessionsByPod[podName] = {        
+        podName : podName,               
+        nodeName: nodeName,      
         sessions: sessions
     };
 
@@ -87,21 +98,21 @@ function processPodInfo(podName, podIp, nodeName, sessions) {
         .forEach(sessionId => delete PodBySessions[sessionId]);
     
     //add the sessions
-    for(var session in req.body.sessions) {
-        PodBySessions[session] = podIp
-    }
+    Object.keys(sessions).forEach((session) => {
+        PodBySessions[session] = podIp;
+    });
 }
 
 /**
  * POST /sessions/:podIp
- * Send all sessions from pod Ip
+ * Receive all sessions from pod Ip
  */
-router.post("*/sessions/:podIp", (req,res) => {
-    const podIp = req.params.podIp;
-    if(podIp in SessionsByPod)
-        delete SessionsByPod[podIp];
-
-    processPodInfo(req.body.podName, podIp, req.body.nodeName, req.body.sessions);
+router.post("*/sessions/:podName", (req,res) => {
+    const podName = req.params.podName;
+    if(Pods[podName] && Pods[podName].timeout)
+        clearTimeout(Pods[podName].timeout);
+    
+    processPodInfo(podName, req.body.nodeName, req.body.sessions, req.body.pushRate);
 
     res.status(200).send("Sessions have been added");
 })
@@ -111,7 +122,7 @@ router.post("*/sessions/:podIp", (req,res) => {
  * Get all the sessions
  */
 router.get("*/sessions", (req, res) => {
-    res.status(200).send(SessionsByPod);
+    res.status(200).send({ info: SessionsByPod });
 });
 
 /**
@@ -122,14 +133,17 @@ router.get("*/sessions", (req, res) => {
 router.delete("*/session/:sessionId", (req,res) => {
     const sessionId = req.params.sessionId;
 
+    log("Deleting session " + sessionId);
     if(PodBySessions[sessionId] == null) {
-        res.status(403).send("Session " + sessionId + " does not exist");
+        const msg = "Session " + sessionId + " does not exist";
+        log(msg);
+        res.status(403).send(msg);
     } else {
-        const podIp = PodBySessions[sessionId];
+        const podName = PodBySessions[sessionId];
         try {
-            request.delete(podIp + "/" + sessionId, ()=> {});
+            request.delete(podName + ":" + config["local-manager-port"]+ "/" + sessionId, ()=> {});
         } catch(e) {
-            console.log(e);
+            log(e);
         }
     }
 });
@@ -137,28 +151,26 @@ router.delete("*/session/:sessionId", (req,res) => {
 app.use('/', router);
 
 app.listen(config.port, () => {
-    console.log(config.appName + " started on PORT " + config.port);
+    log(config.appName + " started on PORT " + config.port);
+
     if(config.pull) {
         setInterval(function() {
-            for(var pod in Pods) {
-                try {
-                    console.log("Getting sessions on information on pod " + pod);
-                    request.get(pod.podIp + "/sessions", {}, (err, httpResponse, body) => {
-                        if(err) {
-                            console.log(err);
-                        } else {               
-                            console.log("processing info from pod response ("+ pod + ")");
-                            processPodInfo(body.podName, body.podIp, body.nodeName, body.sessions);
-                        }
-                    })
-                } catch(e) {
-                    console.log(e);
+            Object.keys(Pods).forEach(podName => {
+                log("Requesting sessions details on pod " + podName);
+                request.get("http://" + Pods[podName].podIp + ":" + config["local-manager-port"]+ "/sessions", {}, (err, httpResponse, body) => {
+                    if(err) {
+                        log(err);
+                    } else {                                     
+                        processPodInfo(body.podName, body.nodeName, body.sessions);
+                    }
+                }).on("error", (err) => {
+                    log(err);
                     Pods[pod].failure++;
                     if(Pods[pod].failure > config["pod-failure-limit"]) {
                         evictPod(pod);
                     }
-                }
-            }
+                });               
+            });
         }, config["pull-interval"])
     }
 });

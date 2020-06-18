@@ -1,0 +1,1 @@
+kubectl delete -f ./stateful.yaml -f ./stateless.yaml -f ./front.yaml

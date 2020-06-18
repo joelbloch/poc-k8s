@@ -19,14 +19,26 @@ var config = require(configPath);
 const logEnabled = config.enableLog;
 
 let Sessions = {};
-let SessionTimeouts = {};
 
 const router = express.Router();
 
+const processId = uuidv4();
+
+function logSessions() {
+    if(logEnabled)
+        fs.appendFileSync('/log/back-log.txt', JSON.stringify(Object.keys(Sessions)) + '\n');
+}
+
 function log(msg) {
-    console.log(msg);
+
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var msgWithDate = date + ' ' + time + ' - ' + msg;
+    
+    console.log(msgWithDate);
     if(logEnabled) {
-        fs.appendFile('/log/back-log.txt',msg + '\n');
+        fs.appendFileSync('/log/session-log.txt', msgWithDate + '\n');
     }
 }
 
@@ -45,42 +57,49 @@ function deleteSession(sessionId, notifyManager) {
 }
 
 router.get('*/counter', (req, res) => {
-    var cookie = req.cookies["session-id"];
-    if(cookie && SessionTimeouts[cookie]) {
-        clearTimeout(SessionTimeouts[cookie]);        
-    }
 
-    if(!cookie || !Sessions[cookie]) {
-        sessionId = uuidv4();
-        Sessions[sessionId] = {
-            counter : 0          
-        };
-        if(config["session-manager"]) {
-           try {
-                request.post(config["session-manager"] + "/session/" + sessionId);
-            } catch(e) {
-                log(e);
+    var sessionId = req.cookies["session-id"];
+    var sessionCounter = 0;
+
+    if(sessionId) {
+        log("receiving counter request from " + sessionId);
+        if(Sessions[sessionId]) {                        
+            sessionCounter = Sessions[sessionId].counter;
+            log("Session " + sessionId + " has been found with counter " + sessionCounter);            
+            if(Sessions[sessionId].timeout != null) {
+                clearTimeout(Sessions[sessionId].timeout);
             }
+        } else {
+            log("Session " + sessionId + " is unknown, creating a new session");
+            sessionId = uuidv4();
+            if(config["session-manager"]) {
+                request
+                .post(config["session-manager"] + "/session/" + sessionId)
+                .on("error", (err) => {log(err) });                 
+             }     
         }
+    }     
+    
+    let sessionTimeout = null;
+    if(config["session-timeout"] && config["session-timeout"] > 0) {
+        log("Setting timeout for session " + sessionId);
+        sessionTimeout = setTimeout(() => { 
+            log("session " + sessionId + " has timed out");
+            deleteSession(sessionId, true);
+        }, config["session-timeout"] * 1000);
     }
-    const sessionCounter = Sessions[sessionId].counter;
-
-    log('session ' + sessionId + ' => new counter value : ' + sessionCounter);
 
     Sessions[sessionId] = {
         counter : sessionCounter + 1,
-        lastAccess : Date.now()
+        lastAccess : Date.now(),
+        timeout: sessionTimeout
     }
 
-    SessionTimeouts[sessionId] 
-        = setTimeout(() => { 
-            log("session " + sessionId + " has timed out");
-            deleteSession(sessionId, true);
-        }, 
-        config["session-timeout"] * 1000);
+    logSessions();
 
-    res.cookie("session-id", sessionId);    
-    res.status(200).send('counter : ' + sessionCounter + '<br><hr>sessionId : '+ sessionId + '<br><hr>');
+    res.cookie("session-id", sessionId);
+    res.set('pod-id', processId);
+    res.status(200).send('counter : ' + sessionCounter + '<br><hr>sessionId : '+ sessionId + '<br><hr>process Id : ' + processId);  
 });
 
 router.delete('*/session', (req, res) => {
