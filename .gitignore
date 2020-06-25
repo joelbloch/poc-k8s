@@ -1,0 +1,5 @@
+log/centralsession/*
+log/front/*
+log/session/*
+log/stateful/*
+log/stateless/*

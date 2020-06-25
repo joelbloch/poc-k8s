@@ -1,0 +1,9 @@
+{
+    "appName" : "Local Session Manager",
+    "logEnabled": false,
+    "port" : "3400",
+    "trace-sessions" : true,
+    "sessionManager" : {
+        "url": "http://localhost:3004"       
+    }
+}

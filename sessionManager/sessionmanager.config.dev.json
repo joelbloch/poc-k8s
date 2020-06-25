@@ -1,6 +1,6 @@
 {
     "appName" : "Central Session Manager",
-    "enableLog" : true,
+    "enableLog" : false,
     "port": "3004",    
     "pull-interval" : 2000,
     "trace-sessions" : true
