@@ -1,10 +1,15 @@
 {
     "appName" : "Local Session Manager",
-    "enableLog": "true",
     "port" : "3400",
+    "trace" : {
+        "enabled" : true,
+        "file-name-policy" : "process",
+        "file-suffix": "session-log.txt",
+        "write-sync" : true
+    },
+    "enableLog": true,
+    "trace-sessions" : false,
     "sessionManager" : {
-        "url": "http://session-managment:3004",
-        "push" : "true",
-        "push-interval" : 3000
+        "url": "http://session-mgt-svc:3004"
     }
 }
