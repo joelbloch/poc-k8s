@@ -26,9 +26,11 @@ __Note__: For kubernetes needs, clone this repository at: d:/dev/poc-k8s
 
 ### 3) Build application images
 
-- go to front subfolder, and execute the command `npm run build-docker`
-- go to back subfolder, and execute the command `npm run build-docker`
-- go to localsessionManager and sessionManager and execute the command `npm run build-docker`
+- Execute the command `npm run build-docker` in the following directory:
+    - __/front__
+    - __/back__
+    - __/localsessionManager__
+    - __/sessionManager__
 
 ### 4) Deploy on kubernetes
 
