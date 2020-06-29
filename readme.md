@@ -18,7 +18,11 @@ __Note__: For kubernetes needs, clone this repository at: d:/dev/poc-k8s
     - log\front
     - log\stateful
     - log\stateless
-- Open Settings for Docker for Desktop => Resources => File Sharing. Add the /config/ingres /config/istio /log/stateless /log/stateful /log/front directories to allow sharing
+    
+- Open Settings for Docker for Desktop => Resources => File Sharing. Add the following directories to allow sharing:
+    - D:\dev\poc-k8s\config
+    - D:\dev\poc-k8s\log
+
 
 ### 3) Build application images
 
