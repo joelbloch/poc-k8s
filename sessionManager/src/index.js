@@ -15,7 +15,7 @@ app.use(cookieParser());
 
 const configPath = process.argv.slice(2)[0];
 const config = require(configPath);
-const logEnabled = config.enableLog;
+const logEnabled = config.trace.enabled;
 const router = express.Router();
 
 var SessionsByPod = {};
@@ -24,24 +24,37 @@ var Pods = {};
 var availableTcpPorts = [3005, 3006, 3007, 3008, 3009, 3010, 3011, 3012, 3013, 3014];
 
 var myPodName = process.env["MY_POD_NAME"];
-if(!myPodName) myPodName = 'localhost';
+if(!myPodName) myPodName = process.pid;
+var myNodeName = process.env["MY_NODE_NAME"];
+if(!myNodeName) {
+    const os = require('os');
+    myNodeName = os.hostname();
+}
 
 function log(msg) {
 
     var today = new Date();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    var msgWithDate = date + ' ' + time + ' - ' + msg;
+    var formattedMsg = date + ' ' + time + ' - ' + myPodName + '.' + myNodeName + ' - ' + msg;
     
-    console.log(msgWithDate);
+    console.log(formattedMsg);
+    if (logEnabled) {
+        var fileName = config.trace["file-name"];
+        if(!fileName) fileName = 'sessions.txt';
 
-    if(logEnabled) {
-        console.log("log is enabled");
-        try {
-            fs.appendFileSync('/log/session-log.txt', msgWithDate + '\n');
-        } catch(err) {
-            console.log(err);
+        if(config.trace['file-name-policy'] == 'process') {
+            fileName = '/log/' + myPodName + '-' + fileName;           
+        } else {
+            fileName = '/log/' + fileName;           
         }
+        try {
+            if(config.trace['write-sync']) {
+                fs.appendFileSync(fileName, formattedMsg + '\n');
+            } else {
+                fs.appendFile(fileName, formattedMsg + '\n', () => {});
+            }
+        } catch(e) {}
     }
 }
 

@@ -1,6 +1,11 @@
 {
     "appName" : "Central Session Manager",
-    "enableLog" : true,
+    "trace" : {
+        "enabled" : true,
+        "file-name-policy" : "unique",
+        "file-suffix": "session-log.txt",
+        "write-sync" : true
+    },
     "port": "3004",    
     "pull-interval" : 2000,
     "trace-sessions" : true

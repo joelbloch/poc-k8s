@@ -1,5 +1,4 @@
-{
-	"enableLog" : true,
+{	
 	"frontEnd" : {
 		"domain" : "http://localhost",
 		"port" : "3500"
@@ -11,5 +10,11 @@
 	"apiStateful" : {
 		"domain" : "http://api-stateful",
 		"port" : "3002"
-	}
+	},
+	"trace" : {
+        "enabled" : true,
+        "file-name-policy" : "unique",
+        "file-suffix": "log.txt",
+        "write-sync" : true
+    }
 }

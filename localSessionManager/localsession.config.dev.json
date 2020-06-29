@@ -1,6 +1,11 @@
 {
     "appName" : "Local Session Manager",
-    "logEnabled": false,
+    "trace" : {
+        "enabled" : true,
+        "file-name-policy" : "unique",
+        "file-suffix": "session-log.txt",
+        "write-sync" : true
+    },
     "port" : "3400",
     "trace-sessions" : true,
     "sessionManager" : {

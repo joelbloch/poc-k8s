@@ -7,7 +7,6 @@
         "file-suffix": "session-log.txt",
         "write-sync" : true
     },
-    "enableLog": true,
     "trace-sessions" : false,
     "sessionManager" : {
         "url": "http://session-mgt-svc:3004"

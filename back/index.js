@@ -16,7 +16,15 @@ app.use(cookieParser());
 const configPath = process.argv.slice(2)[0];
 var config = require(configPath);
 
-const logEnabled = config.enableLog;
+const logEnabled = config.trace.enabled;
+
+var myPodName = process.env["MY_POD_NAME"];
+if(!myPodName) myPodName = process.pid;
+var myNodeName = process.env["MY_NODE_NAME"];
+if(!myNodeName) {
+    const os = require('os');
+    myNodeName = os.hostname();
+}
 
 let Sessions = {};
 
@@ -28,19 +36,34 @@ function logSessions() {
     if(logEnabled)
         fs.appendFileSync('/log/back-log.txt', JSON.stringify(Object.keys(Sessions)) + '\n');
 }
-
 function log(msg) {
 
     var today = new Date();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    var msgWithDate = date + ' ' + time + ' - ' + msg;
+    var formattedMsg = date + ' ' + time + ' - ' + myPodName + '.' + myNodeName + ' - ' + msg;
     
-    console.log(msgWithDate);
-    if(logEnabled) {
-        fs.appendFileSync('/log/session-log.txt', msgWithDate + '\n');
+    console.log(formattedMsg);
+    if (logEnabled) {
+        var fileName = config.trace["file-name"];
+        if(!fileName) fileName = 'sessions.txt';
+
+        if(config.trace['file-name-policy'] == 'process') {
+            fileName = '/log/' + myPodName + '-' + fileName;           
+        } else {
+            fileName = '/log/' + fileName;           
+        }
+        try {
+            if(config.trace['write-sync']) {
+                fs.appendFileSync(fileName, formattedMsg + '\n');
+            } else {
+                fs.appendFile(fileName, formattedMsg + '\n', () => {});
+            }
+        } catch(e) {            
+        }
     }
 }
+
 
 function deleteSession(sessionId, notifyManager) {
     log("deleting session " + sessionId);

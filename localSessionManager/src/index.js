@@ -20,18 +20,14 @@ const logEnabled = config.trace.enabled;
 
 let Sessions = {};
 
-const myPodName = process.env["MY_POD_NAME"];
-const myNodeName = process.env["MY_NODE_NAME"];
 var sessionManagerConnected = false;
 
-function getMyPodName() {
-    if(myPodName) return myPodName;
-    return "localhost";
-}
-
-function getMyNodeName() {
-    if(myNodeName) return myNodeName;
-    return os.hostname();
+var myPodName = process.env["MY_POD_NAME"];
+if(!myPodName) myPodName = process.pid;
+var myNodeName = process.env["MY_NODE_NAME"];
+if(!myNodeName) {
+    const os = require('os');
+    myNodeName = os.hostname();
 }
 
 function log(msg) {
@@ -39,7 +35,7 @@ function log(msg) {
     var today = new Date();
     var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    var formattedMsg = date + ' ' + time + ' - ' + getMyPodName() + '.' + getMyNodeName() + ' - ' + msg;
+    var formattedMsg = date + ' ' + time + ' - ' + myPodName + '.' + myNodeName + ' - ' + msg;
     
     console.log(formattedMsg);
     if (logEnabled) {
@@ -47,16 +43,17 @@ function log(msg) {
         if(!fileName) fileName = 'sessions.txt';
 
         if(config.trace['file-name-policy'] == 'process') {
-            fileName = '/log/' + getMyPodName() + '-' + fileName;           
+            fileName = '/log/' + myPodName + '-' + fileName;           
         } else {
             fileName = '/log/' + fileName;           
         }
-        
-        if(config.trace['write-sync']) {
-            fs.appendFileSync('/log/' + getMyPodName() + '-sessions.txt', formattedMsg + '\n');
-        } else {
-            fs.appendFile('/log/' + getMyPodName() + '-sessions.txt', formattedMsg + '\n', () => {});
-        }
+        try {
+            if(config.trace['write-sync']) {
+                fs.appendFileSync(fileName, formattedMsg + '\n');
+            } else {
+                fs.appendFile(fileName, formattedMsg + '\n', () => {});
+            }
+        } catch(e) {}
     }
 }
 /**
