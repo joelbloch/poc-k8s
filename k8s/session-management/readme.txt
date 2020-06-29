@@ -1,4 +1,4 @@
-0) Apply readme.txt
+0) Read and follow project main readme.txt
 
 1) Reset Kubernetes Cluster from Docker for PC
 Docker for Desktop => Settings => Kubernetes => Reset Kubernetes Cluster
@@ -12,14 +12,10 @@ istioctl install --set profile=demo
 kubectl label namespace default istio-injection=enabled
 
 4) Run the application
-kubectl apply -f stateful.yaml
-kubectl apply -f stateless.yaml
-kubectl apply -f front.yaml
-
-5) ensure your application is running
-kubectl get pods
-kubectl get services
-troubleshooting => kubectl log <podname>
+To start : ".\start.ps1"
+To stop : ".\stop.ps1"
+To get the list of pods : ".\pods.ps1"
+To get the list of services : ".\services.ps1"
 
 5) Dashboard
 istioctl dashboard kiali

@@ -70,9 +70,9 @@ function WaitForPodsStarting() {
 }
 
 Write-Host "Starting Central Session Management"
-kubectl apply -f ./central-session.yaml
+kubectl apply -f ./yaml/central-session.yaml
 WaitForPodsStarting -interval 1
 
 Write-Host "Starting Stateful, Stateless and Front services"
-kubectl apply -f ./stateful.yaml -f ./stateless.yaml -f ./front.yaml
+kubectl apply -f ./yaml/stateful.yaml -f ./yaml/stateless.yaml -f ./yaml/front.yaml
 WaitForPodsStarting -interval 1
