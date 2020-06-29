@@ -86,22 +86,27 @@ router.get('*/counter', (req, res) => {
 
     if(sessionId) {
         log("receiving counter request from " + sessionId);
-        if(Sessions[sessionId]) {                        
-            sessionCounter = Sessions[sessionId].counter;
-            log("Session " + sessionId + " has been found with counter " + sessionCounter);            
-            if(Sessions[sessionId].timeout != null) {
-                clearTimeout(Sessions[sessionId].timeout);
-            }
-        } else {
-            log("Session " + sessionId + " is unknown, creating a new session");
-            sessionId = uuidv4();
-            if(config["session-manager"]) {
-                request
-                .post(config["session-manager"] + "/session/" + sessionId)
-                .on("error", (err) => {log(err) });                 
-             }     
+    }
+
+    if(sessionId && Sessions[sessionId]) {
+        sessionCounter = Sessions[sessionId].counter;
+        log("Session " + sessionId + " has been found with counter " + sessionCounter);            
+        if(Sessions[sessionId].timeout != null) {
+            clearTimeout(Sessions[sessionId].timeout);
         }
-    }     
+    } else {
+        if(sessionId) {
+            log("Session " + sessionId + " is unknown, creating a new session");
+        } else {
+            log("New request without cookie received, creating session");
+        }
+        sessionId = uuidv4();
+        if(config["session-manager"]) {
+            request
+            .post(config["session-manager"] + "/session/" + sessionId)
+            .on("error", (err) => {log(err) });                 
+         }     
+    }      
     
     let sessionTimeout = null;
     if(config["session-timeout"] && config["session-timeout"] > 0) {
