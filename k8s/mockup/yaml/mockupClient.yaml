@@ -62,6 +62,7 @@ metadata:
 spec: 
   type: ExternalName
   externalName: "joelbt490.wyde.paris.local"
+  clusterIP: None
 # ---
 # apiVersion: v1
 # kind: Service
