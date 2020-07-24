@@ -7,6 +7,6 @@ COPY . .
 
 EXPOSE 3700
 
-CMD [ "npm", "start" ]
+CMD [ "npm", "run start-dev" ]
 
 

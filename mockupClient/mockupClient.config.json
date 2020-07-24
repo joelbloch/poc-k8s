@@ -2,7 +2,7 @@
     "appName" : "Mockup Client",
 	"port" : "3700",
 	"trace" : {
-        "enabled" : true,
+        "enabled" : false,
         "file-name-policy" : "process",
         "file-suffix": "log.txt",
         "write-sync" : true

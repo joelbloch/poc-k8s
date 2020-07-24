@@ -55,15 +55,14 @@ spec:
            path: '/host_mnt/d/dev/poc-k8s/config/mockup'           
            type: Directory
 ---
-# kind: Service
-# apiVersion: v1
-# metadata:
-#   name: mockup-service  
-# spec: 
-#   type: ExternalName
-#   externalName: "joelbt490.wyde.paris.local"
-#   clusterIP: None
-# # ---
+kind: Service
+apiVersion: v1
+metadata:
+  name: mockup-service  
+spec: 
+  type: ExternalName
+  externalName: "joelbt490.wyde.paris.local"
+# ---
 # apiVersion: v1
 # kind: Service
 # metadata:
