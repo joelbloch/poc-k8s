@@ -9,6 +9,8 @@ const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 const app = express();
 
+const pg = require('pg')
+
 app.use(bodyParser.json());      
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
@@ -32,10 +34,20 @@ const router = express.Router();
 
 const processId = uuidv4();
 
+const client = new pg.Client({
+    user: config.db.user,
+    host: config.db.host,
+    database: config.db.database,
+    password: config.db.password,
+    port: config.db.port,
+  });
+
+
 function logSessions() {
     if(logEnabled)
         fs.appendFileSync('/log/back-log.txt', JSON.stringify(Object.keys(Sessions)) + '\n');
 }
+
 function log(msg) {
 
     var today = new Date();
@@ -63,6 +75,18 @@ function log(msg) {
         }
     }
 }
+
+client.connect();
+
+client.query('SELECT NOW()', (err, res) => {
+    log("connection to Db");
+    if(err) {
+        log("there was an error with db query" + err.stack);
+    } else {
+        log("Here is the db response " + res);
+    }    
+    client.end();
+})
 
 
 function deleteSession(sessionId, notifyManager) {

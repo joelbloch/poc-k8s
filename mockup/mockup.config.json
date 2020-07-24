@@ -1,0 +1,10 @@
+{
+    "appName" : "Mockup",
+	"port" : "3600",
+	"trace" : {
+        "enabled" : true,
+        "file-name-policy" : "process",
+        "file-suffix": "log.txt",
+        "write-sync" : true
+    }
+}

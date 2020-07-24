@@ -7,5 +7,12 @@
         "write-sync" : true
     },
 	"session-manager" : "http://localhost:3400",
-	"session-timeout" : 0
+    "session-timeout" : 0,
+    "db":{
+        "user": "postgres",
+        "host": "pg-service",
+        "port": 3500,
+        "database": "postgres",
+        "password": "admin123"        
+    }
 }

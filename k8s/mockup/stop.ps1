@@ -45,5 +45,5 @@ function WaitForPodsTerminaison() {
     return $Return    
 }
 
-kubectl delete -f ./yaml/stateful.yaml -f ./yaml/stateless.yaml -f ./yaml/front.yaml -f ./yaml/central-session.yaml -f ./yaml/external-postgres.yaml
+kubectl delete -f ./yaml/mockupClient.yaml
 WaitForPodsTerminaison -interval 1

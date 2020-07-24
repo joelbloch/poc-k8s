@@ -1,0 +1,14 @@
+{
+    "appName" : "Mockup Client",
+	"port" : "3700",
+	"trace" : {
+        "enabled" : true,
+        "file-name-policy" : "process",
+        "file-suffix": "log.txt",
+        "write-sync" : true
+    },
+    "server" : {
+        "host" :"http://10.1.1.221",
+        "port" : 3600
+    }
+}

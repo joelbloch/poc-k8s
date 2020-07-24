@@ -3,3 +3,11 @@ log/front/*
 log/session/*
 log/stateful/*
 log/stateless/*
+front/node_modules
+back/node_modules
+localSessionManager/node_modules
+sessionManager/node_modules
+mockup/node_modules
+mockupClient/node_modules
+
+

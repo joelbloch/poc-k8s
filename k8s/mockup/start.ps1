@@ -1,11 +1,8 @@
-Write-Host 'Deleting session logs'
+Write-Host 'Deleting logs'
 
-Remove-Item -Path ..\..\log\centralsession\*.txt
-Remove-Item -Path ..\..\log\session\*.txt
-Remove-Item -Path ..\..\log\stateful\*.txt
-Remove-Item -Path ..\..\log\stateless\*.txt
+Remove-Item -Path ..\..\log\mockup\*.txt
 
-Write-Host 'Session logs have been deleted'
+Write-Host 'Logs have been deleted'
 
 function WaitForPodsStarting() {
     [CmdletBinding()]
@@ -71,11 +68,6 @@ function WaitForPodsStarting() {
     return $Return    
 }
 
-Write-Host "Starting Central Session Management"
-kubectl apply -f ./yaml/central-session.yaml -f ./yaml/central-session.yaml -f ./yaml/external-postgres.yaml
-WaitForPodsStarting -interval 1
-
-Write-Host "Starting Stateful, Stateless and Front services"
-# kubectl apply -f ./yaml/stateful.yaml -f ./yaml/stateless.yaml -f ./yaml/front.yaml
-kubectl apply -f ./yaml/stateful.yaml -f ./yaml/front.yaml
+Write-Host "Starting MockupClient"
+kubectl apply -f ./yaml/mockupClient.yaml
 WaitForPodsStarting -interval 1

@@ -7,5 +7,12 @@
         "write-sync" : true
     },
 	"session-manager" : "http://localhost:3400",
-	"session-timeout" : 20
+    "session-timeout" : 20,
+    "db":{
+        "user": "postgres",
+        "host": "localhost",
+        "database": "pocsK8s",
+        "password": "admin123",
+        "port": 5432
+    }
 }

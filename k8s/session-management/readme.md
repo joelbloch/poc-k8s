@@ -22,7 +22,8 @@ Docker for Desktop => Settings => Kubernetes => Reset Kubernetes Cluster
 - To get the list of services : `.\services.ps1`
 
 ### 5) Dashboard
-- `istioctl dashboard kiali`
+- `istioctl dashboard kiali` 
+- your browser will be opened, the credentials are `admin / admin`
 
 ### 6) Test in your browser:
 - http://localhost:30000/ping                 => pong from front service
