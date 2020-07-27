@@ -53,7 +53,7 @@ spec:
           readOnly: false
       - name: config-volume
         azureFile:
-          shareName: pock8s-share
+          shareName: pock8sshare
           secretName: pock8s-share-secret
           readOnly: false
 
