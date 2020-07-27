@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: pocfrontend
-        image: pocfrontend:1.0               
+        image: pock8sregistry.azurecr.io/pocfrontend:1.0               
         ports:
            - name: http-front
              containerPort: 3500      
