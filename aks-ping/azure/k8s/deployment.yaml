@@ -12,6 +12,8 @@ spec:
         labels:
             app: aksping
       spec:
+        imagePullSecrets:
+        - name: poc-k8s-registry-pull-secret
         containers:
         - name: aksping
           image: pockK8sRegistry.azurecr.io/aksping:v1
