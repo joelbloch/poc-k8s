@@ -14,7 +14,7 @@ spec:
       spec:
         containers:
         - name: aksping
-          image: pockK8sRegistry.azurecr.io/aksping:1.0
+          image: pock8sregistry.azurecr.io/aksping:1.0
           imagePullPolicy: Always
           readinessProbe:
             httpGet:
