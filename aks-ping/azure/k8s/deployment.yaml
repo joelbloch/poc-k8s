@@ -12,11 +12,9 @@ spec:
         labels:
             app: aksping
       spec:
-        imagePullSecrets:
-        - name: poc-k8s-registry-pull-secret
         containers:
         - name: aksping
-          image: pockK8sRegistry.azurecr.io/aksping:v1
+          image: pockK8sRegistry.azurecr.io/aksping:1.0
           imagePullPolicy: Always
           readinessProbe:
             httpGet:
@@ -33,3 +31,5 @@ spec:
             limits:
               memory: "256Mi"
               cpu: "500m"
+        imagePullSecrets:
+        - name: poc-k8s-registry-pull-secret
