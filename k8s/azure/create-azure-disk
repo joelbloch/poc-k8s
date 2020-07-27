@@ -1,0 +1,5 @@
+az disk create \
+  --resource-group MC_pocK8s_pocK8sCluster_southafricanorth \
+  --name pocK8sDisk \
+  --size-gb 20 \
+  --query id --output tsv

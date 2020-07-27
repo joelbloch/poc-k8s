@@ -1,0 +1,59 @@
+#############################################################
+######################### FRONT END #########################
+
+# Service exposing frontend on node port 30000
+apiVersion: v1
+kind: Service
+metadata:
+  name: front-service
+spec:
+  type: NodePort
+  selector:
+    app: front
+    tier: webserver
+  ports:
+  - port: 3500
+    name: http-fr
+    targetPort: http-front
+    nodePort: 30000
+---
+# deployment of the container pocfrontend listening to port 3500
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-end
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: front
+      tier: webserver
+  template:
+    metadata:
+      labels:
+        app: front
+        tier: webserver
+    spec:
+      containers:
+      - name: pocfrontend
+        image: pocfrontend:1.0               
+        ports:
+           - name: http-front
+             containerPort: 3500      
+        volumeMounts:
+           - mountPath : /log
+             name: log-volume
+           - mountPath : /config
+             name: config-volume
+      volumes:
+      - name: log-volume
+        azureFile:
+          shareName: pock8sshare
+          secretName: pock8s-share-secret
+          readOnly: false
+      - name: config-volume
+        azureFile:
+          shareName: pock8s-share
+          secretName: pock8s-share-secret
+          readOnly: false
+
