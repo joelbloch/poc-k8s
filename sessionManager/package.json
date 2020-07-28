@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/index.js /config/sessionmanager.config.json",
     "start-dev": "node src/index.js ../sessionmanager.config.dev.json",
-    "build-docker": "docker build --tag sessionmanager:1.0 .",
+    "build-docker": "docker build --tag pock8sregistry.azurecr.io/sessionmanager:1.0 .",
+    "push-docker" : "docker push pock8sregistry.azurecr.io/sessionmanager:1.0",
     "docker": "docker run -p 3004:3004 -p 3005:3005 -p 3006:3006 -p 3007:3007 -p 3008:3008 -p 3009:3009 -p 3010:3010 -p 3011:3011 -p 3012:3012 -p 3013:3013 -p 3014:3014  --detach --name sessionmanager sessionmanager:1.0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

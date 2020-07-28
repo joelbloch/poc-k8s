@@ -22,7 +22,7 @@ kind: Deployment
 metadata:
   name: stateful-backend
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: stateful
@@ -33,17 +33,19 @@ spec:
         app: stateful
         tier: appserver
     spec:
+       imagePullSecrets:
+       - name: poc-k8s-registry-pull-secret
        containers:
        - name: pocbackend
-         image: pocbackend:1.0
+         image: pock8sregistry.azurecr.io/pocbackend:1.0
          ports:
           - name: http-stateful
             containerPort: 3000
          volumeMounts:
           - mountPath : /log
-            name: log-volume-stateful
+            name: log-volume
           - mountPath : /config
-            name: config-volume-stateful
+            name: config-volume
        - name: localsessionmanager
          image: localsessionmanager:1.0
          ports:
@@ -60,39 +62,34 @@ spec:
                 fieldPath: metadata.name         
          volumeMounts:
           - mountPath : /log
-            name: log-volume-session
+            name: log-volume
           - mountPath : /config
-            name: config-volume-session
+            name: config-volume
        volumes:
-       - name: log-volume-stateful
-         hostPath:           
-           path: '/host_mnt/d/dev/poc-k8s/log/stateful'           
-           type: Directory
-       - name: config-volume-stateful
-         hostPath:           
-           path: '/host_mnt/d/dev/poc-k8s/config/istio'           
-           type: Directory
-       - name: log-volume-session
-         hostPath:           
-           path: '/host_mnt/d/dev/poc-k8s/log/session'           
-           type: Directory
-       - name: config-volume-session
-         hostPath:           
-           path: '/host_mnt/d/dev/poc-k8s/config/session'           
-           type: Directory
+        - name: log-volume
+          azureFile:
+           shareName: pock8sshare
+           secretName: pock8s-share-secret
+           readOnly: false
+        - name: config-volume
+          azureFile:
+           shareName: pock8sshare
+           secretName: pock8s-share-secret
+           readOnly: false
+
 #############################################################
 ########### ISTIO PROXY FOR API-STATEFUL SERVICE ############
 #############################################################
----
-apiVersion: networking.istio.io/v1alpha3
-kind: DestinationRule
-metadata:
-    name: sticky-svc
-spec:
-    host: api-stateful
-    trafficPolicy:
-     loadBalancer:
-       consistentHash:
-         httpCookie:
-           name: session-id
-           ttl: 20000s
+# ---
+# apiVersion: networking.istio.io/v1alpha3
+# kind: DestinationRule
+# metadata:
+#     name: sticky-svc
+# spec:
+#     host: api-stateful
+#     trafficPolicy:
+#      loadBalancer:
+#        consistentHash:
+#          httpCookie:
+#            name: session-id
+#            ttl: 20000s

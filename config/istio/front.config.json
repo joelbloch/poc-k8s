@@ -1,4 +1,5 @@
 {	
+	"appName" : "Front Server",
 	"frontEnd" : {
 		"domain" : "http://localhost",
 		"port" : "3500"
@@ -12,8 +13,8 @@
 		"port" : "3002"
 	},
 	"trace" : {
-        "enabled" : true,
-        "file-name-policy" : "unique",
+		"enabled" : true,
+        "file-name-policy" : "process",
         "file-suffix": "log.txt",
         "write-sync" : true
     }

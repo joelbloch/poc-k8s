@@ -33,7 +33,7 @@ function log(msg) {
     console.log(formattedMsg);
     if (logEnabled) {
         var fileName = config.trace["file-name"];
-        if(!fileName) fileName = 'sessions.txt';
+        if(!fileName) fileName = config.appName;
 
         if(config.trace['file-name-policy'] == 'process') {
             fileName = '/log/' + myPodName + '-' + fileName;           
@@ -81,5 +81,5 @@ router.get('/*', (req, res) => {
 app.use('/', router);
 
 app.listen(config.frontEnd.port, () => {
-    log("Frontend Started on PORT " + config.frontEnd.port);
+    log(config.appName + " started on PORT " + config.frontEnd.port);
 });

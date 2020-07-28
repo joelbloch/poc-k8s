@@ -9,15 +9,14 @@ metadata:
   name: session-mgt-svc
 spec:
   # clusterIP: None
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: session-management
     tier: appserver
   ports:
-  - port: 3004
+  - port: 80
     name: http-session-mgt
     targetPort: http
-    nodePort: 30001 
   - port: 3005
     name: tcp1
     targetPort: tcp1
@@ -55,7 +54,6 @@ metadata:
   name: session-management
 spec:
   replicas: 1
-  # serviceName: "session-mgt-svc"
   selector:
     matchLabels:
       app: session-management
@@ -66,9 +64,11 @@ spec:
         app: session-management
         tier: appserver
     spec:
+      imagePullSecrets:
+      - name: poc-k8s-registry-pull-secret
       containers:
       - name: sessionmanager
-        image: sessionmanager:1.0        
+        image: pock8sregistry.azurecr.io/sessionmanager:1.0        
         ports:
            - name: http
              containerPort: 3004
@@ -113,11 +113,13 @@ spec:
            - mountPath : /config
              name: config-volume
       volumes:
-      - name: log-volume
-        hostPath:           
-           path: '/host_mnt/d/dev/poc-k8s/log/centralsession'           
-           type: Directory
-      - name: config-volume
-        hostPath:           
-           path: '/host_mnt/d/dev/poc-k8s/config/session'           
-           type: Directory
+       - name: log-volume
+         azureFile:
+           shareName: pock8sshare
+           secretName: pock8s-share-secret
+           readOnly: false
+       - name: config-volume
+         azureFile:
+           shareName: pock8sshare
+           secretName: pock8s-share-secret
+           readOnly: false

@@ -1,6 +1,21 @@
 
 #####################################################################
 ######################### STATELESS BACKEND #########################
+
+# Service for Stateless containers, listening on port 3000
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-stateless
+spec:
+  selector:
+    app: stateless
+    tier: appserver
+  ports:
+  - port: 3001
+    name: http-stless
+    targetPort: http-stateless
+---
 # Deployment for pocbackend containers, listening on port 3000
 apiVersion: apps/v1
 kind: Deployment
@@ -18,9 +33,11 @@ spec:
         app: stateless
         tier: appserver
     spec:
+      imagePullSecrets:
+      - name: poc-k8s-registry-pull-secret
       containers:
       - name: pocbackend
-        image: pocbackend:1.0        
+        image: pock8sregistry.azurecr.io/pocbackend:1.0        
         ports:
            - name: http-stateless
              containerPort: 3000        
@@ -30,26 +47,15 @@ spec:
            - mountPath : /config
              name: config-volume
       volumes:
-      - name: log-volume
-        hostPath:           
-           path: '/host_mnt/d/dev/poc-k8s/log/stateless'           
-           type: Directory
-      - name: config-volume
-        hostPath:           
-           path: '/host_mnt/d/dev/poc-k8s/config/istio'           
-           type: Directory
----
-# Service for Stateless containers, listening on port 3000
-apiVersion: v1
-kind: Service
-metadata:
-  name: api-stateless
-spec:
-  selector:
-    app: stateless
-    tier: appserver
-  ports:
-  - port: 3001
-    name: http-stless
-    targetPort: http-stateless
+       - name: log-volume
+         azureFile:
+           shareName: pock8sshare
+           secretName: pock8s-share-secret
+           readOnly: false
+       - name: config-volume
+         azureFile:
+           shareName: pock8sshare
+           secretName: pock8s-share-secret
+           readOnly: false
+
            

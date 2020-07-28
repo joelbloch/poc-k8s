@@ -7,7 +7,8 @@
     "start": "node ./src/index.js /config/localsession.config.json",
     "start-dev": "node ./src/index.js ../localsession.config.dev.json",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-docker": "docker build --tag localsessionmanager:1.0 .",
+    "build-docker": "docker build --tag pock8sregistry.azurecr.io/localsessionmanager:1.0 .",
+    "push-docker" : "docker push pock8sregistry.azurecr.io/localsessionmanager:1.0",
     "docker": "docker run --publish 3004:3004 --detach --name localsessionmanager localsessionmanager:1.0"
   },
   "keywords": [],
