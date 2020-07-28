@@ -47,7 +47,7 @@ spec:
           - mountPath : /config
             name: config-volume
        - name: localsessionmanager
-         image: localsessionmanager:1.0
+         image: pock8sregistry.azurecr.io/localsessionmanager:1.0
          ports:
           - name: http-lmgt
             containerPort: 3400
