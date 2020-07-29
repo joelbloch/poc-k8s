@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start" : "node.exe index.js",
-    "build-docker": "docker build --tag windows-poc:1.0 .",
-    "push-docker" : "docker push windows-poc:1.0",
+    "build-docker": "docker build --tag pock8sregistry.azurecr.io/windows-poc:1.0 .",
+    "push-docker" : "docker push pock8sregistry.azurecr.io/windows-poc:1.0",
     "run-docker": "docker run --publish 3000:3000 --detach --name windows-poc windows-poc:1.0"
   },
   "author": "",
