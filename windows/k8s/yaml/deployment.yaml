@@ -31,6 +31,8 @@ spec:
       labels:
         app: stateful
     spec:
+       nodeSelector:
+         kubernetes.io/os: windows
        containers:
        - name: windows-poc
          image: pock8sregistry.azurecr.io/windows-poc:1.0
