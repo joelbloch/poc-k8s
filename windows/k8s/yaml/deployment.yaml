@@ -12,9 +12,9 @@ spec:
   selector:
     app: stateful
   ports:
-  - port: 80
-    name: http
-    targetPort: http
+  - protocol: TCP
+    port: 80
+    targetPort: 3000
 ---
 # Deployment for pocbackend containers, listening on port 3000
 apiVersion: apps/v1
@@ -38,20 +38,4 @@ spec:
          ports:
           - name: http
             containerPort: 3000
- 
-#############################################################
-########### ISTIO PROXY FOR API-STATEFUL SERVICE ############
-#############################################################
----
-# apiVersion: networking.istio.io/v1alpha3
-# kind: DestinationRule
-# metadata:
-#     name: sticky-svc
-# spec:
-#     host: api-stateful
-#     trafficPolicy:
-#      loadBalancer:
-#        consistentHash:
-#          httpCookie:
-#            name: session-id
-#            ttl: 20000s
+            
