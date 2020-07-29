@@ -1,0 +1,19 @@
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
+
+WORKDIR c:\\downloads
+RUN powershell -Command "wget -Uri https://nodejs.org/dist/v12.18.3/node-v12.18.3-x64.msi -OutFile nodejs.msi -UseBasicParsing"
+
+RUN msiexec.exe /qn /i nodejs.msi
+
+RUN setx path "%path%;C:\Program Files\nodejs"
+
+WORKDIR c:\\app\\src
+COPY package.json .
+RUN npm install --strict-ssl false
+COPY . .
+
+EXPOSE 3000
+
+CMD [ "node.exe", "index.js" ]
+
+
