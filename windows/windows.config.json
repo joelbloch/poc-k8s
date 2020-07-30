@@ -1,5 +1,5 @@
 {
-    "appName" : "Windows Server",
+    "appName" : "Windows Back Server",
     "port" : "3000",
 	"trace" : {
         "enabled" : true,

@@ -38,7 +38,7 @@ spec:
        containers:
        - name: windows-poc
          image: pock8sregistry.azurecr.io/windows-poc:1.0
-         imagePullPolicy: IfNotPresent
+         imagePullPolicy: Always
          ports:
           - name: http
             containerPort: 3000
