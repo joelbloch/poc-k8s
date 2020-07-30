@@ -1,9 +1,0 @@
-
-
-az disk create \
-  --resource-group MC_pocK8s_pocK8sCluster_southafricanorth \
-  --name pocK8sDisk \
-  --size-gb 20 \
-  --query id --output tsv
-
-=> result :  /subscriptions/0b03bae6-6ab7-49e0-9a1c-ee83f9f409f7/resourceGroups/MC_pocK8s_pocK8sCluster_southafricanorth/providers/Microsoft.Compute/disks/pocK8sDisk

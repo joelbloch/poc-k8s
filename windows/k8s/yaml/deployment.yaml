@@ -31,6 +31,8 @@ spec:
       labels:
         app: wintest
     spec:
+       nodeSelector:
+         kubernetes.io/os: windows
        imagePullSecrets:
        - name: poc-k8s-registry-pull-secret
        containers:
@@ -45,17 +47,15 @@ spec:
             name: log-volume
           - mountPath : /config
             name: config-volume
-       nodeSelector:
-         kubernetes.io/os: windows
        volumes:
        - name: log-volume
          azureFile:
            shareName: pock8sshare
-           secretName: pock8s-share-secret
+           secretName: pock8s-share-secret2
            readOnly: false
        - name: config-volume
          azureFile:
            shareName: pock8sshare
-           secretName: pock8s-share-secret
+           secretName: pock8s-share-secret2
            readOnly: false
             
