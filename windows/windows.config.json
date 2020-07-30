@@ -1,0 +1,17 @@
+{
+    "appName" : "Windows Server",
+    "port" : "3000",
+	"trace" : {
+        "enabled" : true,
+        "file-name-policy" : "process",
+        "file-suffix": "log.txt",
+        "write-sync" : true
+    },
+    "db":{
+        "user": "pock8sadmin",
+        "password": "P@ssw0rd",
+        "host": "db-svc",
+        "database": "pocsK8sdb",
+        "port": 5432
+    }
+}
