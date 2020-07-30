@@ -6,7 +6,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: wintest-svc
+  name: win-svc
 spec:
   type: LoadBalancer
   selector:
@@ -20,7 +20,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wintest-dpl
+  name: win-test-with-pg
 spec:
   replicas: 1
   selector:
@@ -40,6 +40,22 @@ spec:
          ports:
           - name: http
             containerPort: 3000
+         volumeMounts:
+          - mountPath : /log
+            name: log-volume
+          - mountPath : /config
+            name: config-volume
        nodeSelector:
          kubernetes.io/os: windows
+       volumes:
+       - name: log-volume
+         azureFile:
+           shareName: pock8sshare
+           secretName: pock8s-share-secret
+           readOnly: false
+       - name: config-volume
+         azureFile:
+           shareName: pock8sshare
+           secretName: pock8s-share-secret
+           readOnly: false
             

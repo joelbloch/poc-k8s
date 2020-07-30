@@ -34,7 +34,7 @@ router.get('/ping', (req, res) => {
 })
 
 router.get('/db', (req, res) => {
-    console.log(req.originalUrl);
+    console.log('request to db');
 
     client.query('SELECT NOW() as now')
     .then(respdb => res.end("Here is the db response " + respdb.rows[0]))
