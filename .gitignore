@@ -3,6 +3,6 @@ log/front/*
 log/session/*
 log/stateful/*
 log/stateless/*
-*node_modules
+node_modules/
 
 
