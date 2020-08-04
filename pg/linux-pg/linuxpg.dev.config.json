@@ -1,0 +1,25 @@
+{
+    "appName" : "Windows Server",
+    "port" : "3000",
+	"trace" : {
+        "enabled" : false,
+        "file-name-policy" : "process",
+        "file-suffix": "log.txt",
+        "write-sync" : true
+    },
+    "db" : "local",
+    "db-azure":{
+        "user": "pock8sadmin@pock8sdb",
+        "password": "P@ssw0rd",
+        "host": "pock8sdb.postgres.database.azure.com",
+        "database": "pocsK8sdb",
+        "port": 5432
+    },
+    "db-local":{
+        "user": "postgres",
+        "host": "db-svc",
+        "database": "pocsK8s",
+        "password": "admin123",
+        "port": 5432
+    }
+}

@@ -1,8 +1,0 @@
-2020-7-10 15:25:55 - 25.mockup-client-84659cb548-svspc - Mockup Client started on PORT 3700
-2020-7-10 15:26:7 - 25.mockup-client-84659cb548-svspc - receiving request on mock client 
-
-2020-7-10 15:26:8 - 25.mockup-client-84659cb548-svspc - receiving request on mock client 
-
-2020-7-22 8:42:34 - 25.mockup-client-84659cb548-svspc - Mockup Client started on PORT 3700
-2020-7-22 8:49:54 - 25.mockup-client-84659cb548-svspc - Mockup Client started on PORT 3700
-2020-7-23 13:7:5 - 25.mockup-client-84659cb548-svspc - Mockup Client started on PORT 3700

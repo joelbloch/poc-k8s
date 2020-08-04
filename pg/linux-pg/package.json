@@ -1,0 +1,22 @@
+{
+  "name": "windows",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js /config/linuxpg.config.json",
+    "start-dev": "node index.js ./linuxpg.dev.config.json",
+    "build-docker": "docker build --tag pock8sregistry.azurecr.io/linux-pg:1.0 .",
+    "build-docker-local": "docker build --tag linux-pg:1.0 .",
+    "push-docker": "docker push pock8sregistry.azurecr.io/linux-pg:1.0",
+    "run-docker": "docker run -d -p 3000:3000 --name linux-pg  pock8sregistry.azurecr.io/linux-pg:1.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy": "^1.18.1",
+    "node-fetch": "^2.6.0",
+    "pg": "^8.3.0"
+  }
+}
