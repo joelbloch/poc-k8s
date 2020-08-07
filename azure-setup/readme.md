@@ -1,4 +1,7 @@
-### What to prepare for Azure
+# What to prepare for Azure
+
+You need to have Contributor Rights to execute those steps
+
 # Create resource group for deployment
 # Create Azure Container Registry for storing docker images
 # Create Service Principal for ACR

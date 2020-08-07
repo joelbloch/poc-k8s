@@ -1,0 +1,32 @@
+{
+    "group" : {
+        "name" : "demok8s",
+        "location" : "SouthAfricaNorth"
+    },
+    "db" : {
+        "name" : "demok8spg",
+        "location" : "francecentral",
+        "admin" : {
+            "user" : "demok8sadmin",
+            "password" : "P@ssw0rd"
+        },
+        "sku" : "GP_Gen5_2",
+        "database" : "demok8sddata"
+    },
+    "registry" : {
+        "name": "demok8sregistry",
+        "serviceprincipal" : "demok8sregistrysp",
+        "generatedfilename" : "./credentials/acr.json",
+        "k8ssecretname" : "demok8s-registry-pull-secret"
+    },
+    "filestorage" : {
+        "name" : "demok8sstorage",
+        "fileshare" :  "demok8ssmb",
+        "generatedfilename" : "./credentials/fs.json",
+        "k8ssecretname" : "demok8s-fileshare-secret"
+    },
+    "akscluster" : {
+        "name": "demok8scluster",
+        "nodecount" : "3"
+    }    
+}
