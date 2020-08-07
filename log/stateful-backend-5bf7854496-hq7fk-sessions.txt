@@ -1,0 +1,65 @@
+2020-8-6 8:58:20 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Local Session Manager started on PORT 3400
+2020-8-6 8:58:22 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:22 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:24 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:24 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:26 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:26 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:28 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:28 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:30 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:30 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:32 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:32 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:34 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:34 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:36 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:36 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:38 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:38 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:40 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:40 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:42 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:42 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:44 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:44 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:46 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:46 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:48 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:48 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:50 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:50 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:52 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:52 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:55 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:55 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:57 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:57 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:58:59 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:58:59 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:1 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:1 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:3 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:3 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:5 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:5 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:7 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:7 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:9 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:9 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:11 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:11 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:13 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:13 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:15 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:15 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:17 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:17 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:19 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:19 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:21 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:21 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:23 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:23 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:59:25 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Sending http post request to register pod
+2020-8-6 8:59:25 - stateful-backend-5bf7854496-hq7fk.docker-desktop - ReferenceError: getMyPodName is not defined

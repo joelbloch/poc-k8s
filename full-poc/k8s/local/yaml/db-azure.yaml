@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: pg-svc  
+spec: 
+  type: ExternalName
+  externalName: todo
+  ports:
+    - name: port
+      port: 5432

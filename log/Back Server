@@ -1,0 +1,917 @@
+2020-8-6 8:15:33 - 18.stateful-backend-6d75c5b4f4-s42n9 - Back Server started on PORT 3000
+2020-8-6 8:15:33 - 18.stateful-backend-6d75c5b4f4-npvpv - Back Server started on PORT 3000
+2020-8-6 8:15:33 - 18.stateful-backend-6d75c5b4f4-s42n9 - Trying to connect to Db
+2020-8-6 8:15:33 - 18.stateful-backend-6d75c5b4f4-s42n9 - Connection to db is sucessful
+2020-8-6 8:15:33 - 18.stateful-backend-6d75c5b4f4-npvpv - Trying to connect to Db
+2020-8-6 8:15:33 - 18.stateful-backend-6d75c5b4f4-npvpv - Connection to db is sucessful
+2020-8-6 8:17:20 - 19.stateless-backend-754b664556-mfc94 - Back Server started on PORT 3000
+2020-8-6 8:17:20 - 19.stateless-backend-754b664556-mfc94 - Trying to connect to Db
+2020-8-6 8:17:20 - 19.stateless-backend-754b664556-mfc94 - Connection to db is sucessful
+2020-8-6 8:17:21 - 22.stateful-backend-6d75c5b4f4-pjn2f - Back Server started on PORT 3000
+2020-8-6 8:17:21 - 22.stateful-backend-6d75c5b4f4-pjn2f - Trying to connect to Db
+2020-8-6 8:17:21 - 22.stateful-backend-6d75c5b4f4-pjn2f - Connection to db is sucessful
+2020-8-6 8:17:21 - 20.stateful-backend-6d75c5b4f4-vjb5l - Back Server started on PORT 3000
+2020-8-6 8:17:21 - 18.stateful-backend-6d75c5b4f4-j2bd9 - Back Server started on PORT 3000
+2020-8-6 8:17:21 - 18.stateful-backend-6d75c5b4f4-j2bd9 - Trying to connect to Db
+2020-8-6 8:17:21 - 18.stateful-backend-6d75c5b4f4-j2bd9 - Connection to db is sucessful
+2020-8-6 8:17:21 - 20.stateful-backend-6d75c5b4f4-vjb5l - Trying to connect to Db
+2020-8-6 8:17:21 - 20.stateful-backend-6d75c5b4f4-vjb5l - Connection to db is sucessful
+2020-8-6 8:17:50 - 19.stateless-backend-754b664556-mfc94 - New request without cookie received, creating session
+2020-8-6 8:17:50 - 19.stateless-backend-754b664556-mfc94 - Setting timeout for session 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:17:50 - 19.stateless-backend-754b664556-mfc94 - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 8:17:50 - 19.stateless-backend-754b664556-mfc94 - /favicon.ico
+2020-8-6 8:17:51 - 19.stateless-backend-754b664556-mfc94 - receiving counter request from 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:17:51 - 19.stateless-backend-754b664556-mfc94 - Session 5a50debd-a917-4298-bd5f-5aa0954be334 has been found with counter 1
+2020-8-6 8:17:51 - 19.stateless-backend-754b664556-mfc94 - Setting timeout for session 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:17:52 - 19.stateless-backend-754b664556-mfc94 - receiving counter request from 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:17:52 - 19.stateless-backend-754b664556-mfc94 - Session 5a50debd-a917-4298-bd5f-5aa0954be334 has been found with counter 2
+2020-8-6 8:17:52 - 19.stateless-backend-754b664556-mfc94 - Setting timeout for session 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:17:53 - 19.stateless-backend-754b664556-mfc94 - receiving counter request from 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:17:53 - 19.stateless-backend-754b664556-mfc94 - Session 5a50debd-a917-4298-bd5f-5aa0954be334 has been found with counter 3
+2020-8-6 8:17:53 - 19.stateless-backend-754b664556-mfc94 - Setting timeout for session 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:17:54 - 19.stateless-backend-754b664556-mfc94 - receiving counter request from 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:17:54 - 19.stateless-backend-754b664556-mfc94 - Session 5a50debd-a917-4298-bd5f-5aa0954be334 has been found with counter 4
+2020-8-6 8:17:54 - 19.stateless-backend-754b664556-mfc94 - Setting timeout for session 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:17:54 - 19.stateless-backend-754b664556-mfc94 - receiving counter request from 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:17:54 - 19.stateless-backend-754b664556-mfc94 - Session 5a50debd-a917-4298-bd5f-5aa0954be334 has been found with counter 5
+2020-8-6 8:17:54 - 19.stateless-backend-754b664556-mfc94 - Setting timeout for session 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:17:57 - 18.stateful-backend-6d75c5b4f4-j2bd9 - receiving counter request from 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:17:57 - 18.stateful-backend-6d75c5b4f4-j2bd9 - Session 5a50debd-a917-4298-bd5f-5aa0954be334 is unknown, creating a new session
+2020-8-6 8:17:57 - 18.stateful-backend-6d75c5b4f4-j2bd9 - Setting timeout for session d484a410-a553-4385-bb2f-9c04204b016f
+2020-8-6 8:17:57 - 18.stateful-backend-6d75c5b4f4-j2bd9 - /favicon.ico
+2020-8-6 8:17:59 - 20.stateful-backend-6d75c5b4f4-vjb5l - receiving counter request from d484a410-a553-4385-bb2f-9c04204b016f
+2020-8-6 8:17:59 - 20.stateful-backend-6d75c5b4f4-vjb5l - Session d484a410-a553-4385-bb2f-9c04204b016f is unknown, creating a new session
+2020-8-6 8:17:59 - 20.stateful-backend-6d75c5b4f4-vjb5l - Setting timeout for session 85d831d0-1fd8-4a12-a014-da780009740c
+2020-8-6 8:17:59 - 20.stateful-backend-6d75c5b4f4-vjb5l - receiving counter request from 85d831d0-1fd8-4a12-a014-da780009740c
+2020-8-6 8:17:59 - 20.stateful-backend-6d75c5b4f4-vjb5l - Session 85d831d0-1fd8-4a12-a014-da780009740c has been found with counter 1
+2020-8-6 8:17:59 - 20.stateful-backend-6d75c5b4f4-vjb5l - Setting timeout for session 85d831d0-1fd8-4a12-a014-da780009740c
+2020-8-6 8:18:0 - 20.stateful-backend-6d75c5b4f4-vjb5l - receiving counter request from 85d831d0-1fd8-4a12-a014-da780009740c
+2020-8-6 8:18:0 - 20.stateful-backend-6d75c5b4f4-vjb5l - Session 85d831d0-1fd8-4a12-a014-da780009740c has been found with counter 2
+2020-8-6 8:18:0 - 20.stateful-backend-6d75c5b4f4-vjb5l - Setting timeout for session 85d831d0-1fd8-4a12-a014-da780009740c
+2020-8-6 8:18:0 - 20.stateful-backend-6d75c5b4f4-vjb5l - receiving counter request from 85d831d0-1fd8-4a12-a014-da780009740c
+2020-8-6 8:18:0 - 20.stateful-backend-6d75c5b4f4-vjb5l - Session 85d831d0-1fd8-4a12-a014-da780009740c has been found with counter 3
+2020-8-6 8:18:0 - 20.stateful-backend-6d75c5b4f4-vjb5l - Setting timeout for session 85d831d0-1fd8-4a12-a014-da780009740c
+2020-8-6 8:18:1 - 20.stateful-backend-6d75c5b4f4-vjb5l - receiving counter request from 85d831d0-1fd8-4a12-a014-da780009740c
+2020-8-6 8:18:1 - 20.stateful-backend-6d75c5b4f4-vjb5l - Session 85d831d0-1fd8-4a12-a014-da780009740c has been found with counter 4
+2020-8-6 8:18:1 - 20.stateful-backend-6d75c5b4f4-vjb5l - Setting timeout for session 85d831d0-1fd8-4a12-a014-da780009740c
+2020-8-6 8:18:14 - 19.stateless-backend-754b664556-mfc94 - session 5a50debd-a917-4298-bd5f-5aa0954be334 has timed out
+2020-8-6 8:18:14 - 19.stateless-backend-754b664556-mfc94 - deleting session 5a50debd-a917-4298-bd5f-5aa0954be334
+2020-8-6 8:18:15 - 18.stateless-backend-754b664556-mfc94 - Back Server started on PORT 3000
+2020-8-6 8:18:15 - 18.stateless-backend-754b664556-mfc94 - Trying to connect to Db
+2020-8-6 8:18:15 - 18.stateless-backend-754b664556-mfc94 - Connection to db is sucessful
+2020-8-6 8:18:17 - 18.stateful-backend-6d75c5b4f4-j2bd9 - session d484a410-a553-4385-bb2f-9c04204b016f has timed out
+2020-8-6 8:18:17 - 18.stateful-backend-6d75c5b4f4-j2bd9 - deleting session d484a410-a553-4385-bb2f-9c04204b016f
+2020-8-6 8:18:18 - 18.stateful-backend-6d75c5b4f4-j2bd9 - Back Server started on PORT 3000
+2020-8-6 8:18:18 - 18.stateful-backend-6d75c5b4f4-j2bd9 - Trying to connect to Db
+2020-8-6 8:18:18 - 18.stateful-backend-6d75c5b4f4-j2bd9 - Connection to db is sucessful
+2020-8-6 8:18:21 - 20.stateful-backend-6d75c5b4f4-vjb5l - session 85d831d0-1fd8-4a12-a014-da780009740c has timed out
+2020-8-6 8:18:21 - 20.stateful-backend-6d75c5b4f4-vjb5l - deleting session 85d831d0-1fd8-4a12-a014-da780009740c
+2020-8-6 8:18:22 - 18.stateful-backend-6d75c5b4f4-vjb5l - Back Server started on PORT 3000
+2020-8-6 8:18:22 - 18.stateful-backend-6d75c5b4f4-vjb5l - Trying to connect to Db
+2020-8-6 8:18:22 - 18.stateful-backend-6d75c5b4f4-vjb5l - Connection to db is sucessful
+2020-8-6 8:23:36 - 18.stateful-backend-6d75c5b4f4-pjn2f - Back Server started on PORT 3000
+2020-8-6 8:23:36 - 18.stateful-backend-6d75c5b4f4-pjn2f - Trying to connect to Db
+2020-8-6 8:23:36 - 18.stateful-backend-6d75c5b4f4-pjn2f - Connection to db is sucessful
+2020-8-6 8:23:50 - 18.stateless-backend-754b664556-mfc94 - Back Server started on PORT 3000
+2020-8-6 8:23:50 - 19.stateful-backend-6d75c5b4f4-vjb5l - Back Server started on PORT 3000
+2020-8-6 8:23:50 - 19.stateful-backend-6d75c5b4f4-vjb5l - Trying to connect to Db
+2020-8-6 8:23:50 - 19.stateful-backend-6d75c5b4f4-vjb5l - Connection to db is sucessful
+2020-8-6 8:23:50 - 18.stateless-backend-754b664556-mfc94 - Trying to connect to Db
+2020-8-6 8:23:50 - 18.stateless-backend-754b664556-mfc94 - Connection to db is sucessful
+2020-8-6 8:23:51 - 21.stateful-backend-6d75c5b4f4-j2bd9 - Back Server started on PORT 3000
+2020-8-6 8:23:51 - 21.stateful-backend-6d75c5b4f4-j2bd9 - Trying to connect to Db
+2020-8-6 8:23:51 - 21.stateful-backend-6d75c5b4f4-j2bd9 - Connection to db is sucessful
+2020-8-6 8:30:20 - 18.stateful-backend-6d75c5b4f4-pjn2f - Back Server started on PORT 3000
+2020-8-6 8:30:20 - 18.stateful-backend-6d75c5b4f4-pjn2f - Trying to connect to Db
+2020-8-6 8:30:20 - 18.stateful-backend-6d75c5b4f4-pjn2f - Connection to db is sucessful
+2020-8-6 8:30:33 - 18.stateful-backend-6d75c5b4f4-vjb5l - Back Server started on PORT 3000
+2020-8-6 8:30:33 - 18.stateful-backend-6d75c5b4f4-vjb5l - Trying to connect to Db
+2020-8-6 8:30:33 - 18.stateful-backend-6d75c5b4f4-vjb5l - Connection to db is sucessful
+2020-8-6 8:30:34 - 18.stateless-backend-754b664556-mfc94 - Back Server started on PORT 3000
+2020-8-6 8:30:34 - 18.stateless-backend-754b664556-mfc94 - Trying to connect to Db
+2020-8-6 8:30:34 - 18.stateless-backend-754b664556-mfc94 - Connection to db is sucessful
+2020-8-6 8:30:37 - 19.stateful-backend-6d75c5b4f4-j2bd9 - Back Server started on PORT 3000
+2020-8-6 8:30:37 - 19.stateful-backend-6d75c5b4f4-j2bd9 - Trying to connect to Db
+2020-8-6 8:30:37 - 19.stateful-backend-6d75c5b4f4-j2bd9 - Connection to db is sucessful
+2020-8-6 8:58:19 - 18.stateless-backend-754b664556-n6kgg - Back Server started on PORT 3000
+2020-8-6 8:58:19 - 18.stateless-backend-754b664556-q8vsd - Back Server started on PORT 3000
+2020-8-6 8:58:19 - 18.stateless-backend-754b664556-n6kgg - Trying to connect to Db
+2020-8-6 8:58:19 - 18.stateless-backend-754b664556-n6kgg - Connection to db is sucessful
+2020-8-6 8:58:19 - 18.stateless-backend-754b664556-q8vsd - Trying to connect to Db
+2020-8-6 8:58:19 - 18.stateless-backend-754b664556-q8vsd - Connection to db is sucessful
+2020-8-6 8:58:19 - 18.stateless-backend-754b664556-wvph5 - Back Server started on PORT 3000
+2020-8-6 8:58:19 - 18.stateless-backend-754b664556-wvph5 - Trying to connect to Db
+2020-8-6 8:58:19 - 18.stateless-backend-754b664556-wvph5 - Connection to db is sucessful
+2020-8-6 8:58:21 - stateful-backend-5bf7854496-grkz7.docker-desktop - Back Server started on PORT 3000
+2020-8-6 8:58:21 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Back Server started on PORT 3000
+2020-8-6 8:58:21 - stateful-backend-5bf7854496-bp4bf.docker-desktop - Back Server started on PORT 3000
+2020-8-6 8:58:21 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Trying to connect to Db
+2020-8-6 8:58:21 - stateful-backend-5bf7854496-hq7fk.docker-desktop - Connection to db is sucessful
+2020-8-6 8:58:21 - stateful-backend-5bf7854496-grkz7.docker-desktop - Trying to connect to Db
+2020-8-6 8:58:21 - stateful-backend-5bf7854496-grkz7.docker-desktop - Connection to db is sucessful
+2020-8-6 8:58:21 - stateful-backend-5bf7854496-bp4bf.docker-desktop - Trying to connect to Db
+2020-8-6 8:58:21 - stateful-backend-5bf7854496-bp4bf.docker-desktop - Connection to db is sucessful
+2020-8-6 8:58:31 - stateful-backend-5bf7854496-grkz7.docker-desktop - receiving counter request from 85d831d0-1fd8-4a12-a014-da780009740c
+2020-8-6 8:58:31 - stateful-backend-5bf7854496-grkz7.docker-desktop - Session 85d831d0-1fd8-4a12-a014-da780009740c is unknown, creating a new session
+2020-8-6 8:58:31 - stateful-backend-5bf7854496-grkz7.docker-desktop - Setting timeout for session 38e3802e-47ad-4bba-abaa-b540a8de1ca1
+2020-8-6 8:58:33 - stateful-backend-5bf7854496-grkz7.docker-desktop - receiving counter request from 38e3802e-47ad-4bba-abaa-b540a8de1ca1
+2020-8-6 8:58:33 - stateful-backend-5bf7854496-grkz7.docker-desktop - Session 38e3802e-47ad-4bba-abaa-b540a8de1ca1 has been found with counter 1
+2020-8-6 8:58:33 - stateful-backend-5bf7854496-grkz7.docker-desktop - Setting timeout for session 38e3802e-47ad-4bba-abaa-b540a8de1ca1
+2020-8-6 8:58:37 - 18.stateless-backend-754b664556-wvph5 - receiving counter request from 38e3802e-47ad-4bba-abaa-b540a8de1ca1
+2020-8-6 8:58:37 - 18.stateless-backend-754b664556-wvph5 - Session 38e3802e-47ad-4bba-abaa-b540a8de1ca1 is unknown, creating a new session
+2020-8-6 8:58:37 - 18.stateless-backend-754b664556-wvph5 - Setting timeout for session 491d2ed1-4f7d-41a8-b912-1deb7f91d00e
+2020-8-6 8:58:37 - 18.stateless-backend-754b664556-wvph5 - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 8:58:39 - 18.stateless-backend-754b664556-wvph5 - receiving counter request from 491d2ed1-4f7d-41a8-b912-1deb7f91d00e
+2020-8-6 8:58:39 - 18.stateless-backend-754b664556-wvph5 - Session 491d2ed1-4f7d-41a8-b912-1deb7f91d00e has been found with counter 1
+2020-8-6 8:58:39 - 18.stateless-backend-754b664556-wvph5 - Setting timeout for session 491d2ed1-4f7d-41a8-b912-1deb7f91d00e
+2020-8-6 8:58:40 - 18.stateless-backend-754b664556-wvph5 - receiving counter request from 491d2ed1-4f7d-41a8-b912-1deb7f91d00e
+2020-8-6 8:58:40 - 18.stateless-backend-754b664556-wvph5 - Session 491d2ed1-4f7d-41a8-b912-1deb7f91d00e has been found with counter 2
+2020-8-6 8:58:40 - 18.stateless-backend-754b664556-wvph5 - Setting timeout for session 491d2ed1-4f7d-41a8-b912-1deb7f91d00e
+2020-8-6 8:58:42 - 18.stateless-backend-754b664556-wvph5 - receiving counter request from 491d2ed1-4f7d-41a8-b912-1deb7f91d00e
+2020-8-6 8:58:42 - 18.stateless-backend-754b664556-wvph5 - Session 491d2ed1-4f7d-41a8-b912-1deb7f91d00e has been found with counter 3
+2020-8-6 8:58:42 - 18.stateless-backend-754b664556-wvph5 - Setting timeout for session 491d2ed1-4f7d-41a8-b912-1deb7f91d00e
+2020-8-6 8:58:53 - stateful-backend-5bf7854496-grkz7.docker-desktop - session 38e3802e-47ad-4bba-abaa-b540a8de1ca1 has timed out
+2020-8-6 8:58:53 - stateful-backend-5bf7854496-grkz7.docker-desktop - deleting session 38e3802e-47ad-4bba-abaa-b540a8de1ca1
+2020-8-6 8:58:55 - stateful-backend-5bf7854496-grkz7.docker-desktop - Back Server started on PORT 3000
+2020-8-6 8:58:55 - stateful-backend-5bf7854496-grkz7.docker-desktop - Trying to connect to Db
+2020-8-6 8:58:55 - stateful-backend-5bf7854496-grkz7.docker-desktop - Connection to db is sucessful
+2020-8-6 8:59:2 - 18.stateless-backend-754b664556-wvph5 - session 491d2ed1-4f7d-41a8-b912-1deb7f91d00e has timed out
+2020-8-6 8:59:2 - 18.stateless-backend-754b664556-wvph5 - deleting session 491d2ed1-4f7d-41a8-b912-1deb7f91d00e
+2020-8-6 8:59:4 - 18.stateless-backend-754b664556-wvph5 - Back Server started on PORT 3000
+2020-8-6 8:59:4 - 18.stateless-backend-754b664556-wvph5 - Trying to connect to Db
+2020-8-6 8:59:4 - 18.stateless-backend-754b664556-wvph5 - Connection to db is sucessful
+2020-8-6 9:0:9 - stateless-backend-9564b4dcd-k7fcf.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:0:9 - stateless-backend-9564b4dcd-dllw2.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:0:9 - stateless-backend-9564b4dcd-dllw2.docker-desktop - Trying to connect to Db
+2020-8-6 9:0:9 - stateless-backend-9564b4dcd-k7fcf.docker-desktop - Trying to connect to Db
+2020-8-6 9:0:9 - stateless-backend-9564b4dcd-k7fcf.docker-desktop - Connection to db is sucessful
+2020-8-6 9:0:9 - stateless-backend-9564b4dcd-dllw2.docker-desktop - Connection to db is sucessful
+2020-8-6 9:0:9 - stateless-backend-9564b4dcd-46nkk.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:0:9 - stateless-backend-9564b4dcd-46nkk.docker-desktop - Trying to connect to Db
+2020-8-6 9:0:9 - stateless-backend-9564b4dcd-46nkk.docker-desktop - Connection to db is sucessful
+2020-8-6 9:0:10 - stateful-backend-5bf7854496-s6k2n.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:0:10 - stateful-backend-5bf7854496-s6k2n.docker-desktop - Trying to connect to Db
+2020-8-6 9:0:10 - stateful-backend-5bf7854496-s6k2n.docker-desktop - Connection to db is sucessful
+2020-8-6 9:0:11 - stateful-backend-5bf7854496-dc8xg.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:0:11 - stateful-backend-5bf7854496-dc8xg.docker-desktop - Trying to connect to Db
+2020-8-6 9:0:11 - stateful-backend-5bf7854496-dc8xg.docker-desktop - Connection to db is sucessful
+2020-8-6 9:0:11 - stateful-backend-5bf7854496-4jc4g.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:0:11 - stateful-backend-5bf7854496-4jc4g.docker-desktop - Trying to connect to Db
+2020-8-6 9:0:11 - stateful-backend-5bf7854496-4jc4g.docker-desktop - Connection to db is sucessful
+2020-8-6 9:0:42 - stateful-backend-5bf7854496-dc8xg.docker-desktop - receiving counter request from 491d2ed1-4f7d-41a8-b912-1deb7f91d00e
+2020-8-6 9:0:42 - stateful-backend-5bf7854496-dc8xg.docker-desktop - Session 491d2ed1-4f7d-41a8-b912-1deb7f91d00e is unknown, creating a new session
+2020-8-6 9:0:42 - stateful-backend-5bf7854496-dc8xg.docker-desktop - Setting timeout for session 2f17894d-1e13-455b-a511-fbc5206a917e
+2020-8-6 9:1:2 - stateful-backend-5bf7854496-dc8xg.docker-desktop - session 2f17894d-1e13-455b-a511-fbc5206a917e has timed out
+2020-8-6 9:1:2 - stateful-backend-5bf7854496-dc8xg.docker-desktop - deleting session 2f17894d-1e13-455b-a511-fbc5206a917e
+2020-8-6 9:1:3 - stateful-backend-5bf7854496-dc8xg.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:1:3 - stateful-backend-5bf7854496-dc8xg.docker-desktop - Trying to connect to Db
+2020-8-6 9:1:3 - stateful-backend-5bf7854496-dc8xg.docker-desktop - Connection to db is sucessful
+2020-8-6 9:3:12 - stateless-backend-9564b4dcd-g7zh9.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:3:12 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:3:12 - stateless-backend-9564b4dcd-jwzrv.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:3:13 - stateless-backend-9564b4dcd-g7zh9.docker-desktop - Trying to connect to Db
+2020-8-6 9:3:13 - stateless-backend-9564b4dcd-g7zh9.docker-desktop - Connection to db is sucessful
+2020-8-6 9:3:13 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Trying to connect to Db
+2020-8-6 9:3:13 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Connection to db is sucessful
+2020-8-6 9:3:13 - stateless-backend-9564b4dcd-jwzrv.docker-desktop - Trying to connect to Db
+2020-8-6 9:3:13 - stateless-backend-9564b4dcd-jwzrv.docker-desktop - Connection to db is sucessful
+2020-8-6 9:3:14 - stateful-backend-5bf7854496-wchcc.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:3:14 - stateful-backend-5bf7854496-gc47c.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:3:14 - stateful-backend-5bf7854496-wchcc.docker-desktop - Trying to connect to Db
+2020-8-6 9:3:14 - stateful-backend-5bf7854496-wchcc.docker-desktop - Connection to db is sucessful
+2020-8-6 9:3:14 - stateful-backend-5bf7854496-gc47c.docker-desktop - Trying to connect to Db
+2020-8-6 9:3:14 - stateful-backend-5bf7854496-gc47c.docker-desktop - Connection to db is sucessful
+2020-8-6 9:3:14 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:3:14 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Trying to connect to Db
+2020-8-6 9:3:14 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Connection to db is sucessful
+2020-8-6 9:3:52 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - receiving counter request from 2f17894d-1e13-455b-a511-fbc5206a917e
+2020-8-6 9:3:52 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Session 2f17894d-1e13-455b-a511-fbc5206a917e is unknown, creating a new session
+2020-8-6 9:3:52 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Setting timeout for session ba887ff5-4752-480b-b9ba-f9b1f58fef64
+2020-8-6 9:3:52 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:3:57 - stateful-backend-5bf7854496-g7ndl.docker-desktop - receiving counter request from ba887ff5-4752-480b-b9ba-f9b1f58fef64
+2020-8-6 9:3:57 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Session ba887ff5-4752-480b-b9ba-f9b1f58fef64 is unknown, creating a new session
+2020-8-6 9:3:57 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Setting timeout for session fa4f8c83-d2d2-4dce-a922-d37b45d9f6e8
+2020-8-6 9:4:1 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Request to db
+2020-8-6 9:4:1 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Trying to connect to Db
+2020-8-6 9:4:1 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Connection to db is sucessful
+2020-8-6 9:4:6 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Request to db
+2020-8-6 9:4:6 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Trying to connect to Db
+2020-8-6 9:4:6 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Connection to db is sucessful
+2020-8-6 9:4:12 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - session ba887ff5-4752-480b-b9ba-f9b1f58fef64 has timed out
+2020-8-6 9:4:12 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - deleting session ba887ff5-4752-480b-b9ba-f9b1f58fef64
+2020-8-6 9:4:13 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:4:13 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Trying to connect to Db
+2020-8-6 9:4:13 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Connection to db is sucessful
+2020-8-6 9:4:17 - stateful-backend-5bf7854496-g7ndl.docker-desktop - session fa4f8c83-d2d2-4dce-a922-d37b45d9f6e8 has timed out
+2020-8-6 9:4:17 - stateful-backend-5bf7854496-g7ndl.docker-desktop - deleting session fa4f8c83-d2d2-4dce-a922-d37b45d9f6e8
+2020-8-6 9:4:19 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:4:19 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Trying to connect to Db
+2020-8-6 9:4:19 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Connection to db is sucessful
+2020-8-6 9:9:39 - stateful-backend-5bf7854496-wchcc.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:9:39 - stateful-backend-5bf7854496-wchcc.docker-desktop - Trying to connect to Db
+2020-8-6 9:9:39 - stateful-backend-5bf7854496-wchcc.docker-desktop - Connection to db is sucessful
+2020-8-6 9:9:39 - stateless-backend-9564b4dcd-g7zh9.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:9:39 - stateful-backend-5bf7854496-gc47c.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:9:39 - stateless-backend-9564b4dcd-g7zh9.docker-desktop - Trying to connect to Db
+2020-8-6 9:9:39 - stateless-backend-9564b4dcd-g7zh9.docker-desktop - Connection to db is sucessful
+2020-8-6 9:9:39 - stateful-backend-5bf7854496-gc47c.docker-desktop - Trying to connect to Db
+2020-8-6 9:9:40 - stateful-backend-5bf7854496-gc47c.docker-desktop - Connection to db is sucessful
+2020-8-6 9:9:40 - stateless-backend-9564b4dcd-jwzrv.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:9:40 - stateless-backend-9564b4dcd-jwzrv.docker-desktop - Trying to connect to Db
+2020-8-6 9:9:40 - stateless-backend-9564b4dcd-jwzrv.docker-desktop - Connection to db is sucessful
+2020-8-6 9:9:49 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:9:49 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Trying to connect to Db
+2020-8-6 9:9:49 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Connection to db is sucessful
+2020-8-6 9:9:50 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:9:50 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Trying to connect to Db
+2020-8-6 9:9:50 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Connection to db is sucessful
+2020-8-6 9:16:19 - stateless-backend-9564b4dcd-g7zh9.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:16:19 - stateless-backend-9564b4dcd-g7zh9.docker-desktop - Trying to connect to Db
+2020-8-6 9:16:19 - stateful-backend-5bf7854496-gc47c.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:16:19 - stateless-backend-9564b4dcd-g7zh9.docker-desktop - Connection to db is sucessful
+2020-8-6 9:16:19 - stateful-backend-5bf7854496-gc47c.docker-desktop - Trying to connect to Db
+2020-8-6 9:16:19 - stateful-backend-5bf7854496-gc47c.docker-desktop - Connection to db is sucessful
+2020-8-6 9:16:20 - stateless-backend-9564b4dcd-jwzrv.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:16:20 - stateless-backend-9564b4dcd-jwzrv.docker-desktop - Trying to connect to Db
+2020-8-6 9:16:20 - stateless-backend-9564b4dcd-jwzrv.docker-desktop - Connection to db is sucessful
+2020-8-6 9:16:21 - stateful-backend-5bf7854496-wchcc.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:16:21 - stateful-backend-5bf7854496-wchcc.docker-desktop - Trying to connect to Db
+2020-8-6 9:16:21 - stateful-backend-5bf7854496-wchcc.docker-desktop - Connection to db is sucessful
+2020-8-6 9:16:33 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:16:33 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Trying to connect to Db
+2020-8-6 9:16:33 - stateful-backend-5bf7854496-g7ndl.docker-desktop - Connection to db is sucessful
+2020-8-6 9:16:36 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:16:36 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Trying to connect to Db
+2020-8-6 9:16:36 - stateless-backend-9564b4dcd-ll5p7.docker-desktop - Connection to db is sucessful
+2020-8-6 9:31:27 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:31:27 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:31:27 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:31:27 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Trying to connect to Db
+2020-8-6 9:31:27 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Connection to db is sucessful
+2020-8-6 9:31:27 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Trying to connect to Db
+2020-8-6 9:31:27 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Connection to db is sucessful
+2020-8-6 9:31:27 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Trying to connect to Db
+2020-8-6 9:31:27 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Connection to db is sucessful
+2020-8-6 9:31:27 - stateful-backend-5bf7854496-tzssf.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:31:27 - stateful-backend-5bf7854496-w4skj.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:31:28 - stateful-backend-5bf7854496-tzssf.docker-desktop - Trying to connect to Db
+2020-8-6 9:31:28 - stateful-backend-5bf7854496-tzssf.docker-desktop - Connection to db is sucessful
+2020-8-6 9:31:28 - stateful-backend-5bf7854496-rrpx8.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:31:28 - stateful-backend-5bf7854496-w4skj.docker-desktop - Trying to connect to Db
+2020-8-6 9:31:28 - stateful-backend-5bf7854496-w4skj.docker-desktop - Connection to db is sucessful
+2020-8-6 9:31:28 - stateful-backend-5bf7854496-rrpx8.docker-desktop - Trying to connect to Db
+2020-8-6 9:31:28 - stateful-backend-5bf7854496-rrpx8.docker-desktop - Connection to db is sucessful
+2020-8-6 9:31:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - ping
+2020-8-6 9:31:57 - stateful-backend-5bf7854496-w4skj.docker-desktop - ping
+2020-8-6 9:34:15 - stateful-backend-5bf7854496-w4skj.docker-desktop - New request without cookie received, creating session
+2020-8-6 9:34:15 - stateful-backend-5bf7854496-w4skj.docker-desktop - Setting timeout for session 8e39e23b-79a2-4071-b1f5-a835662133d3
+2020-8-6 9:34:17 - stateful-backend-5bf7854496-rrpx8.docker-desktop - receiving counter request from 8e39e23b-79a2-4071-b1f5-a835662133d3
+2020-8-6 9:34:17 - stateful-backend-5bf7854496-rrpx8.docker-desktop - Session 8e39e23b-79a2-4071-b1f5-a835662133d3 is unknown, creating a new session
+2020-8-6 9:34:17 - stateful-backend-5bf7854496-rrpx8.docker-desktop - Setting timeout for session 05aeecc9-15c7-4a03-9cf7-a4def1fa088c
+2020-8-6 9:34:17 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 05aeecc9-15c7-4a03-9cf7-a4def1fa088c
+2020-8-6 9:34:17 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 05aeecc9-15c7-4a03-9cf7-a4def1fa088c is unknown, creating a new session
+2020-8-6 9:34:17 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session facef787-de79-43b1-9320-57f0c1c62b8a
+2020-8-6 9:34:18 - stateful-backend-5bf7854496-w4skj.docker-desktop - receiving counter request from facef787-de79-43b1-9320-57f0c1c62b8a
+2020-8-6 9:34:18 - stateful-backend-5bf7854496-w4skj.docker-desktop - Session facef787-de79-43b1-9320-57f0c1c62b8a is unknown, creating a new session
+2020-8-6 9:34:18 - stateful-backend-5bf7854496-w4skj.docker-desktop - Setting timeout for session 091bf9c3-0a6e-4cec-aa64-2e0462bc7a22
+2020-8-6 9:34:18 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 091bf9c3-0a6e-4cec-aa64-2e0462bc7a22
+2020-8-6 9:34:18 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 091bf9c3-0a6e-4cec-aa64-2e0462bc7a22 is unknown, creating a new session
+2020-8-6 9:34:18 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 36b311d0-8634-4b8f-ac6c-40e3b295282f
+2020-8-6 9:34:18 - stateful-backend-5bf7854496-w4skj.docker-desktop - receiving counter request from 36b311d0-8634-4b8f-ac6c-40e3b295282f
+2020-8-6 9:34:18 - stateful-backend-5bf7854496-w4skj.docker-desktop - Session 36b311d0-8634-4b8f-ac6c-40e3b295282f is unknown, creating a new session
+2020-8-6 9:34:18 - stateful-backend-5bf7854496-w4skj.docker-desktop - Setting timeout for session fe5bf376-055c-445a-b9ca-799ca9f670c4
+2020-8-6 9:34:18 - stateful-backend-5bf7854496-rrpx8.docker-desktop - receiving counter request from fe5bf376-055c-445a-b9ca-799ca9f670c4
+2020-8-6 9:34:18 - stateful-backend-5bf7854496-rrpx8.docker-desktop - Session fe5bf376-055c-445a-b9ca-799ca9f670c4 is unknown, creating a new session
+2020-8-6 9:34:18 - stateful-backend-5bf7854496-rrpx8.docker-desktop - Setting timeout for session 7392678b-0c39-48c9-88d5-72a7dc1cadfb
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 7392678b-0c39-48c9-88d5-72a7dc1cadfb
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 7392678b-0c39-48c9-88d5-72a7dc1cadfb is unknown, creating a new session
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 1
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 2
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 3
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 4
+2020-8-6 9:34:19 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 5
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 6
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 7
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 8
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 9
+2020-8-6 9:34:20 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:21 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:21 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 10
+2020-8-6 9:34:21 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:21 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:21 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 11
+2020-8-6 9:34:21 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 12
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 13
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 14
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 15
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 16
+2020-8-6 9:34:22 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 17
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 18
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 19
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 20
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 21
+2020-8-6 9:34:23 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 22
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 23
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 24
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 25
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 26
+2020-8-6 9:34:24 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 27
+2020-8-6 9:34:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 28
+2020-8-6 9:34:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 29
+2020-8-6 9:34:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 30
+2020-8-6 9:34:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 31
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 32
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 33
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 34
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 has been found with counter 35
+2020-8-6 9:34:26 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:30 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 401a3bdf-de8e-40ea-894f-24869120ff23
+2020-8-6 9:34:30 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 401a3bdf-de8e-40ea-894f-24869120ff23 is unknown, creating a new session
+2020-8-6 9:34:30 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 4e9099e2-4a2c-4902-97c4-b8af53e32bc0
+2020-8-6 9:34:30 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:32 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 4e9099e2-4a2c-4902-97c4-b8af53e32bc0
+2020-8-6 9:34:32 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 4e9099e2-4a2c-4902-97c4-b8af53e32bc0 is unknown, creating a new session
+2020-8-6 9:34:32 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 1e2ff0e4-a8b9-4a24-a23b-81300b712253
+2020-8-6 9:34:32 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:32 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 1e2ff0e4-a8b9-4a24-a23b-81300b712253
+2020-8-6 9:34:32 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 1e2ff0e4-a8b9-4a24-a23b-81300b712253 is unknown, creating a new session
+2020-8-6 9:34:32 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 7b65bdae-0cdd-4720-8f99-f286f752add9
+2020-8-6 9:34:32 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 7b65bdae-0cdd-4720-8f99-f286f752add9
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 7b65bdae-0cdd-4720-8f99-f286f752add9 is unknown, creating a new session
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session fc6dc0c3-8ac9-431e-bd47-6a48bbee09a0
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from fc6dc0c3-8ac9-431e-bd47-6a48bbee09a0
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session fc6dc0c3-8ac9-431e-bd47-6a48bbee09a0 is unknown, creating a new session
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 422b3de6-808e-4e13-bd57-f83e53a54582
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 422b3de6-808e-4e13-bd57-f83e53a54582
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 422b3de6-808e-4e13-bd57-f83e53a54582 is unknown, creating a new session
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session e7b00ebf-34cd-47cd-9340-888280028929
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from e7b00ebf-34cd-47cd-9340-888280028929
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session e7b00ebf-34cd-47cd-9340-888280028929 is unknown, creating a new session
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 6893fec0-5c85-4952-83f9-365527b1203d
+2020-8-6 9:34:33 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 6893fec0-5c85-4952-83f9-365527b1203d
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 6893fec0-5c85-4952-83f9-365527b1203d is unknown, creating a new session
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session f56f79d3-2cc1-4275-ac4d-29c8e52e8504
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from f56f79d3-2cc1-4275-ac4d-29c8e52e8504
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session f56f79d3-2cc1-4275-ac4d-29c8e52e8504 is unknown, creating a new session
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 9bc2abe1-e9c3-4fe4-b6fa-5fca62668468
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 9bc2abe1-e9c3-4fe4-b6fa-5fca62668468
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 9bc2abe1-e9c3-4fe4-b6fa-5fca62668468 is unknown, creating a new session
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session d86a315a-8640-43d7-be5a-31a180d06862
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from d86a315a-8640-43d7-be5a-31a180d06862
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session d86a315a-8640-43d7-be5a-31a180d06862 is unknown, creating a new session
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session d7b82c09-2e9c-4f1f-a261-b399c543b0f0
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from d7b82c09-2e9c-4f1f-a261-b399c543b0f0
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session d7b82c09-2e9c-4f1f-a261-b399c543b0f0 is unknown, creating a new session
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 3cbaefba-3230-4fa6-85c5-89f642f5b6af
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 3cbaefba-3230-4fa6-85c5-89f642f5b6af
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 3cbaefba-3230-4fa6-85c5-89f642f5b6af is unknown, creating a new session
+2020-8-6 9:34:34 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 4a3585f5-af64-4e80-af26-babd3fce7d9c
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 4a3585f5-af64-4e80-af26-babd3fce7d9c
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 4a3585f5-af64-4e80-af26-babd3fce7d9c is unknown, creating a new session
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session ed52a953-a3b7-4e01-ae5a-359e1bb21af9
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from ed52a953-a3b7-4e01-ae5a-359e1bb21af9
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session ed52a953-a3b7-4e01-ae5a-359e1bb21af9 is unknown, creating a new session
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 67529bb9-907f-4048-87d9-034f4d7ed13a
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 67529bb9-907f-4048-87d9-034f4d7ed13a
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 67529bb9-907f-4048-87d9-034f4d7ed13a is unknown, creating a new session
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 3bd28d48-ca09-4d14-811f-54a30d31bff1
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:35 - stateful-backend-5bf7854496-w4skj.docker-desktop - session 8e39e23b-79a2-4071-b1f5-a835662133d3 has timed out
+2020-8-6 9:34:35 - stateful-backend-5bf7854496-w4skj.docker-desktop - deleting session 8e39e23b-79a2-4071-b1f5-a835662133d3
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 3bd28d48-ca09-4d14-811f-54a30d31bff1
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 3bd28d48-ca09-4d14-811f-54a30d31bff1 is unknown, creating a new session
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 4a2630ff-146c-4afd-894e-0ddd7041b47d
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 4a2630ff-146c-4afd-894e-0ddd7041b47d
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 4a2630ff-146c-4afd-894e-0ddd7041b47d is unknown, creating a new session
+2020-8-6 9:34:35 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session ab24a1ce-02ec-494f-acef-853665243ba4
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from ab24a1ce-02ec-494f-acef-853665243ba4
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session ab24a1ce-02ec-494f-acef-853665243ba4 is unknown, creating a new session
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session b95cecfb-57c4-4253-8b4c-2aaef48eef2a
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from b95cecfb-57c4-4253-8b4c-2aaef48eef2a
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session b95cecfb-57c4-4253-8b4c-2aaef48eef2a is unknown, creating a new session
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 0e14e74f-42b5-4194-b778-765f9ae2786c
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 0e14e74f-42b5-4194-b778-765f9ae2786c
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 0e14e74f-42b5-4194-b778-765f9ae2786c is unknown, creating a new session
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session a83a5f75-4137-42e2-a565-c9146b232bcc
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from a83a5f75-4137-42e2-a565-c9146b232bcc
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session a83a5f75-4137-42e2-a565-c9146b232bcc is unknown, creating a new session
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session a669b6e5-20cd-4f1d-b1b5-a224ab8fb2ae
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from a669b6e5-20cd-4f1d-b1b5-a224ab8fb2ae
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session a669b6e5-20cd-4f1d-b1b5-a224ab8fb2ae is unknown, creating a new session
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 6b126060-9132-46f9-adf4-fa1022686fb2
+2020-8-6 9:34:36 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 6b126060-9132-46f9-adf4-fa1022686fb2
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 6b126060-9132-46f9-adf4-fa1022686fb2 is unknown, creating a new session
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 8bfaae74-c617-421c-9543-3da251050c38
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 8bfaae74-c617-421c-9543-3da251050c38
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 8bfaae74-c617-421c-9543-3da251050c38 is unknown, creating a new session
+2020-8-6 9:34:37 - stateful-backend-5bf7854496-rrpx8.docker-desktop - session 05aeecc9-15c7-4a03-9cf7-a4def1fa088c has timed out
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 50894a49-a1dc-4e8b-8d7a-4a5e40b897e4
+2020-8-6 9:34:37 - stateful-backend-5bf7854496-rrpx8.docker-desktop - deleting session 05aeecc9-15c7-4a03-9cf7-a4def1fa088c
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 50894a49-a1dc-4e8b-8d7a-4a5e40b897e4
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 50894a49-a1dc-4e8b-8d7a-4a5e40b897e4 is unknown, creating a new session
+2020-8-6 9:34:37 - stateful-backend-5bf7854496-w4skj.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 98e66d5e-13c4-4541-90e9-28e3aea4c4d5
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:37 - stateful-backend-5bf7854496-w4skj.docker-desktop - Trying to connect to Db
+2020-8-6 9:34:37 - stateful-backend-5bf7854496-w4skj.docker-desktop - Connection to db is sucessful
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 98e66d5e-13c4-4541-90e9-28e3aea4c4d5
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 98e66d5e-13c4-4541-90e9-28e3aea4c4d5 is unknown, creating a new session
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 488c4f7b-0da3-47ce-9ed2-1feda728f1b8
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 488c4f7b-0da3-47ce-9ed2-1feda728f1b8
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 488c4f7b-0da3-47ce-9ed2-1feda728f1b8 is unknown, creating a new session
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 0f41f76c-ceb5-4a62-81c1-b34603569f23
+2020-8-6 9:34:37 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:37 - stateful-backend-5bf7854496-tzssf.docker-desktop - session facef787-de79-43b1-9320-57f0c1c62b8a has timed out
+2020-8-6 9:34:37 - stateful-backend-5bf7854496-tzssf.docker-desktop - deleting session facef787-de79-43b1-9320-57f0c1c62b8a
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 0f41f76c-ceb5-4a62-81c1-b34603569f23
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 0f41f76c-ceb5-4a62-81c1-b34603569f23 is unknown, creating a new session
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 69ad3b01-9a3e-41f3-8c36-fa259ef0d786
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 69ad3b01-9a3e-41f3-8c36-fa259ef0d786
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 69ad3b01-9a3e-41f3-8c36-fa259ef0d786 is unknown, creating a new session
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 1fb2b2de-256c-4d16-95f3-c14c0503f78f
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 1fb2b2de-256c-4d16-95f3-c14c0503f78f
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 1fb2b2de-256c-4d16-95f3-c14c0503f78f is unknown, creating a new session
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 102ca682-17a6-4fa2-a568-e041591b913c
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:38 - stateful-backend-5bf7854496-rrpx8.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:34:38 - stateful-backend-5bf7854496-rrpx8.docker-desktop - Trying to connect to Db
+2020-8-6 9:34:38 - stateful-backend-5bf7854496-rrpx8.docker-desktop - Connection to db is sucessful
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 102ca682-17a6-4fa2-a568-e041591b913c
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 102ca682-17a6-4fa2-a568-e041591b913c is unknown, creating a new session
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 5afab74c-dc16-4c0c-b42a-a805e77f9531
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 5afab74c-dc16-4c0c-b42a-a805e77f9531
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 5afab74c-dc16-4c0c-b42a-a805e77f9531 is unknown, creating a new session
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 443845e2-aacd-4372-ba24-33122000d46b
+2020-8-6 9:34:38 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 443845e2-aacd-4372-ba24-33122000d46b
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 443845e2-aacd-4372-ba24-33122000d46b is unknown, creating a new session
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 61310d11-81d3-4f72-b463-b8777652aedb
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 61310d11-81d3-4f72-b463-b8777652aedb
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 61310d11-81d3-4f72-b463-b8777652aedb is unknown, creating a new session
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 61748894-3e98-4fa7-8603-2b2a7f4e0d87
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:39 - stateful-backend-5bf7854496-tzssf.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:34:39 - stateful-backend-5bf7854496-tzssf.docker-desktop - Trying to connect to Db
+2020-8-6 9:34:39 - stateful-backend-5bf7854496-tzssf.docker-desktop - Connection to db is sucessful
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 61748894-3e98-4fa7-8603-2b2a7f4e0d87
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 61748894-3e98-4fa7-8603-2b2a7f4e0d87 is unknown, creating a new session
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 113660c6-fb98-4dec-a5c4-9b9e7867922e
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 113660c6-fb98-4dec-a5c4-9b9e7867922e
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 113660c6-fb98-4dec-a5c4-9b9e7867922e is unknown, creating a new session
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session f8ce12bc-7a4b-4398-a7df-680e739f2630
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from f8ce12bc-7a4b-4398-a7df-680e739f2630
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session f8ce12bc-7a4b-4398-a7df-680e739f2630 is unknown, creating a new session
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 16a7be06-5c1c-416e-86ba-2e333ff72f7a
+2020-8-6 9:34:39 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 16a7be06-5c1c-416e-86ba-2e333ff72f7a
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 16a7be06-5c1c-416e-86ba-2e333ff72f7a is unknown, creating a new session
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 9b550ffe-9efc-44c5-ad20-024b6a9bbebf
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 9b550ffe-9efc-44c5-ad20-024b6a9bbebf
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 9b550ffe-9efc-44c5-ad20-024b6a9bbebf is unknown, creating a new session
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 7eddc56d-9bd0-46b4-8557-0362629e874d
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 7eddc56d-9bd0-46b4-8557-0362629e874d
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 7eddc56d-9bd0-46b4-8557-0362629e874d is unknown, creating a new session
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session ba9c812f-5d7d-41bb-a4c5-9343765d4d2d
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from ba9c812f-5d7d-41bb-a4c5-9343765d4d2d
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session ba9c812f-5d7d-41bb-a4c5-9343765d4d2d is unknown, creating a new session
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 2898ca55-64ea-4eb7-aa5d-60d6181e5cad
+2020-8-6 9:34:40 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 2898ca55-64ea-4eb7-aa5d-60d6181e5cad
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 2898ca55-64ea-4eb7-aa5d-60d6181e5cad is unknown, creating a new session
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 43620fdd-bd94-43e4-9508-5f958df89d2d
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 43620fdd-bd94-43e4-9508-5f958df89d2d
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 43620fdd-bd94-43e4-9508-5f958df89d2d is unknown, creating a new session
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session d6445850-ee0c-445a-95d6-19c4a27be109
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from d6445850-ee0c-445a-95d6-19c4a27be109
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session d6445850-ee0c-445a-95d6-19c4a27be109 is unknown, creating a new session
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 4b065541-0f2c-4f50-9d49-91485d67c03f
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 4b065541-0f2c-4f50-9d49-91485d67c03f
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 4b065541-0f2c-4f50-9d49-91485d67c03f is unknown, creating a new session
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 8fc8c3ca-2141-4ee5-93d2-82c8c6f043b7
+2020-8-6 9:34:41 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 8fc8c3ca-2141-4ee5-93d2-82c8c6f043b7
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 8fc8c3ca-2141-4ee5-93d2-82c8c6f043b7 is unknown, creating a new session
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 0be601bf-0e60-46f0-987b-d7c269b4c309
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 0be601bf-0e60-46f0-987b-d7c269b4c309
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 0be601bf-0e60-46f0-987b-d7c269b4c309 is unknown, creating a new session
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 20e03e9a-64f8-4cd1-8af1-1d8affec1936
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 20e03e9a-64f8-4cd1-8af1-1d8affec1936
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 20e03e9a-64f8-4cd1-8af1-1d8affec1936 is unknown, creating a new session
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session ee9bd277-5782-47d1-9ebc-62df9486160d
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from ee9bd277-5782-47d1-9ebc-62df9486160d
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session ee9bd277-5782-47d1-9ebc-62df9486160d is unknown, creating a new session
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 8fccd00e-8d72-4165-a9de-d6e3fd87cdda
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 8fccd00e-8d72-4165-a9de-d6e3fd87cdda
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 8fccd00e-8d72-4165-a9de-d6e3fd87cdda is unknown, creating a new session
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 757592f3-cb72-485c-81c0-98ea7f6512dd
+2020-8-6 9:34:42 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 757592f3-cb72-485c-81c0-98ea7f6512dd
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 757592f3-cb72-485c-81c0-98ea7f6512dd is unknown, creating a new session
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 0cafdb68-31b9-45e2-ae14-875382d0b93f
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 0cafdb68-31b9-45e2-ae14-875382d0b93f
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 0cafdb68-31b9-45e2-ae14-875382d0b93f is unknown, creating a new session
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session ade4829a-acf9-44f6-95dc-5c51342008dc
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from ade4829a-acf9-44f6-95dc-5c51342008dc
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session ade4829a-acf9-44f6-95dc-5c51342008dc is unknown, creating a new session
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session b243a608-a016-49e1-88ba-7a7265f00a3c
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from b243a608-a016-49e1-88ba-7a7265f00a3c
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session b243a608-a016-49e1-88ba-7a7265f00a3c is unknown, creating a new session
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session b16eec29-af26-4c23-a524-3f6105e64b0a
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from b16eec29-af26-4c23-a524-3f6105e64b0a
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session b16eec29-af26-4c23-a524-3f6105e64b0a is unknown, creating a new session
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 084ed355-748d-4d04-ae44-a616ef9a96c0
+2020-8-6 9:34:43 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 084ed355-748d-4d04-ae44-a616ef9a96c0
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 084ed355-748d-4d04-ae44-a616ef9a96c0 is unknown, creating a new session
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session ff45269f-35bb-4b4e-9158-947c0b5f7270
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from ff45269f-35bb-4b4e-9158-947c0b5f7270
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session ff45269f-35bb-4b4e-9158-947c0b5f7270 is unknown, creating a new session
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session ba0067c8-83bc-4cbc-a5a9-324718f268b7
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from ba0067c8-83bc-4cbc-a5a9-324718f268b7
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session ba0067c8-83bc-4cbc-a5a9-324718f268b7 is unknown, creating a new session
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 82162fbd-b4a8-4176-8d55-8c5b05607951
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 82162fbd-b4a8-4176-8d55-8c5b05607951
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 82162fbd-b4a8-4176-8d55-8c5b05607951 is unknown, creating a new session
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 09b28259-4667-4695-953a-21e4bdbaa2c9
+2020-8-6 9:34:44 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 09b28259-4667-4695-953a-21e4bdbaa2c9
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 09b28259-4667-4695-953a-21e4bdbaa2c9 is unknown, creating a new session
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 6937cf67-bf85-422b-ae08-0f1753e7e6a2
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 6937cf67-bf85-422b-ae08-0f1753e7e6a2
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 6937cf67-bf85-422b-ae08-0f1753e7e6a2 is unknown, creating a new session
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session d8a7d845-fcd2-4b22-91f0-9192205f462e
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from d8a7d845-fcd2-4b22-91f0-9192205f462e
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session d8a7d845-fcd2-4b22-91f0-9192205f462e is unknown, creating a new session
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 0b692a04-5eed-4f24-a6e0-45947a1ad8b5
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 0b692a04-5eed-4f24-a6e0-45947a1ad8b5
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 0b692a04-5eed-4f24-a6e0-45947a1ad8b5 is unknown, creating a new session
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session c7bca6cd-1352-4d9b-9091-77aa8e0d9d25
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from c7bca6cd-1352-4d9b-9091-77aa8e0d9d25
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session c7bca6cd-1352-4d9b-9091-77aa8e0d9d25 is unknown, creating a new session
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session c45c8ad6-cd5a-42ce-b4cd-b5b607614817
+2020-8-6 9:34:45 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from c45c8ad6-cd5a-42ce-b4cd-b5b607614817
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session c45c8ad6-cd5a-42ce-b4cd-b5b607614817 is unknown, creating a new session
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session a4ee2ce8-b8e9-4f70-8403-78cd09f6642d
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from a4ee2ce8-b8e9-4f70-8403-78cd09f6642d
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session a4ee2ce8-b8e9-4f70-8403-78cd09f6642d is unknown, creating a new session
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session d7036e0b-d0f9-4942-b28c-8d7ff8fe7a8f
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from d7036e0b-d0f9-4942-b28c-8d7ff8fe7a8f
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session d7036e0b-d0f9-4942-b28c-8d7ff8fe7a8f is unknown, creating a new session
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 3572d97f-4216-4e74-ad90-11ffd5b18afa
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 3572d97f-4216-4e74-ad90-11ffd5b18afa
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 3572d97f-4216-4e74-ad90-11ffd5b18afa is unknown, creating a new session
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session c246ae4e-0cfd-4a5c-bc40-58d76246a882
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from c246ae4e-0cfd-4a5c-bc40-58d76246a882
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session c246ae4e-0cfd-4a5c-bc40-58d76246a882 is unknown, creating a new session
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session a4cddd3a-cb27-4198-bfac-e3cf808eaed7
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from a4cddd3a-cb27-4198-bfac-e3cf808eaed7
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session a4cddd3a-cb27-4198-bfac-e3cf808eaed7 is unknown, creating a new session
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 63d8091c-fa48-4a43-800c-237f65e495eb
+2020-8-6 9:34:46 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:47 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 63d8091c-fa48-4a43-800c-237f65e495eb
+2020-8-6 9:34:47 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 63d8091c-fa48-4a43-800c-237f65e495eb is unknown, creating a new session
+2020-8-6 9:34:47 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 8608dcbb-d5d9-4f28-844f-95cc48e176e4
+2020-8-6 9:34:47 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:47 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 8608dcbb-d5d9-4f28-844f-95cc48e176e4
+2020-8-6 9:34:47 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 8608dcbb-d5d9-4f28-844f-95cc48e176e4 is unknown, creating a new session
+2020-8-6 9:34:47 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session b8376478-63b1-48a6-a541-d68fba9e0d0e
+2020-8-6 9:34:47 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:47 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from b8376478-63b1-48a6-a541-d68fba9e0d0e
+2020-8-6 9:34:47 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session b8376478-63b1-48a6-a541-d68fba9e0d0e is unknown, creating a new session
+2020-8-6 9:34:47 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 71ea74ba-d2cc-46be-8b71-8555d6e268fb
+2020-8-6 9:34:47 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:48 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 71ea74ba-d2cc-46be-8b71-8555d6e268fb
+2020-8-6 9:34:48 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 71ea74ba-d2cc-46be-8b71-8555d6e268fb is unknown, creating a new session
+2020-8-6 9:34:48 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session cce1568b-1418-47f6-a993-ad1d33bef8f2
+2020-8-6 9:34:48 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:48 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from cce1568b-1418-47f6-a993-ad1d33bef8f2
+2020-8-6 9:34:48 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session cce1568b-1418-47f6-a993-ad1d33bef8f2 is unknown, creating a new session
+2020-8-6 9:34:48 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session bd9d58ea-331b-4768-ba18-c0dff9206e1d
+2020-8-6 9:34:48 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:49 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from bd9d58ea-331b-4768-ba18-c0dff9206e1d
+2020-8-6 9:34:49 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session bd9d58ea-331b-4768-ba18-c0dff9206e1d is unknown, creating a new session
+2020-8-6 9:34:49 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 6dbcaaea-68e2-44ba-a697-cbcb0eede886
+2020-8-6 9:34:49 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:49 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 6dbcaaea-68e2-44ba-a697-cbcb0eede886
+2020-8-6 9:34:49 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 6dbcaaea-68e2-44ba-a697-cbcb0eede886 is unknown, creating a new session
+2020-8-6 9:34:49 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session ae9dd649-a349-47af-9600-cfdfdaa33201
+2020-8-6 9:34:49 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:49 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from ae9dd649-a349-47af-9600-cfdfdaa33201
+2020-8-6 9:34:49 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session ae9dd649-a349-47af-9600-cfdfdaa33201 is unknown, creating a new session
+2020-8-6 9:34:49 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 1c61cbb4-0e0f-403b-a5d7-335fe2659c72
+2020-8-6 9:34:49 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 1c61cbb4-0e0f-403b-a5d7-335fe2659c72
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 1c61cbb4-0e0f-403b-a5d7-335fe2659c72 is unknown, creating a new session
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 910d8dc7-70e3-4997-bfd8-a2771903758a
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 910d8dc7-70e3-4997-bfd8-a2771903758a
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 910d8dc7-70e3-4997-bfd8-a2771903758a is unknown, creating a new session
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session fc3a1123-e0ab-4a86-9ba3-607e829566e0
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from fc3a1123-e0ab-4a86-9ba3-607e829566e0
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session fc3a1123-e0ab-4a86-9ba3-607e829566e0 is unknown, creating a new session
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 8974cc38-ad45-4999-a985-a2f8f4afd506
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 8974cc38-ad45-4999-a985-a2f8f4afd506
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 8974cc38-ad45-4999-a985-a2f8f4afd506 is unknown, creating a new session
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 314bae31-0278-4eed-a8a0-42b1cdef6cc7
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-89zc9.docker-desktop - session 4e9099e2-4a2c-4902-97c4-b8af53e32bc0 has timed out
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-89zc9.docker-desktop - deleting session 4e9099e2-4a2c-4902-97c4-b8af53e32bc0
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 314bae31-0278-4eed-a8a0-42b1cdef6cc7
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 314bae31-0278-4eed-a8a0-42b1cdef6cc7 is unknown, creating a new session
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 69ce1ce1-7436-4747-9808-2a2bc4dcc65f
+2020-8-6 9:34:50 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 69ce1ce1-7436-4747-9808-2a2bc4dcc65f
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 69ce1ce1-7436-4747-9808-2a2bc4dcc65f is unknown, creating a new session
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 9b9e6e97-7ccb-442d-a42f-5b57fc022ecb
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 9b9e6e97-7ccb-442d-a42f-5b57fc022ecb
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 9b9e6e97-7ccb-442d-a42f-5b57fc022ecb has been found with counter 1
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 9b9e6e97-7ccb-442d-a42f-5b57fc022ecb
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 9b9e6e97-7ccb-442d-a42f-5b57fc022ecb
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 9b9e6e97-7ccb-442d-a42f-5b57fc022ecb is unknown, creating a new session
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 7e48dc83-60aa-4341-8c13-33d3da39c12f
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 7e48dc83-60aa-4341-8c13-33d3da39c12f
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 7e48dc83-60aa-4341-8c13-33d3da39c12f is unknown, creating a new session
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session b6cf446e-e5af-4ea7-838f-f160e4a49a71
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Trying to connect to Db
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Connection to db is sucessful
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from b6cf446e-e5af-4ea7-838f-f160e4a49a71
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session b6cf446e-e5af-4ea7-838f-f160e4a49a71 is unknown, creating a new session
+2020-8-6 9:34:51 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 929a3120-53ae-4f28-bf56-8505dbf2e833
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 929a3120-53ae-4f28-bf56-8505dbf2e833
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 929a3120-53ae-4f28-bf56-8505dbf2e833 is unknown, creating a new session
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 508735de-dc6b-4d22-a746-a0d31067693a
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 508735de-dc6b-4d22-a746-a0d31067693a
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 508735de-dc6b-4d22-a746-a0d31067693a is unknown, creating a new session
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session bb8c6f60-85bd-417a-9803-c2ad0ee89508
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - session 1e2ff0e4-a8b9-4a24-a23b-81300b712253 has timed out
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - deleting session 1e2ff0e4-a8b9-4a24-a23b-81300b712253
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from bb8c6f60-85bd-417a-9803-c2ad0ee89508
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session bb8c6f60-85bd-417a-9803-c2ad0ee89508 has been found with counter 1
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session bb8c6f60-85bd-417a-9803-c2ad0ee89508
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from bb8c6f60-85bd-417a-9803-c2ad0ee89508
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session bb8c6f60-85bd-417a-9803-c2ad0ee89508 has been found with counter 2
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session bb8c6f60-85bd-417a-9803-c2ad0ee89508
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - session 7b65bdae-0cdd-4720-8f99-f286f752add9 has timed out
+2020-8-6 9:34:52 - stateless-backend-9564b4dcd-chc4r.docker-desktop - deleting session 7b65bdae-0cdd-4720-8f99-f286f752add9
+2020-8-6 9:34:53 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:34:53 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:34:54 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Trying to connect to Db
+2020-8-6 9:34:54 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Connection to db is sucessful
+2020-8-6 9:34:54 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Trying to connect to Db
+2020-8-6 9:34:54 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Connection to db is sucessful
+2020-8-6 9:34:54 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from bb8c6f60-85bd-417a-9803-c2ad0ee89508
+2020-8-6 9:34:54 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session bb8c6f60-85bd-417a-9803-c2ad0ee89508 is unknown, creating a new session
+2020-8-6 9:34:54 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session abf04d25-21cf-48dc-aad1-24b39b5fefb6
+2020-8-6 9:34:54 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:55 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from abf04d25-21cf-48dc-aad1-24b39b5fefb6
+2020-8-6 9:34:55 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session abf04d25-21cf-48dc-aad1-24b39b5fefb6 has been found with counter 1
+2020-8-6 9:34:55 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session abf04d25-21cf-48dc-aad1-24b39b5fefb6
+2020-8-6 9:34:55 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from abf04d25-21cf-48dc-aad1-24b39b5fefb6
+2020-8-6 9:34:55 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session abf04d25-21cf-48dc-aad1-24b39b5fefb6 is unknown, creating a new session
+2020-8-6 9:34:55 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 344c47f4-bcaa-45d8-9e58-81c6d80388fc
+2020-8-6 9:34:55 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 344c47f4-bcaa-45d8-9e58-81c6d80388fc
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 344c47f4-bcaa-45d8-9e58-81c6d80388fc is unknown, creating a new session
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session f2dd9bed-706e-4ccb-89cf-7dec5a08a050
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from f2dd9bed-706e-4ccb-89cf-7dec5a08a050
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session f2dd9bed-706e-4ccb-89cf-7dec5a08a050 is unknown, creating a new session
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 1ec7533e-a6cf-4ae7-af8d-2c56402e02c5
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from 1ec7533e-a6cf-4ae7-af8d-2c56402e02c5
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session 1ec7533e-a6cf-4ae7-af8d-2c56402e02c5 is unknown, creating a new session
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session 635ca7fd-0a49-4a18-9cca-56fe36261780
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from 635ca7fd-0a49-4a18-9cca-56fe36261780
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session 635ca7fd-0a49-4a18-9cca-56fe36261780 is unknown, creating a new session
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 77fe7369-6b23-4dfa-9faf-967bc79f255f
+2020-8-6 9:34:56 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 77fe7369-6b23-4dfa-9faf-967bc79f255f
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 77fe7369-6b23-4dfa-9faf-967bc79f255f is unknown, creating a new session
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session b665e1a2-a1ab-4f5d-8854-bac76d50991a
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-89zc9.docker-desktop - receiving counter request from b665e1a2-a1ab-4f5d-8854-bac76d50991a
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Session b665e1a2-a1ab-4f5d-8854-bac76d50991a is unknown, creating a new session
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Setting timeout for session d76e2180-462f-4121-8a7f-b431980e7caf
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - receiving counter request from d76e2180-462f-4121-8a7f-b431980e7caf
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Session d76e2180-462f-4121-8a7f-b431980e7caf is unknown, creating a new session
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Setting timeout for session 2416122d-dc1b-4fc8-9b86-bd79e42efd42
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-chc4r.docker-desktop - receiving counter request from 2416122d-dc1b-4fc8-9b86-bd79e42efd42
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Session 2416122d-dc1b-4fc8-9b86-bd79e42efd42 is unknown, creating a new session
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Setting timeout for session 8ad1155b-27da-4a25-9bc0-afb5eecc4737
+2020-8-6 9:34:57 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Error: connect ECONNREFUSED 127.0.0.1:3400
+2020-8-6 9:35:2 - stateful-backend-5bf7854496-w4skj.docker-desktop - receiving counter request from 8ad1155b-27da-4a25-9bc0-afb5eecc4737
+2020-8-6 9:35:2 - stateful-backend-5bf7854496-w4skj.docker-desktop - Session 8ad1155b-27da-4a25-9bc0-afb5eecc4737 is unknown, creating a new session
+2020-8-6 9:35:2 - stateful-backend-5bf7854496-w4skj.docker-desktop - Setting timeout for session 0bbb97cb-f949-4147-9484-bc3ff059a617
+2020-8-6 9:35:4 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 0bbb97cb-f949-4147-9484-bc3ff059a617
+2020-8-6 9:35:4 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 0bbb97cb-f949-4147-9484-bc3ff059a617 is unknown, creating a new session
+2020-8-6 9:35:4 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 9ad8a372-f1ec-490b-be31-8543677c2981
+2020-8-6 9:35:6 - stateful-backend-5bf7854496-w4skj.docker-desktop - receiving counter request from 9ad8a372-f1ec-490b-be31-8543677c2981
+2020-8-6 9:35:6 - stateful-backend-5bf7854496-w4skj.docker-desktop - Session 9ad8a372-f1ec-490b-be31-8543677c2981 is unknown, creating a new session
+2020-8-6 9:35:6 - stateful-backend-5bf7854496-w4skj.docker-desktop - Setting timeout for session 411f6304-36c7-4525-a1d2-2a164e3e60d6
+2020-8-6 9:35:6 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 411f6304-36c7-4525-a1d2-2a164e3e60d6
+2020-8-6 9:35:6 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 411f6304-36c7-4525-a1d2-2a164e3e60d6 is unknown, creating a new session
+2020-8-6 9:35:6 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:7 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:7 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 1
+2020-8-6 9:35:7 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:7 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:7 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 2
+2020-8-6 9:35:7 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:7 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:7 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 3
+2020-8-6 9:35:7 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:8 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:8 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 4
+2020-8-6 9:35:8 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:8 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:8 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 5
+2020-8-6 9:35:8 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:8 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:8 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 6
+2020-8-6 9:35:8 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:9 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:9 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 7
+2020-8-6 9:35:9 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:10 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:10 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 8
+2020-8-6 9:35:10 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:10 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:10 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 9
+2020-8-6 9:35:10 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:10 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:10 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 10
+2020-8-6 9:35:10 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:10 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:10 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 11
+2020-8-6 9:35:10 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:11 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:11 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 12
+2020-8-6 9:35:11 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:11 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:11 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 13
+2020-8-6 9:35:11 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:11 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:11 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 14
+2020-8-6 9:35:11 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:11 - stateful-backend-5bf7854496-tzssf.docker-desktop - receiving counter request from 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:11 - stateful-backend-5bf7854496-tzssf.docker-desktop - Session 1e0928f2-5637-4600-b366-6c4583db4530 has been found with counter 15
+2020-8-6 9:35:11 - stateful-backend-5bf7854496-tzssf.docker-desktop - Setting timeout for session 1e0928f2-5637-4600-b366-6c4583db4530
+2020-8-6 9:35:15 - stateless-backend-9564b4dcd-chc4r.docker-desktop - session abf04d25-21cf-48dc-aad1-24b39b5fefb6 has timed out
+2020-8-6 9:35:15 - stateless-backend-9564b4dcd-chc4r.docker-desktop - deleting session abf04d25-21cf-48dc-aad1-24b39b5fefb6
+2020-8-6 9:35:15 - stateless-backend-9564b4dcd-89zc9.docker-desktop - session 344c47f4-bcaa-45d8-9e58-81c6d80388fc has timed out
+2020-8-6 9:35:15 - stateless-backend-9564b4dcd-89zc9.docker-desktop - deleting session 344c47f4-bcaa-45d8-9e58-81c6d80388fc
+2020-8-6 9:35:16 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - session f2dd9bed-706e-4ccb-89cf-7dec5a08a050 has timed out
+2020-8-6 9:35:16 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - deleting session f2dd9bed-706e-4ccb-89cf-7dec5a08a050
+2020-8-6 9:35:22 - stateful-backend-5bf7854496-w4skj.docker-desktop - session 0bbb97cb-f949-4147-9484-bc3ff059a617 has timed out
+2020-8-6 9:35:22 - stateful-backend-5bf7854496-w4skj.docker-desktop - deleting session 0bbb97cb-f949-4147-9484-bc3ff059a617
+2020-8-6 9:35:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - session 9ad8a372-f1ec-490b-be31-8543677c2981 has timed out
+2020-8-6 9:35:25 - stateful-backend-5bf7854496-tzssf.docker-desktop - deleting session 9ad8a372-f1ec-490b-be31-8543677c2981
+2020-8-6 9:35:27 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:35:27 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Trying to connect to Db
+2020-8-6 9:35:27 - stateless-backend-9564b4dcd-89zc9.docker-desktop - Connection to db is sucessful
+2020-8-6 9:35:29 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:35:29 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:35:29 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Trying to connect to Db
+2020-8-6 9:35:29 - stateless-backend-9564b4dcd-chc4r.docker-desktop - Connection to db is sucessful
+2020-8-6 9:35:29 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Trying to connect to Db
+2020-8-6 9:35:29 - stateless-backend-9564b4dcd-jxhnr.docker-desktop - Connection to db is sucessful
+2020-8-6 9:35:37 - stateful-backend-5bf7854496-w4skj.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:35:37 - stateful-backend-5bf7854496-w4skj.docker-desktop - Trying to connect to Db
+2020-8-6 9:35:37 - stateful-backend-5bf7854496-w4skj.docker-desktop - Connection to db is sucessful
+2020-8-6 9:35:40 - stateful-backend-5bf7854496-tzssf.docker-desktop - Back Server started on PORT 3000
+2020-8-6 9:35:40 - stateful-backend-5bf7854496-tzssf.docker-desktop - Trying to connect to Db
+2020-8-6 9:35:40 - stateful-backend-5bf7854496-tzssf.docker-desktop - Connection to db is sucessful

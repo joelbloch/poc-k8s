@@ -1,0 +1,306 @@
+2020-8-6 8:11:52 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:11:52 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:11:54 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:11:54 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:11:56 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:11:56 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:11:58 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:11:58 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:0 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:0 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:2 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:2 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:4 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:4 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:6 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:6 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:8 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:8 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:10 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:10 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:12 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:12 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:14 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:14 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:16 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:16 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:18 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:18 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:20 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:20 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:22 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:22 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:24 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:24 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:26 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:26 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:28 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:28 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:30 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:30 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:32 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:32 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:34 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:34 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:36 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:36 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:38 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:38 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:40 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:40 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:42 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:42 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:44 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:44 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:46 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:46 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:48 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:48 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:50 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:50 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:52 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:52 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:54 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:54 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:56 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:56 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:12:58 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:12:58 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:0 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:0 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:2 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:2 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:4 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:4 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:6 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:6 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:8 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:8 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:10 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:10 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:12 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:12 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:14 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:14 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:17 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:17 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:19 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:19 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:21 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:21 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:23 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:23 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:25 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:25 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:27 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:27 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:29 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:29 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:31 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:31 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:33 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:33 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:35 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:35 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:37 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:37 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:39 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:39 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:41 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:41 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:43 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:43 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:45 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:45 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:47 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:47 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:49 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:49 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:51 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:51 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:53 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:53 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:55 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:55 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:57 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:57 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:13:59 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:13:59 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:1 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:1 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:3 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:3 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:5 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:5 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:7 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:7 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:9 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:9 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:11 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:11 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:13 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:13 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:15 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:15 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:17 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:17 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:19 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:19 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:21 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:21 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:23 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:23 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:25 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:25 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:27 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:27 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:29 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:29 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:31 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:31 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:33 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:33 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:35 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:35 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:37 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:37 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:39 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:39 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:41 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:41 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:43 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:43 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:45 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:45 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:47 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:47 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:49 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:49 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:51 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:51 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:53 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:53 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:55 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:55 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:57 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:57 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:14:59 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:14:59 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:1 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:1 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:3 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:3 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:5 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:5 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:7 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:7 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:9 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:9 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:11 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:11 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:13 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:13 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:15 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:15 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:17 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:17 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:19 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:19 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:21 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:21 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:23 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:23 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:25 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:25 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:27 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:27 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:29 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:29 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:31 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:31 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:33 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:33 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:35 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:35 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:37 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:37 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:39 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:39 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:41 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:41 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:43 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:43 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:45 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:45 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:47 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:47 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:49 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:49 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:51 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:51 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:53 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:53 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:55 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:55 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:57 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:57 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:15:59 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:15:59 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:1 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:1 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:3 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:3 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:5 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:5 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:7 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:7 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:9 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:9 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:11 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:11 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:13 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:13 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:15 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:15 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:17 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:17 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:19 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:19 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:21 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:21 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:23 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:23 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:25 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:25 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:27 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:27 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:29 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:29 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:31 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:31 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:33 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:33 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:35 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:35 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:37 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:37 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:39 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:39 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:41 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:41 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:43 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:43 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:45 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:45 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:47 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:47 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:49 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:49 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:51 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:51 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:53 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:53 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:55 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:55 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined
+2020-8-6 8:16:57 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - Sending http post request to register pod
+2020-8-6 8:16:57 - stateful-backend-6d75c5b4f4-npvpv.docker-desktop - ReferenceError: getMyPodName is not defined

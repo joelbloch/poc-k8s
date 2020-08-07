@@ -1,0 +1,24 @@
+{
+  "name": "session-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js /config/central-session-manager.config.json",
+    "start-dev": "node src/index.js ./central-session-manager.dev.config.json",
+    "build-docker-azure": "docker build --tag pock8sregistry.azurecr.io/central-session-manager:1.0 .",
+    "build-docker-local" : "docker build --tag central-session-manager:1.0 .",
+    "push-docker-azure" : "docker push pock8sregistry.azurecr.io/central-session-manager:1.0",
+    "run-docker": "docker run -p 3004:3004 -p 3005:3005 -p 3006:3006 -p 3007:3007 -p 3008:3008 -p 3009:3009 -p 3010:3010 -p 3011:3011 -p 3012:3012 -p 3013:3013 -p 3014:3014  --detach --name central-session-manager central-session-manager:1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "json-socket": "^0.3.0",
+    "request": "^2.88.2"
+  }
+}

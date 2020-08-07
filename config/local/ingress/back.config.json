@@ -1,5 +1,0 @@
-{
-	"port" : "3000",
-	"enableLog" : true,
-	"localSessionManager" : "http://localhost:3400"
-}
