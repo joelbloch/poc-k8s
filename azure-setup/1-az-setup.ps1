@@ -45,15 +45,11 @@ az storage account create --name $azConfig.filestorage.name `
 az storage share create --account-name $azConfig.filestorage.name `
                         --name $azConfig.filestorage.fileshare
 
-                       
-#export AZURE_STORAGE_CONNECTION_STRING=$(az storage account show-connection-string -n $AKS_PERS_STORAGE_ACCOUNT_NAME -g $AKS_PERS_RESOURCE_GROUP -o tsv)
-                        
-                        # Create the file share
-#az storage share create -n $AKS_PERS_SHARE_NAME --connection-string $AZURE_STORAGE_CONNECTION_STRING
-                        
-                        # Get storage account key
+# Get storage account key
 $fsstorageKey=$(az storage account keys list --resource-group $azConfig.group.name  `
                                            --account-name $azConfig.filestorage.name  `
                                            --query "[0].value" -o tsv)
+
+#Save storage account credentials in file
 
 @{login="$azConfig.filestorage.name";password="$fsstorageKey"} | ConvertTo-Json | Out-File -FilePath $azConfig.filestorage.generatedfilename

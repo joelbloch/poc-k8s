@@ -1,0 +1,89 @@
+####################################################################
+######################### STATEFUL BACKEND #########################
+####################################################################
+# Service for Stateful containers, listening on port 3002
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-server-stateful
+spec:
+  type: ClusterIP
+  selector:
+    app: stateful
+    tier: backend
+  ports:
+  - port: 80
+    name: http
+    targetPort: http-stateful
+---
+# Deployment for pocbackend containers, listening on port 3000
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stateful-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: stateful
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: stateful
+        tier: backend
+    spec:
+       imagePullSecrets:
+       - name: demok8s-registry-pull-secret
+       containers:
+       - name: app-server
+         imagePullPolicy: Always
+         image: pock8sregistry.azurecr.io/app-server:1.0
+         ports:
+          - name: http-stateful
+            containerPort: 3000
+         env:
+          - name: MY_NODE_NAME
+            valueFrom:
+             fieldRef:
+              fieldPath: spec.nodeName
+          - name: MY_POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name         
+         volumeMounts:
+          - mountPath : /log
+            name: log-volume
+          - mountPath : /config
+            name: config-volume
+       - name: local-session-manager
+         imagePullPolicy: Always
+         image: pock8sregistry.azurecr.io/local-session-manager:1.0
+         ports:
+          - name: http-lmgt
+            containerPort: 3400
+         env:
+          - name: MY_NODE_NAME
+            valueFrom:
+             fieldRef:
+              fieldPath: spec.nodeName
+          - name: MY_POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name         
+         volumeMounts:
+          - mountPath : /log
+            name: log-volume
+          - mountPath : /config
+            name: config-volume
+       volumes:
+       - name: log-volume
+         azureFile:
+          shareName: demok8ssmb
+          secretName: demok8s-fileshare-secret
+          readOnly: false
+       - name: config-volume
+         azureFile:
+          shareName: demok8ssmb
+          secretName: demok8s-fileshare-secret
+          readOnly: false

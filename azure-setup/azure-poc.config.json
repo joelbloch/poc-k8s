@@ -15,8 +15,8 @@
         "database" : "demok8sddata"
     },
     "registry" : {
-        "name": "demok8sregistry",
-        "serviceprincipal" : "demok8sregistrysp",
+        "name": "pock8sregistry",
+        "serviceprincipal" : "pock8sregistry",
         "generatedfilename" : "./credentials/acr.json",
         "k8ssecretname" : "demok8s-registry-pull-secret"
     },

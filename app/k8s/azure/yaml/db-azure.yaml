@@ -4,7 +4,7 @@ metadata:
   name: pg-svc  
 spec: 
   type: ExternalName
-  externalName: todo
+  externalName: demok8spg.postgres.database.azure.com
   ports:
     - name: port
       port: 5432

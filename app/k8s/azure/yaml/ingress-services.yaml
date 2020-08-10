@@ -1,0 +1,47 @@
+#################################################################
+######################## INGRESS ROUTERS ########################
+#################################################################
+#### Sticky ####
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-sticky
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/affinity: "cookie"    
+    nginx.ingress.kubernetes.io/session-cookie-name: "session-id"
+spec:
+  rules:
+  - http:
+      paths:      
+      - path: /stateful/.*      
+        backend:
+          serviceName: app-server-stateful
+          servicePort: 3002     
+---
+#### NOT Sticky ####
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-not-sticky 
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /session-mgt/.*
+        backend:
+          serviceName: session-mgt-svc
+          servicePort: 3004           
+      - path: /stateless/.*        
+        backend:
+          serviceName: app-server-stateless
+          servicePort: 3001      
+      - path: /webserver/.*        
+        backend:
+          serviceName: web-server-service
+          servicePort: 3500
+           

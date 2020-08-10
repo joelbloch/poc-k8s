@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: pg-svc  
+spec: 
+  type: ExternalName
+  externalName: demok8spg.postgres.database.azure.com
+  ports:
+    - name: port
+      port: 5432

@@ -1,7 +1,9 @@
 
 # 1 - Introduction
 
-# 2 - Deploy and Test locally
+The POC is composed of several modules.
+- A docker image must be created for each module.
+- The application can then be deployed and tested.
 
 In this section, we describe how to deploy the POC on your local machine:
 - PG service
@@ -28,7 +30,7 @@ Create a new database called pocsK8s.
 
 #### d) Update the app-server configuration file if necessary
 If you want to change the admin user name, password, or the database name, you can. Just update the file located at the following location:
-- `/poc-k8s/full-poc/config/local/app-server.config.json`
+- `/poc-k8s/app/config/local/app-server.config.json`
 - edit the entry `db/local` with the info you provided for the fields `user`, `password`, and `database` :
 
 ```
@@ -47,11 +49,10 @@ This configuration is used by the app server module to access the local database
 
 #### e) Allow access to PG Service from Docker and Kubernetes Cluster
 
-Kubernetes and Docker are considered as external machines to the PG Service, so we need to grant them access from the PG configuration.
-For the sake of simplicity, we will configure PG to accept all requests from all machines.
+Kubernetes and Docker are considered as external machines to the PG Service, so we need to grant them access from the PG configuration. For the sake of simplicity, we will configure PG to accept all requests from all machines.
 
-Edit the file located at `C:\Program Files\PostgreSQL\10\data\pg_hba.conf`.
-Add the following line at the beginning of the list:
+1 - Edit the file located at `C:\Program Files\PostgreSQL\10\data\pg_hba.conf`.
+2 - Add the following line at the beginning of the list:
 `host    all             all             0.0.0.0/0               trust`
 
 You should have the following list:
@@ -62,7 +63,7 @@ host    all             all             127.0.0.1/32            md5
 host    all             all             10.1.1.221/32           md5
 ```
 
-Restart the PG Windows service for the modification to take effect
+3 - Restart the PG Windows service for the modification to take effect
 
 ### 2.1.2 Install Docker for Desktop
 
@@ -75,9 +76,9 @@ You can right click on the icon and select `settings` to display... the settings
 #### a) Enable Kubernetes
 
 Once Docker for Desktop is up and running, there is a new icon in the Windows tray : a whale.
-You can right click on the icon and select `settings` to display... the settings.
+1 - Right click on the icon and select `settings` to display... the settings.
 
-Press the Docker Engine button on the right, and enable the experimental features:
+2 - Press the Docker Engine button on the right, and enable the experimental features:
 ```
 {
   "registry-mirrors": [],
@@ -87,11 +88,10 @@ Press the Docker Engine button on the right, and enable the experimental feature
 }
 ```
 
-Press the Kubernetes button on the right, and check the checkbox `Enable Kubernetes`
+3 - Press the Kubernetes button on the right, and check the checkbox `Enable Kubernetes`
+4 - Press Apply and Docker will restart.
 
-Docker will restart.
-
-#### Check hosts Windows file
+#### b) Check hosts Windows file
 
 Installation of Docker for Desktop and Kubernetes should modify your hosts file located at : `C:\Windows\System32\drivers\etc\hosts` with 3 new entries:
 - `host.docker.internal`
@@ -115,54 +115,56 @@ This configuration is updated at each start-up, and as incredible as it sounds, 
 - `gateway.docker.internal`    => Docker images use a virtual ethernet card to reach the host, it is the ip address of this virtual card.
 - `kubernetes.docker.internal` => it is the dns entry indicating the host ip, used by Kubernetes. The ip should be the ip address of your main Ethernet card.
 
-### Build local docker images
+### 2.1.3 Build local docker images
 
-The POC modules are located in the `\POC-k8s\full-poc\modules` subfolders :
+The POC modules are located in the `\POC-k8s\app\modules` subfolders :
 - `app-server`
 - `web-server`
 - `central-session-manager`
 - `local-session-manager`
 A Docker container image must be created for each module.
-Open a cmd terminal. You can either :
-- go each module subfolder, and type `npm run build-docker-local`. It will build each docker image one by one.
-- go to the `\POC-k8s\full-poc` folder, and type `npm run build-all-local` : it will build container images one after another.
+1 - Open a cmd terminal. You can either :
+    - Go to each module subfolder, and type `npm run build-docker-local`. It will build each docker image one by one.
+    - or go to the `\POC-k8s\app` folder, and type `npm run build-all-local` : it will build container images one after another.
 
-### Local File Sharing 
+### 2.1.4 Local File Sharing 
 
 In order for the POC to work, we need to mount 2 folders for the docker images to use them:
 - `\poc-K8s\log` : this folder is used by each pod to generate logs
-- `\poc-K8s\full-poc\config` : this folder is used by each module to reach configuration files
+- `\poc-K8s\app\config` : this folder is used by each module to reach configuration files
 
 To enable file sharing with containers locally:
-- Right-click on the docker tray icon, and select "Settings"
-- Navigate to the "Resources" menu
-- Navigate to the "File Sharing" sub-menu
-- Use the + button to add the first folder, then again to add the second folder.
-- Click on the 'Apply and Restart Docker" button to validate your changes
+1 - Right-click on the docker tray icon, and select "Settings"
+2 - Navigate to the "Resources" menu
+3 - Navigate to the "File Sharing" sub-menu
+4 - Use the + button to add the first folder, then again to add the second folder.
+5 - Click on the 'Apply and Restart Docker" button to validate your changes
 
-### Install NGINX Ingress Controller
+### 2.1.5 Install NGINX Ingress Controller
 Kubernetes Ingress Service implements proxy services to reach the Kubernetes Cluster.
 Ingress is a Kubernetes specification, implemented by several providers. We use the Nginx provider. To install the nginx implementation:
-- Open a terminal
-- Execute the following instruction:  `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.34.1/deploy/static/provider/cloud/deploy.yaml`
+1 - Open a terminal
+2 - Execute the following instruction:  `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.34.1/deploy/static/provider/cloud/deploy.yaml`
 
 Kubectl downloads the Nginx resources and instantiates them.
 
-### Setup of Powershell Module
+### 2.1.6 Setup of Powershell Module
 Powershell scripts are defined as shortcuts to start and stop the POC in Kubernetes Cluster, as well as check the status of pods and services.
 The Powershell scripts use a module provided with this POC. This module needs to be deployed for the scripts to run correctly:
-- Copy the folder `\POC-K8S\resources\KubernetesFunctions`
-- Paste the entire folder in `C:\Users\<your_win_username>\Documents\WindowsPowerShell\Modules` (replace <your_win_username> by the correct value in the path).
+1 - Copy the folder `\POC-K8S\resources\KubernetesFunctions`
+2 - Paste the entire folder in `C:\Users\<your_win_username>\Documents\WindowsPowerShell\Modules` (replace <your_win_username> by the correct value in the path).
 
 ## 2.2 - Deploy
-- Open a Terminal window and go to the folder `\POC-K8S\full-poc\k8s\local`
+- Open a Terminal window and go to the folder `\POC-K8S\app\k8s\local`
 - The following scripts are available:
-- `1-start-with-local-pg.ps1` => Runs the Kubernetes Cluster and the modules containers are being ran as pods. The local postgres instance is used.  
-- `2-start-with-azure-pg.ps1` => Runs the Kubernetes Cluster and the modules containers are being ran as pods. The azure postgres instance is used.  (out of scope of this documentation)
-- `3-stop.ps1`                => Stops the POC pod modules.
-- `4-list-pods.ps1`           => Lists the pods currently being instantiated.
-- `5-list-svc.ps1`            => List the services currently being instantiated.
-- `6-list-pod.status.ps1`     => List the details of each pod.
+  - `1-start-with-local-pg.ps1` => Runs the Kubernetes Cluster and the modules containers are being ran as pods. The local postgres instance is used.  
+  - `2-start-with-azure-pg.ps1` => Runs the Kubernetes Cluster and the modules containers are being ran as pods. The azure postgres instance is used.  (out of scope of this documentation)
+  - `3-stop.ps1`                => Stops the POC pod modules.
+  - `4-list-pods.ps1`           => Lists the pods currently being instantiated.
+  - `5-list-svc.ps1`            => List the services currently being instantiated.
+  - `6-list-pod.status.ps1`     => List the details of each pod.
+
+  Scripts are prefixed by disinct figures, so they are easy to execute : just type the figure, then tab and enter.
 
 ## 2.3 - Test
 Once deployed, the following APIs can be accessed:
