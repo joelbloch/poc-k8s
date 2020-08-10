@@ -10,7 +10,7 @@
 	"session-manager" : "http://localhost:3400",
     "session-timeout" : 20,
     "db" : {
-        "location" : "local",
+        "location" : "azure",
         "local" : {
             "user": "postgres",
             "password": "admin123",

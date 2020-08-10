@@ -59,7 +59,7 @@ spec:
            type: Directory
       - name: config-volume
         hostPath:           
-           path: '/host_mnt/D/dev/poc-k8s/full-poc/config/local'           
+           path: '/host_mnt/D/dev/poc-k8s/app/config/local'           
            type: Directory
 
            
