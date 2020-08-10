@@ -1,4 +1,5 @@
 {
+    "login" : "joel.bloch@mphasis.com",
     "group" : {
         "name" : "demok8s",
         "location" : "SouthAfricaNorth"
@@ -22,7 +23,7 @@
     "filestorage" : {
         "name" : "demok8sstorage",
         "fileshare" :  "demok8ssmb",
-        "generatedfilename" : "./credentials/fs.json",
+        "generatedfilename" : "./credentials/afs.json",
         "k8ssecretname" : "demok8s-fileshare-secret"
     },
     "akscluster" : {

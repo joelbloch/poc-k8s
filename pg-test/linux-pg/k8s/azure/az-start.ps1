@@ -34,9 +34,6 @@ function WaitForPodsStarting() {
         }
 
         foreach ($pod in $pods.Split(" ")) {
-            if($counter -eq 0) {
-                $MainPod = "${pod}"
-            }
             $podstatus = $(kubectl get pods $pod -o jsonpath='{.status.phase}')
             if ($podstatus -eq "Running") {
                 # nothing to do
