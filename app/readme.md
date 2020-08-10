@@ -7,4 +7,4 @@
 
 Please proceed to either:
 - `k8s/local` readme.md : instructions for deploying and testing locally.
-- `k8s/azure` readme.md :s instructions for deploying and testing on Azure.
+- `k8s/azure` readme.md : instructions for deploying and testing on Azure.

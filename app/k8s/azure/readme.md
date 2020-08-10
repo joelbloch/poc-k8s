@@ -19,14 +19,15 @@ The POC modules are located in the `\POC-k8s\app\modules` subfolders :
 - `central-session-manager`
 - `local-session-manager`
 
-A Docker container image must be created for each module.
+A Docker container image must be created for each module :
+
 1 - Open a cmd terminal. You can either :
 2.1 - Go to each module subfolder, and type `npm run build-docker-azure`. It will build each docker image one by one.
 2.2 - Or go to the `\POC-k8s\app` folder, and type `npm run build-all-azure` : it will build container images one after another.
+3 - Docker images must be pushed to the Azure Container Registry.
+    From the `\POC-k8s\app` folder, type `npm run push-all` to push all the images you created on the Azure Registry.
 
-2 - Docker images must be pushed to the Azure Container Registry.
-    - From the `\POC-k8s\app` folder, type `npm run push-all` to push all the images you created on the Azure Registry.
-    - You could have alternatively execute the command `npm run build-push-all` to build and push all the images in one command.
+You could have alternatively execute the command `npm run build-push-all` to build and push all the images in one command.
 
 ## 3 - Deploy the Application
 
@@ -53,6 +54,8 @@ The Ingress Service listed exposed a public IP Address. Use this IP Address in t
 
 ## 5 - Test
 Once deployed, the following APIs can be accessed:
+
+Replace the <ipAddress> by the Ingress Service public address found at the precedent step.
 
 `http://<ipAddress>/webserver/ping`           => "Pong from Web Server" from Web Server pod
 `http://<ipAddress>/stateless/ping`           => "Pong from Applicaiton Server" from App Server Stateless pod

@@ -8,7 +8,7 @@ On top of this, the POC uses the following components:
 - an Azure File Share (AFS): a location where are stored the configuration files for the different modules of the POC.
 - an Azure Postgres Database (APD).
 
-Most of the applications will use all these components, hence their usage in the POC.
+Most of the applications will use all these components, this is why they are used by the demo app.
 
 # Folder Content
 
@@ -43,4 +43,5 @@ Most of the applications will use all these components, hence their usage in the
     - Install the Nginx Ingress Controller implementation.
 
 We are now ready to deploy the POC on Azure.
-Go to `/POC-K8S/app/k8s/azure` and browse the readme.md for instructions. Try not to fall into an infinite loop.
+
+8 - Go to `/POC-K8S/app/k8s/azure` and browse the readme.md for instructions. Try not to fall into an infinite loop.
