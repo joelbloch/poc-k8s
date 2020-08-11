@@ -8,8 +8,10 @@ $connectionString = $credentials.connectionstring
 
 Write-Host "Uploading configuration file to Azure Fileshare with connection string $connectionString"
 
-Get-ChildItem -Path ..\app\config\azure\*.json -Name |  `
+$files = Get-ChildItem -Path ..\app\config\azure\*.json -Name
+foreach($file in $files) {
     az storage file upload `
         --share-name $shareName `
-        --source ../app/config/azure/$_ `
+        --source ../app/config/azure/$file `
         --connection-string $connectionString
+}
