@@ -11,6 +11,13 @@ We need to create the Azure Container Registry, Azure File Share, Azure Postgres
  
 Navigate to the `\POC-K8S\azure-setup` and follow instructions listed in the readme.md. Don't fall into an infinite loop if you just did it though.
 
+## 2 - Deploy the POC Configuration files.
+
+1.1 - Use the Azure Cloud Shell Terminal Window on Azure you used to deploy Azure resources or
+1.2 - Log on the Azure Portal and open a new Azure Cloud Shell Terminal Window.
+2 - Navigate to the `poc-k8s/az-setup` folder
+3 - Execute the script 
+
 ## 2 - Build and Push Docker images
 
 The POC modules are located in the `\POC-k8s\app\modules` subfolders :
@@ -32,7 +39,7 @@ You could have alternatively execute the command `npm run build-push-all` to bui
 ## 3 - Deploy the Application
 
 1 - Open a powershell Terminal on your local computer.
-2 - Execute the powershell script `\POC-K8S\azure-setup\3-deploy-configuration-files.ps1` to push the POC configuration files on the Azure File Share.
+
 3 - Log on the Azure Portal at https://portal.azure.com
 4 - Open a Powershell Terminal
 5 - Git clone the project if not already done, by typing `git clone https://github.com/joelbloch/poc-k8s.git`
