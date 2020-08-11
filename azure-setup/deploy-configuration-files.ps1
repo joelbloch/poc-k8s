@@ -10,6 +10,7 @@ Write-Host "Uploading configuration file to Azure Fileshare with connection stri
 
 $files = Get-ChildItem -Path ..\app\config\azure\*.json -Name
 foreach($file in $files) {
+    Write-Host "Uploading $file to fileshare $shareName"
     az storage file upload `
         --share-name $shareName `
         --source ../app/config/azure/$file `
