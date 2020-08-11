@@ -27,13 +27,13 @@ Most of the applications will use all these components, this is why they are use
 1 - Log in on Azure Portal : https://portal.azure.com
 2 - Open a Powershell Terminal. Be sure to be in Powershell mode, rather than bash mode.
 3 - Git clone this project on your account by executing `git clone https://github.com/joelbloch/poc-k8s.git`
-4 - Go to the `/POC-K8S/azure-setup` folder.
+4 - Go to the `/poc-k8s/azure-setup` folder.
 5 - Adjust the `azure-poc.config.json` if you want to change settings, such as:
     - Component names : resource group name, aks name, acr name, fileshare name
     - Location
     - skus of Kubernetes nodes, Postgres database
     - etc.
-(6 - If you modified values on the azure-poc.config.json, we need to change the templates and yaml files for the POC. It will be convered by a powershell script in further deliveries of this project.)
+(6 - If you modified values on the azure-poc.config.json, we need to change the templates and yaml files for the POC. It will be convered by a powershell script in further deliveries of this project, but not right now, so it is better not to change anything)
 
 6 - Execute `1-az-setup.ps1`
         This script does everthing: create the resource group, the container registry, the kubernetes cluster, the postgres database, the fileshare, links everything.

@@ -1,11 +1,10 @@
 $azConfig = Get-Content -Path "./azure-poc.config.json" | ConvertFrom-Json
+$storageName = $azConfig.filestorage.name
+$shareName = $azConfig.filestorage.fileshare
+
 $credentialFile = $azConfig.fileshare.generatedfilename
 $credentials = Get-Content -Path $credentialFile | ConvertFrom-Json
 
-. ./0-as-login.ps1
-
-$storageName = $azConfig.filestorage.name
-$shareName = azConfig.filestorage.fileshare
 az storage file upload-batch `
     --account-name $storageName `
     --account-key $credentials.password `
