@@ -3,8 +3,9 @@ $storageName = $azConfig.filestorage.name
 $shareName = $azConfig.filestorage.fileshare
 $credentialFile = $azConfig.filestorage.generatedfilename
 $credentials = Get-Content -Path $credentialFile | ConvertFrom-Json
+$connectionString = $credentials.connectionstring
 
-Write-Host "Uploading configuration file to Azure Fileshare with connection string $credentials.connectionstring"
+Write-Host "Uploading configuration file to Azure Fileshare with connection string $connectionString"
 az storage file upload-batch `
     --connection-string $credentials.connectionstring `
     --source "../app/config/azure" `
