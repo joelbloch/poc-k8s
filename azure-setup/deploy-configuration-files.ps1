@@ -1,4 +1,4 @@
-c$azConfig = Get-Content -Path "./azure-poc.config.json" | ConvertFrom-Json
+$azConfig = Get-Content -Path "./azure-poc.config.json" | ConvertFrom-Json
 $storageName = $azConfig.filestorage.name
 $shareName = $azConfig.filestorage.fileshare
 $credentialFile = $azConfig.filestorage.generatedfilename
