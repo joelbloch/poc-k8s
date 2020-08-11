@@ -58,9 +58,13 @@ az storage share create --account-name $azConfig.filestorage.name `
                         --name $azConfig.filestorage.fileshare
 
 # Get storage account key
-$fsstorageKey=$(az storage account keys list --resource-group $azConfig.group.name  `
-                                           --account-name $azConfig.filestorage.name  `
-                                           --query "[0].value" -o tsv)
+$fsstorageKey=$(az storage account keys list `
+                        --resource-group $azConfig.group.name  `
+                        --account-name $azConfig.filestorage.name  `
+                        --query "[0].value" -o tsv)
+$fsConnectionString = $(az storage account show-connection-string `
+                        --resource-group $azConfig.group.name  `
+                        --account-name $azConfig.filestorage.name -o tsv)
 
 #Save storage account credentials in file
 
@@ -69,4 +73,4 @@ if(Test-Path -Path $azConfig.filestorage.generatedfilename) {
     Remove-Item -Path $azConfig.filestorage.generatedfilename -Force
 }
 $FileStorageName = $azConfig.filestorage.name
-@{login="$FileStorageName";password="$fsstorageKey"} | ConvertTo-Json | Out-File -FilePath $azConfig.filestorage.generatedfilename
+@{login="$FileStorageName";password="$fsstorageKey"; connectionstring = "$fsConnectionString"} | ConvertTo-Json | Out-File -FilePath $azConfig.filestorage.generatedfilename

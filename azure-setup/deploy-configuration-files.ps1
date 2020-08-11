@@ -10,4 +10,4 @@ az storage file upload-batch `
     --account-key $credentials.password `
     --share-name $shareName `
     --source "../app/config/azure" `
-    --destination "./"
+    --destination .
