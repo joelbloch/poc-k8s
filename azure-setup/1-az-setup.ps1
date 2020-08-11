@@ -63,8 +63,8 @@ $fsstorageKey=$(az storage account keys list `
                         --account-name $azConfig.filestorage.name  `
                         --query "[0].value" -o tsv)
 $fsConnectionString = $(az storage account show-connection-string `
-                        --resource-group $azConfig.group.name  `
-                        --account-name $azConfig.filestorage.name -o tsv)
+                        -g $azConfig.group.name  `
+                        -n $azConfig.filestorage.name -o tsv)
 
 #Save storage account credentials in file
 
