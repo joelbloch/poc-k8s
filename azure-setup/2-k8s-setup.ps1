@@ -23,6 +23,7 @@ az aks get-credentials --name $azConfig.akscluster.name `
                        --resource-group $azConfig.group.name
 
 # Create secret for accessing Azure Container Registry
+Write-Host "Create Kubernetes Secret for accessing Azure Container Registry"
 $CredentialFile = $azConfig.registry.generatedfilename
 $SecretName =   $azConfig.registry.k8ssecretname
 CreateK8sSecret `
@@ -30,8 +31,9 @@ CreateK8sSecret `
     -SecretName  $SecretName
 
 # Create secret for accessing Azure File Share
-$CredentialFile = $azConfig.fileshare.generatedfilename
-$SecretName =   $azConfig.fileshare.k8ssecretname
+Write-Host "Create secret for accessing Azure File Share"
+$CredentialFile = $azConfig.filestorage.generatedfilename
+$SecretName =   $azConfig.filestorage.k8ssecretname
 CreateK8sSecret `
     -FileName $CredentialFile `
     -SecretName  $SecretName
