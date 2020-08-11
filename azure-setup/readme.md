@@ -36,7 +36,7 @@ Most of the applications will use all these components, this is why they are use
 
 6 - Execute `1-az-setup.ps1`
         This script does everthing: create the resource group, the container registry, the kubernetes cluster, the postgres database, the fileshare, links everything.
-        The execution is rather long, so you can definitely go for a coffee : a long and hot americano.
+        The execution is rather long, so you can definitely go for a coffee : a long and hot americano. Drink slowly, with little sips.
         This script generates 2 files in the ./credentials subfolder.
 7 - Execute the script `2-k8s-setup.ps1`, which:
     - Creates secret for accessing file share and acr
