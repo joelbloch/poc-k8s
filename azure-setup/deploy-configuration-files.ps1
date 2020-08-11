@@ -9,4 +9,4 @@ Write-Host "Uploading configuration file to Azure Fileshare with connection stri
 az storage file upload-batch `
     --connection-string $credentials.connectionstring `
     --source "../app/config/azure" `
-    --destination .
+    --destination ./$shareName
