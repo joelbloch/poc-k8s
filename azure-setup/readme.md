@@ -12,14 +12,15 @@ Most of the applications will use all these components, this is why they are use
 
 # Folder Content
 
-- `azure-poc.config.json` : contains configuration of all the parts to be installed on Azure
-- `0-az-login.ps1` : allows connecting to the azure subscription from the local machine
+- `azure-poc.config.json` : contains configuration of all the parts to be installed on Azure.
+- `az-login.ps1` : allows connecting to the azure subscription from your local machine.
 - `1-az-setup.ps1` : 
     - setups all the modules
     - generates credentials file for Azure Container Registry in `./credentials/acr.json`
     - generate credentials file for Azure File Share in `./credentials/fs.json`
-- `2-k8s-setup.ps1` : create kubernetes secrets based on generated credentials for accessing Container Registry and File Share, and install Nginx Controller Implementation.
-- `3-deploy-configuration-files.ps1` : deploys the configuration files located in `/POC-K8S/app/config/azure/` folder into the newly created fileshare.
+- `2-deploy-configuration-files.ps1` : deploys the configuration files located in `/POC-K8S/app/config/azure/` folder into the newly created fileshare.
+- `3-k8s-setup.ps1` : create kubernetes secrets based on generated credentials for accessing Container Registry and File Share, and install Nginx Controller Implementation.
+
 
 # Installation Steps
 
