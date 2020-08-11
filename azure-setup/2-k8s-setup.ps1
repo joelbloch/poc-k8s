@@ -6,7 +6,7 @@ function CreateK8sSecret() {
         $SecretName
     )
 
-    if(Test-Path -PathType $FileName) {
+    if(Test-Path -Path $FileName) {
         $Credentials = Get-Content -Path $FileName | ConvertFrom-Json
         kubectl create secret generic $SecretName `
             --from-literal=azurestorageaccountname=$Credentials.login `
