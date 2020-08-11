@@ -25,8 +25,8 @@ az acr create --resource-group $azConfig.group.name `
               --name $azConfig.registry.name `
               --sku Basic
 
-ACR_REGISTRY_ID=$(az acr show --name $azConfig.registry.name --query id --output tsv) 
-ACR_ServicePrincipal = $azConfig.registry.serviceprincipal
+$ACR_REGISTRY_ID=$(az acr show --name $azConfig.registry.name --query id --output tsv) 
+$ACR_ServicePrincipal = $azConfig.registry.serviceprincipal
 
 $sp_password=$(az ad sp create-for-rbac --name http://$ACR_ServicePrincipal --scopes $ACR_REGISTRY_ID --role acrpush --query password --output tsv)
 $sp_id=$(az ad sp show --id http://$ACR_ServicePrincipal --query appId --output tsv)
