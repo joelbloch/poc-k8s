@@ -1,4 +1,4 @@
-$azConfig = Get-Content -Path ".\azure-poc.config.json" | ConvertFrom-Json
+azConfig = Get-Content -Path ".\azure-poc.config.json" | ConvertFrom-Json
 
 #Create Resource Group
 Write-Host "Creating Resource Group $azConfig.group.name"
@@ -18,17 +18,18 @@ Write-Host "Creating Azure Postgres Database $azConfig.db.database on Server $az
 az postgres db create --name $azConfig.db.database `
                       --resource-group $azConfig.group.name `
                       --server-name $azConfig.db.name
-
+Q
 #Create Azure Container Registry (ACR)
 Write-Host "Creating Azure Container Registry $azConfig.registry.name"
 az acr create --resource-group $azConfig.group.name `
               --name $azConfig.registry.name `
               --sku Basic
 
-$ACR_REGISTRY_ID=$(az acr show --name $azConfig.registry.name --query id --output tsv)
+ACR_REGISTRY_ID=$(az acr show --name $azConfig.registry.name --query id --output tsv) 
+ACR_ServicePrincipal = $azConfig.registry.serviceprincipal
 
-$sp_password=$(az ad sp create-for-rbac --name http://$azConfig.registry.serviceprincipal --scopes $ACR_REGISTRY_ID --role acrpush --query password --output tsv)
-$sp_id=$(az ad sp show --id http://$azConfig.registry.serviceprincipal  --query appId --output tsv)
+$sp_password=$(az ad sp create-for-rbac --name http://$ACR_ServicePrincipal --scopes $ACR_REGISTRY_ID --role acrpush --query password --output tsv)
+$sp_id=$(az ad sp show --id http://$ACR_ServicePrincipal --query appId --output tsv)
 
 Write-Host "Saving Azure Container Registry credentials in $azConfig.registry.generatedfilenamee"
 if(Test-Path -Path $azConfig.registry.generatedfilename) {
