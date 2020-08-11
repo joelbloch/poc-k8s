@@ -18,7 +18,7 @@ Write-Host "Creating Azure Postgres Database $azConfig.db.database on Server $az
 az postgres db create --name $azConfig.db.database `
                       --resource-group $azConfig.group.name `
                       --server-name $azConfig.db.name
-Q
+
 #Create Azure Container Registry (ACR)
 Write-Host "Creating Azure Container Registry $azConfig.registry.name"
 az acr create --resource-group $azConfig.group.name `
@@ -53,7 +53,7 @@ az storage account create --name $azConfig.filestorage.name `
                           --resource-group $azConfig.group.name `
                           --sku Standard_LRS 
 
-Write-Host "Creating Azure File Share $azConfig.filestorage.name on Account $azConfig.filestorage.name"
+Write-Host "Creating Azure File Share $azConfig.fileshare on Account $azConfig.filestorage.name"
 az storage share create --account-name $azConfig.filestorage.name `
                         --name $azConfig.filestorage.fileshare
 
@@ -68,4 +68,5 @@ Write-Host "Saving Azure File Share credentials in $azConfig.filestorage.generat
 if(Test-Path -Path $azConfig.filestorage.generatedfilename) {
     Remove-Item -Path $azConfig.filestorage.generatedfilename -Force
 }
-@{login="$azConfig.filestorage.name";password="$fsstorageKey"} | ConvertTo-Json | Out-File -FilePath $azConfig.filestorage.generatedfilename
+$FileStorageName = $azConfig.filestorage.name
+@{login="$FileStorageName";password="$fsstorageKey"} | ConvertTo-Json | Out-File -FilePath $azConfig.filestorage.generatedfilename
