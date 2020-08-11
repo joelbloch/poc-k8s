@@ -1,0 +1,28 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: db-svc
+spec:
+  type: ExternalName
+  externalName: pock8sdb.postgres.database.azure.com
+
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: db-svc
+# spec:
+#   ports:
+#     - protocol: TCP
+#       port: 5432
+#       targetPort: 5432
+# ---
+# apiVersion: v1
+# kind: Endpoints
+# metadata:
+#   name: db-svc
+# subsets:
+#   - addresses:
+#       - ip: 192.0.2.42
+#     ports:
+#       - port: 5432

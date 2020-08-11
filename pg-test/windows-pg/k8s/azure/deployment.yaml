@@ -1,0 +1,61 @@
+####################################################################
+######################### STATEFUL BACKEND #########################
+####################################################################
+
+# Service for Stateful containers, listening on port 3002
+apiVersion: v1
+kind: Service
+metadata:
+  name: win-svc
+spec:
+  type: LoadBalancer
+  selector:
+    app: wintest
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000
+---
+# Deployment for pocbackend containers, listening on port 3000
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: win-test-with-pg
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wintest
+  template:
+    metadata:
+      labels:
+        app: wintest
+    spec:
+       nodeSelector:
+         kubernetes.io/os: windows
+       imagePullSecrets:
+       - name: poc-k8s-registry-pull-secret
+       containers:
+       - name: windows-poc
+         image: pock8sregistry.azurecr.io/windows-poc:1.0
+         imagePullPolicy: Always
+         ports:
+          - name: http
+            containerPort: 3000
+         volumeMounts:
+          - mountPath : /log
+            name: log-volume
+          - mountPath : /config
+            name: config-volume
+       volumes:
+       - name: log-volume
+         azureFile:
+           shareName: pock8sshare
+           secretName: pock8s-share-secret2
+           readOnly: false
+       - name: config-volume
+         azureFile:
+           shareName: pock8sshare
+           secretName: pock8s-share-secret2
+           readOnly: false
+            

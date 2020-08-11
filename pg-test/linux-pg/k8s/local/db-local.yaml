@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: db-svc
+spec:
+  type: ExternalName
+  externalName: host.docker.internal
+  ports:
+    - name: port
+      port: 5432

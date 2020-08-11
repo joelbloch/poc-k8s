@@ -1,0 +1,65 @@
+
+#####################################################################
+######################### STATELESS BACKEND #########################
+# Service for Stateless containers, listening on port 3000
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-server-stateless
+spec:
+  selector:
+    app: stateless
+    tier: backend
+  ports:
+  - port: 3001
+    name: http
+    targetPort: http-stateless
+---
+# Deployment for pocbackend containers, listening on port 3000
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stateless-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: stateless
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: stateless
+        tier: backend
+    spec:
+      containers:
+      - name: app-server 
+        image: app-server:1.0        
+        ports:
+           - name: http-stateless
+             containerPort: 3000        
+        volumeMounts:
+           - mountPath : /log
+             name: log-volume
+           - mountPath : /config
+             name: config-volume
+        env:
+          - name: MY_NODE_NAME
+            valueFrom:
+             fieldRef:
+              fieldPath: spec.nodeName
+          - name: MY_POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name    
+      volumes:
+      - name: log-volume
+        hostPath:           
+           path: '/host_mnt/d/dev/poc-k8s/log'           
+           type: Directory
+      - name: config-volume
+        hostPath:           
+           path: '/host_mnt/D/dev/poc-k8s/app/config/local'           
+           type: Directory
+
+           

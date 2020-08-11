@@ -1,0 +1,23 @@
+{
+  "name": "poc-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js /config/web-server.config.json",
+    "start-dev" : "node index.js ./web-server.config.dev.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-docker-azure": "docker build --tag pock8sregistry.azurecr.io/web-server:1.0 .",
+    "build-docker-local": "docker build --tag web-server:1.0 .",
+    "push-docker-azure": "docker push pock8sregistry.azurecr.io/web-server:1.0",
+    "run-docker": "docker run --publish 3500:3500 --detach --name web-server web-server:1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "http-proxy": "^1.18.1"
+  }
+}

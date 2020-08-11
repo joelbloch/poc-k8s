@@ -1,0 +1,18 @@
+{
+	"appName" : "Web Server",
+	"port" : "3500",
+	"apiStateless" : {
+		"domain" : "http://localhost",
+		"port" : "30001"
+	},
+	"apiStateful" : {
+		"domain" : "http://localhost",
+		"port" : "30002"
+	},
+	"trace" : {
+        "enabled" : true,
+        "file-name-policy" : "unique",
+        "file-suffix": "log.txt",
+        "write-sync" : true
+    }
+}

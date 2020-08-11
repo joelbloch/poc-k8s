@@ -3,7 +3,7 @@ const app = express();
 const router = express.Router();
 
 router.get('/ping', (req, res) => {    
-    res.end('pong');
+    res.end('pong from Azure');
 });
 
 router.get('/*', (req, res) => {    

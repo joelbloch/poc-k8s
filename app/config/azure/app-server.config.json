@@ -1,0 +1,29 @@
+{
+    "appName" : "Back Server",
+    "port" : "3000",
+	"trace" : {
+        "enabled" : true,
+        "file-name-policy" : "unique",
+        "file-suffix": "log.txt",
+        "write-sync" : true
+    },
+	"session-manager" : "http://localhost:3400",
+    "session-timeout" : 20,
+    "db" : {
+        "location" : "azure",
+        "local" : {
+            "user": "postgres",
+            "password": "admin123",
+            "host": "pg-svc",
+            "port": 5432,
+            "database": "pocsK8s"
+        },
+        "azure":{
+            "user": "demok8sadmin",
+            "password": "P@ssw0rd",
+            "host": "pg-svc",
+            "port": 5432,
+            "database": "pock8sdb"
+        }
+    }
+}

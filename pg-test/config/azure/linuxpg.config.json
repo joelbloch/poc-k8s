@@ -1,0 +1,25 @@
+{
+    "appName" : "Linux Back Server",
+    "port" : "3000",
+	"trace" : {
+        "enabled" : false,
+        "file-name-policy" : "process",
+        "file-suffix": "log.txt",
+        "write-sync" : true
+    },
+    "db" : "azure",
+    "db-local":{
+        "user": "postgres",
+        "host": "db-svc",
+        "database": "pocsK8s",
+        "password": "admin123",
+        "port": 5432
+    },
+    "db-azure":{
+        "user": "pock8sadmin@pock8sdb",
+        "password": "P@ssw0rd",
+        "host": "db-svc",
+        "database": "pock8sdb",
+        "port": 5432
+    }
+}

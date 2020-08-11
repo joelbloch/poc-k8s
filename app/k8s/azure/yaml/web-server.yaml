@@ -1,0 +1,60 @@
+#############################################################
+######################### FRONT END #########################
+
+# Service exposing frontend on node port 30000
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-server-service
+spec:
+  type: ClusterIP
+  selector:
+    app: webapp
+    tier: webserver
+  ports:
+  - port: 3500
+    name: http-fr
+    targetPort: http-front
+---
+# deployment of the container pocfrontend listening to port 3500
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapp
+      tier: webserver
+  template:
+    metadata:
+      labels:
+        app: webapp
+        tier: webserver
+    spec:
+      imagePullSecrets:
+      - name: demok8s-registry-pull-secret
+      containers:
+      - name: web-server
+        imagePullPolicy: Always
+        image: pock8sregistry.azurecr.io/web-server:1.0               
+        ports:
+           - name: http-front
+             containerPort: 3500      
+        volumeMounts:
+           - mountPath : /log
+             name: log-volume
+           - mountPath : /config
+             name: config-volume
+      volumes:
+       - name: log-volume
+         azureFile:
+          shareName: demok8ssmb
+          secretName: demok8s-fileshare-secret
+          readOnly: false
+       - name: config-volume
+         azureFile:
+          shareName: demok8ssmb
+          secretName: demok8s-fileshare-secret
+          readOnly: false
