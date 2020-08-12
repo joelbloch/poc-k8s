@@ -54,18 +54,21 @@ az storage account create --name $azConfig.filestorage.name `
                           --resource-group $azConfig.group.name `
                           --sku Standard_LRS 
 
+
+export $fsConnectionString = $(az storage account show-connection-string `
+                        -g $azConfig.group.name  `
+                        -n $azConfig.filestorage.name -o tsv)
+
 Write-Host "Creating Azure File Share $azConfig.fileshare on Account $azConfig.filestorage.name"
-az storage share create --account-name $azConfig.filestorage.name `
-                        --name $azConfig.filestorage.fileshare
+az storage share create `
+        --name $azConfig.filestorage.fileshare `
+        --connection-string $fsConnectionString
 
 # Get storage account key
 $fsstorageKey=$(az storage account keys list `
                         --resource-group $azConfig.group.name  `
                         --account-name $azConfig.filestorage.name  `
                         --query "[0].value" -o tsv)
-$fsConnectionString = $(az storage account show-connection-string `
-                        -g $azConfig.group.name  `
-                        -n $azConfig.filestorage.name -o tsv)
 
 #Save storage account credentials in file
 

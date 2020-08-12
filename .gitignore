@@ -4,5 +4,6 @@ log/session/*
 log/stateful/*
 log/stateless/*
 node_modules/
+azure-setup/credentials/*.json
 
 
