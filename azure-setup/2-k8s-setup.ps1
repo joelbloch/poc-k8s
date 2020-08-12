@@ -8,15 +8,15 @@ az aks get-credentials --name $azConfig.akscluster.name `
 Write-Host "Create Kubernetes Secret for accessing Azure Container Registry"
 $CredentialFile = $azConfig.registry.generatedfilename
 if(Test-Path -Path $CredentialFile) {
-    $SecretName = $azConfig.registry.k8ssecretname | Out-String
+    $SecretName = $azConfig.registry.k8ssecretname
     Write-Host "Secret Name : " + $SecretName
     $RegistryName = $azConfig.registry.name + ".azurecr.io"
     $Credentials = Get-Content -Path  $CredentialFile | Out-String | ConvertFrom-Json
 
-    kubectl create secret docker-registry $azConfig.registry.k8ssecretname `
-        --docker-server = $RegistryName `
-        --docker-username = $Credentials.login `
-        --docker-password = $Credentials.password
+    kubectl create secret docker-registry "$azConfig.registry.k8ssecretname" `
+        --docker-server = "$RegistryName" `
+        --docker-username = "$Credentials.login" `
+        --docker-password = "$Credentials.password"
 } else {
     Write-Host 'Credential file (' +  $CredentialFile + ') is not found'
 }
@@ -31,7 +31,7 @@ if(Test-Path -Path $CredentialFile) {
 
     Write-Host "Secret Name : " + $SecretName
 
-    kubectl create secret generic $SecretName `
+    kubectl create secret generic "$SecretName" `
         --from-literal=azurestorageaccountname=$Credentials.login `
         --from-literal=azurestorageaccountkey=$Credentials.password
 } else {
