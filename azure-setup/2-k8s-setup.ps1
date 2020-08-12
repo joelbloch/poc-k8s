@@ -1,21 +1,3 @@
-function CreateK8sSecret() {
-    [CmdletBinding()]
-    param
-    (        
-        [String]$FileName,
-        [String]$SecretName
-    )
-
-    if(Test-Path -Path $FileName) {
-        $Credentials = Get-Content -Path $FileName | ConvertFrom-Json
-        kubectl create secret generic $SecretName `
-            --from-literal=azurestorageaccountname=$Credentials.login `
-            --from-literal=azurestorageaccountkey=$Credentials.password
-    } else {
-        Write-Host 'Credential file (' +  $FileName + ') is not found'
-    }
-}
-
 $azConfig = Get-Content -Path ".\azure-poc.config.json" | ConvertFrom-Json
 
 # Sets the AKS cluster we created as the one we access with the next kubectl commands.
@@ -25,18 +7,30 @@ az aks get-credentials --name $azConfig.akscluster.name `
 # Create secret for accessing Azure Container Registry
 Write-Host "Create Kubernetes Secret for accessing Azure Container Registry"
 $CredentialFile = $azConfig.registry.generatedfilename
-$SecretName =   $azConfig.registry.k8ssecretname
-CreateK8sSecret `
-    -FileName $CredentialFile `
-    -SecretName  $SecretName
+if(Test-Path -Path $CredentialFile) {
+    $SecretName =   $azConfig.registry.k8ssecretname
+    $RegistryName = $azConfig.registry.name + ".azurecr.io"
+    $Credentials = Get-Content -Path  $CredentialFile | ConvertFrom-Json
+
+    kubectl create secret docker-registry $SecretName `
+        --docker-server = $RegistryName `
+        --docker-username = $Credentials.login `
+        --docker-password = $Credentials.password
+}
 
 # Create secret for accessing Azure File Share
 Write-Host "Create secret for accessing Azure File Share"
 $CredentialFile = $azConfig.filestorage.generatedfilename
-$SecretName =   $azConfig.filestorage.k8ssecretname
-CreateK8sSecret `
-    -FileName $CredentialFile `
-    -SecretName  $SecretName
+
+if(Test-Path -Path $CredentialFile) {
+    $Credentials = Get-Content -Path  $CredentialFile | ConvertFrom-Json
+    $SecretName =  $azConfig.filestorage.k8ssecretname
+    kubectl create secret generic $SecretName `
+        --from-literal=azurestorageaccountname = $Credentials.login `
+        --from-literal=azurestorageaccountkey = $Credentials.password
+} else {
+    Write-Host 'Credential file (' +  $FileName + ') is not found'
+}
 
 # Install Nginx Ingress Controller
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.34.1/deploy/static/provider/cloud/deploy.yaml
