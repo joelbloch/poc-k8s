@@ -16,7 +16,6 @@ spec:
   - port: 3004
     name: http-session-mgt
     targetPort: http
-    nodePort: 30004
   - port: 3005
     name: tcp1
     targetPort: tcp1

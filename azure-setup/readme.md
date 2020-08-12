@@ -18,9 +18,10 @@ Most of the applications will use all these components, this is why they are use
     - setups all the modules
     - generates credentials file for Azure Container Registry in `./credentials/acr.json`
     - generate credentials file for Azure File Share in `./credentials/fs.json`
-- `2-save-credentials.ps1`: it will save the credentials generated to access file share and acr. You will be prompted for location, choose the folder `/poc-k8s/app/k8s/azure`.
-- `3-k8s-setup.ps1` : create kubernetes secrets based on generated credentials for accessing Container Registry and File Share, and install Nginx Controller Implementation.
+- `2-k8s-setup.ps1` : create kubernetes secrets based on generated credentials for accessing Container Registry and File Share, and install Nginx Controller Implementation.
+- `3-save-credentials.ps1`: it will save the credentials generated to access file share and acr. You will be prompted for location, choose the folder `/poc-k8s/app/k8s/azure`.
 - `deploy-configuration-files.ps1` : deploys the configuration files located in `/POC-K8S/app/config/azure/` folder into the newly created fileshare.
+- `az-setup-all.ps1` : invoke all the scripts above.
 
 # Installation Steps
 
@@ -42,6 +43,8 @@ Most of the applications will use all these components, this is why they are use
 7 - Execute the script `2-k8s-setup.ps1`, which:
     - Creates secret for accessing file share and acr
     - Install the Nginx Ingress Controller implementation.
+7 - Execute the script `3-save-credentials.ps1`. You will be prompted to save 2 files, save them on the `poc-k8s/app/k8s/azure` folder
+
 
 We are now ready to deploy the POC on Azure.
 
