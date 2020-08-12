@@ -55,7 +55,7 @@ az storage account create --name $azConfig.filestorage.name `
                           --sku Standard_LRS 
 
 
-export $fsConnectionString = $(az storage account show-connection-string `
+$fsConnectionString = $(az storage account show-connection-string `
                         -g $azConfig.group.name  `
                         -n $azConfig.filestorage.name -o tsv)
 
