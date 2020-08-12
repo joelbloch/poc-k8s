@@ -9,14 +9,14 @@ The POC is composed of several modules.
 ## 1 - Setup Azure components to deploy the POC
 We need to create the Azure Container Registry, Azure File Share, Azure Postgres Database and install the Nginx Ingress Controller on Azure.
  
-Navigate to the `\POC-K8S\azure-setup` and follow instructions listed in the readme.md. Don't fall into an infinite loop if you just did it though.
+Navigate to the `\poc-k8s\azure-setup` and follow instructions listed in the readme.md. Don't fall into an infinite loop if you just did it though.
 
 ## 2 - Deploy the POC Configuration files.
 
 1.1 - Use the Azure Cloud Shell Terminal Window on Azure you used to deploy Azure resources or
 1.2 - Log on the Azure Portal and open a new Azure Cloud Shell Terminal Window.
 2 - Navigate to the `poc-k8s/az-setup` folder
-3 - Execute the script 
+3 - Execute the script `deploy-configuration-files.ps1` to deploy the `/config/azure` files into the newly created file share.
 
 ## 2 - Build and Push Docker images
 
@@ -32,9 +32,9 @@ A Docker container image must be created for each module :
 2.1 - Go to each module subfolder, and type `npm run build-docker-azure`. It will build each docker image one by one.
 2.2 - Or go to the `\POC-k8s\app` folder, and type `npm run build-all-azure` : it will build container images one after another.
 3 - Docker images must be pushed to the Azure Container Registry.
-    From the `\POC-k8s\app` folder, type `npm run push-all` to push all the images you created on the Azure Registry.
+    From the `\POC-k8s\app` folder, type `npm run push-all-azure` to push all the images you created on the Azure Registry.
 
-You could have alternatively execute the command `npm run build-push-all` to build and push all the images in one command.
+You could have alternatively execute the command `npm run build-push-all-azure` to build and push all the images in one command.
 
 ## 3 - Deploy the Application
 

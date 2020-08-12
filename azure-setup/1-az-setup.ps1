@@ -35,7 +35,8 @@ Write-Host "Saving Azure Container Registry credentials in $azConfig.registry.ge
 if(Test-Path -Path $azConfig.registry.generatedfilename) {
     Remove-Item -Path $azConfig.registry.generatedfilename -Force
 }
-@{login="$sp_id";password="$sp_password"} | ConvertTo-Json | Out-File -FilePath $azConfig.registry.generatedfilename
+$acrname = $azConfig.registry.name
+@{acrname = "$acrname"; login="$sp_id";password="$sp_password"} | ConvertTo-Json | Out-File -FilePath $azConfig.registry.generatedfilename
 
 #Create Azure Kubernetes Service (AKS)
 Write-Host "Creating Azure Kubernetes Service $azConfig.akscluster.name"
