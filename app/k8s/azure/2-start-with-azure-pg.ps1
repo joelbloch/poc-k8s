@@ -64,6 +64,8 @@ function WaitForPodsStarting() {
 }
 
 
+az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
+
 Write-Host "Starting Central Session Management"
 kubectl apply -f ./yaml/ingress-services.yaml
 kubectl apply -f ./yaml/db-azure.yaml
