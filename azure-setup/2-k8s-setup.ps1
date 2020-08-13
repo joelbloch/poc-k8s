@@ -11,12 +11,12 @@ if(Test-Path -Path $CredentialFile) {
     [String]$SecretName = $azConfig.registry.k8ssecretname
     Write-Host "Secret Name : " + $SecretName
     $RegistryName = $azConfig.registry.name + ".azurecr.io"
-    $Credentials = Get-Content -Path  $CredentialFile | Out-String | ConvertFrom-Json
+    $Credentials = Get-Content -Path  $CredentialFile | ConvertFrom-Json
 
-    kubectl create secret docker-registry "$SecretName" `
-        --docker-server = "$RegistryName" `
-        --docker-username = "$Credentials.login" `
-        --docker-password = "$Credentials.password"
+    kubectl create secret docker-registry $SecretName `
+        --docker-server=$RegistryName `
+        --docker-username=$Credentials.login `
+        --docker-password=$Credentials.password
 } else {
     Write-Host 'Credential file (' +  $CredentialFile + ') is not found'
 }
