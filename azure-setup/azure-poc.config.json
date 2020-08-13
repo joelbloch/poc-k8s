@@ -21,6 +21,7 @@
     },
     "filestorage" : {
         "name" : "demok8sstorage",
+        "sku" : "Standard_LRS",
         "fileshare" :  "demok8ssmb",
         "generatedfilename" : "./credentials/afs.json",
         "k8ssecretname" : "demok8s-fileshare-secret"
