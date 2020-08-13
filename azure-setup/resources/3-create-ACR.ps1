@@ -1,4 +1,4 @@
-$azConfig = Get-Content -Path "..\azure-poc.config.json" | ConvertFrom-Json
+$azConfig = Get-Content -Path ".\azure-poc.config.json" | ConvertFrom-Json
 
 #Create Azure Container Registry (ACR)
 Write-Host "Creating Azure Container Registry $azConfig.registry.name"

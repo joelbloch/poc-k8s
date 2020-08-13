@@ -1,4 +1,4 @@
-$azConfig = Get-Content -Path "..\azure-poc.config.json" | ConvertFrom-Json
+$azConfig = Get-Content -Path ".\azure-poc.config.json" | ConvertFrom-Json
 
 #Create Azure Postgres Db
 Write-Host "Creating Azure Postgres DB Service $azConfig.db.name"

@@ -1,4 +1,4 @@
-$azConfig = Get-Content -Path "..\azure-poc.config.json" | ConvertFrom-Json
+$azConfig = Get-Content -Path ".\azure-poc.config.json" | ConvertFrom-Json
 
 #Create Storage Account
 Write-Host "Creating Azure Storage Account $azConfig.filestorage.name"
