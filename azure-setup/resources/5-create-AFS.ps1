@@ -1,4 +1,14 @@
-$azConfig = Get-Content -Path ".\azure-poc.config.json" | ConvertFrom-Json
+$azConfig = $null
+$standalone = $FALSE
+
+if(Test-Path -Path ".\azure-poc.config.json") {
+    $azConfig = Get-Content -Path ".\azure-poc.config.json" | ConvertFrom-Json
+} else {
+    if(Test-Path -Path "..\azure-poc.config.json") {
+        $azConfig = Get-Content -Path "..\azure-poc.config.json" | ConvertFrom-Json
+        $standalone = $TRUE
+    }
+}
 
 #Create Storage Account
 Write-Host "Creating Azure Storage Account $azConfig.filestorage.name"
@@ -32,4 +42,8 @@ if(Test-Path -Path $azConfig.filestorage.generatedfilename) {
     Remove-Item -Path $azConfig.filestorage.generatedfilename -Force
 }
 $FileStorageName = $azConfig.filestorage.name
-@{login="$FileStorageName";password="$fsstorageKey"; connectionstring = "$fsConnectionString"} | ConvertTo-Json | Out-File -FilePath $azConfig.filestorage.generatedfilename
+$OutputFileName = $azConfig.filestorage.generatedfilename
+if($standalone) {
+    $OutputFileName = "../" + $OutputFileName
+}
+@{login="$FileStorageName";password="$fsstorageKey"; connectionstring = "$fsConnectionString"} | ConvertTo-Json | Out-File -FilePath $OutputFileName
