@@ -12,11 +12,13 @@ if(Test-Path -Path $CredentialFile) {
    
     $RegistryName = $azConfig.registry.name + ".azurecr.io"
     $Credentials = Get-Content -Path  $CredentialFile | ConvertFrom-Json
-
+    $Login = $Credentials.login
+    $Password = $Credentials.password
+    Write-Host " kubectl create secret docker-registry $SecretName --docker-server=$RegistryName --docker-username=$Login --docker-password=$Password"
     kubectl create secret docker-registry $SecretName `
         --docker-server=$RegistryName `
-        --docker-username=$Credentials.login `
-        --docker-password=$Credentials.password
+        --docker-username=$Login `
+        --docker-password=$Password
 } else {
     Write-Host 'Credential file (' +  $CredentialFile + ') is not found'
 }
@@ -28,10 +30,12 @@ $CredentialFile = $azConfig.filestorage.generatedfilename
 if(Test-Path -Path $CredentialFile) {
     $Credentials = Get-Content -Path  $CredentialFile | Out-String | ConvertFrom-Json
     $SecretName =  $azConfig.filestorage.k8ssecretname
-
+    $Login = $Credentials.login
+    $Password = $Credentials.password
+    Write-Host "kubectl create secret generic $SecretName --from-literal=azurestorageaccountname=$Login --from-literal=azurestorageaccountkey=$Password"
     kubectl create secret generic "$SecretName" `
-        --from-literal=azurestorageaccountname=$Credentials.login `
-        --from-literal=azurestorageaccountkey=$Credentials.password
+        --from-literal=azurestorageaccountname= $Login `
+        --from-literal=azurestorageaccountkey=$Password
 } else {
     Write-Host 'Credential file (' +  $CredentialFile  + ') is not found'
 }
