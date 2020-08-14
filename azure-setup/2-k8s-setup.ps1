@@ -34,7 +34,7 @@ if(Test-Path -Path $CredentialFile) {
     $Password = $Credentials.password
     Write-Host "kubectl create secret generic $SecretName --from-literal=azurestorageaccountname=$Login --from-literal=azurestorageaccountkey=$Password"
     kubectl create secret generic "$SecretName" `
-        --from-literal=azurestorageaccountname= $Login `
+        --from-literal=azurestorageaccountname=$Login `
         --from-literal=azurestorageaccountkey=$Password
 } else {
     Write-Host 'Credential file (' +  $CredentialFile  + ') is not found'
