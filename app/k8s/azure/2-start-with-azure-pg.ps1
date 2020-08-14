@@ -1,4 +1,3 @@
-
 function WaitForPodsStarting() {
     [CmdletBinding()]
     param
@@ -62,9 +61,6 @@ function WaitForPodsStarting() {
 
     return $Return    
 }
-
-
-az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
 
 Write-Host "Starting Central Session Management"
 kubectl apply -f ./yaml/ingress-services.yaml
