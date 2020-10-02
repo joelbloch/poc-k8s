@@ -19,7 +19,7 @@
             "database": "pocsK8s"
         },
         "azure":{
-            "user": "demok8sadmin",
+            "user": "demok8sadmin@demok8spg",
             "password": "P@ssw0rd",
             "host": "pg-svc",
             "port": 5432,
