@@ -14,7 +14,7 @@ az postgres server update --name $azConfig.db.database `
                         --resource-group $azConfig.group.name `
                         --ssl-enforcement Disabled
 
-$DbName = $azConfig.db.database
+$DbName = $azConfig.db.name
 $ServerName = $DbName +".postgres.database.azure.com"
 
 Write-Host "Allowing all incoming requests from Azure"
