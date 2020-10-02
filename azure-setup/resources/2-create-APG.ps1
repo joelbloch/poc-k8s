@@ -9,7 +9,24 @@ az postgres server create --resource-group $azConfig.group.name `
                           --admin-password $azConfig.db.admin.password `
                           --sku-name $azConfig.db.sku
 
+Write-Host "Disabling SSL connection for the POC"
+az postgres server update --name $azConfig.db.database `
+                        --resource-group $azConfig.group.name `
+                        --ssl-enforcement Disabled
+
+$DbName = $azConfig.db.database
+$ServerName = $DbName +".postgres.database.azure.com"
+
+Write-Host "Allowing all incoming requests from Azure"
+az postgres server firewall-rule create --resource-group $azConfig.group.name `
+                                        --server-name $ServerName `
+                                        --name AllowAllAzureIps `
+                                        --start-ip-address 0.0.0.0 `
+                                        --end-ip-address 0.0.0.0 `
+
 Write-Host "Creating Azure Postgres Database $azConfig.db.database on Server $azConfig.db.name"
 az postgres db create --name $azConfig.db.database `
                       --resource-group $azConfig.group.name `
                       --server-name $azConfig.db.name
+
+
