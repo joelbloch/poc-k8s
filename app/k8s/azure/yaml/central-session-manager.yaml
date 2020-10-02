@@ -55,12 +55,12 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: central-session-manager
+      app: session-management
       tier: appserver
   template:
     metadata:
       labels:
-        app: central-session-manager
+        app: session-management
         tier: appserver
     spec:
       imagePullSecrets:
