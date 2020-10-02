@@ -1,15 +1,17 @@
 # DEPLOYMENT AND TEST OF THE POC ON AZURE
 
-The POC is composed of several modules.
+The POC is composed of several modules : app-server, web-server, central-session-manager, local-session-manager.
 - A docker image must be created for each module.
 - The docker images must be pushed to the Azure Container Registry
 - The docker images configuration files must be copied to the azure file share.
-- The application can then be deployed and tested.
+
+The application can then be deployed and tested.
 
 ## 1 - Setup Azure components to deploy the POC
 We need to create the Azure Container Registry, Azure File Share, Azure Postgres Database and install the Nginx Ingress Controller on Azure.
+The Ingress Controller will route the traffic to the different services based on the URL requested, and managed the session affinity for stateful services.
  
-Navigate to the `\poc-k8s\azure-setup` and follow instructions listed in the readme.md. Don't fall into an infinite loop if you just did it though.
+Navigate to the `\poc-k8s\azure-setup` and follow instructions listed in the readme.md, then come back here and follow the next step to proceed.
 
 ## 2 - Deploy the POC Configuration files.
 
@@ -28,24 +30,33 @@ The POC modules are located in the `\POC-k8s\app\modules` subfolders :
 
 A Docker container image must be created for each module :
 
-1 - Open a cmd terminal. You can either :
+1 - Open a cmd terminal on your local computer from VS Code. You can either :
 2.1 - Go to each module subfolder, and type `npm run build-docker-azure`. It will build each docker image one by one.
 2.2 - Or go to the `\POC-k8s\app` folder, and type `npm run build-all-azure` : it will build container images one after another.
 3 - Docker images must be pushed to the Azure Container Registry.
+    Unfortunately, you cannot push to images to an ACR if your computer uses the Wyde Network.
+    To be able to do it, you must either use a personal network.
     From the `\POC-k8s\app` folder, type `npm run push-all-azure` to push all the images you created on the Azure Registry.
 
 You could have alternatively execute the command `npm run build-push-all-azure` to build and push all the images in one command.
 
+You can check the result as follow:
+- Go the Azure Portal, and navigate to the demoK8s Resource Group.
+- Open the pock8sregistry.
+- From the right menu, click on the Services => Repositories menu item. You should see the 4 images there : 
+    - app-server
+    - central-session-manager
+    - local-session-manager
+    - web-server
+
 ## 3 - Deploy the Application
 
-1 - Open a powershell Terminal on your local computer.
-
-3 - Log on the Azure Portal at https://portal.azure.com
+3 - Log on the Azure Portal at `https://portal.azure.com`
 4 - Open a Powershell Terminal
 5 - Git clone the project if not already done, by typing `git clone https://github.com/joelbloch/poc-k8s.git`
-6 - Navigate to the /POC-K8S/app/k8s/azure directory
+6 - Navigate to the `/POC-K8S/app/k8s/azure` directory
     The following scripts are available:
-    - `2-start-with-azure-pg.ps1` => Runs the Kubernetes Cluster and the modules containers are being ran as pods. The azure postgres instance is used.  (out of scope of this documentation)
+    - `2-start-with-azure-pg.ps1` => Runs the Kubernetes Cluster and the modules containers are being ran as pods. The azure postgres instance is used.
     - `3-stop.ps1`                => Stops the POC pod modules.
     - `4-list-pods.ps1`           => Lists the pods currently being instantiated.
     - `5-list-svc.ps1`            => List the services currently being instantiated.

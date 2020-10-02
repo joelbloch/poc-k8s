@@ -12,7 +12,7 @@ spec:
     app: stateful
     tier: backend
   ports:
-  - port: 80
+  - port: 3002
     name: http
     targetPort: http-stateful
 ---

@@ -12,7 +12,7 @@ spec:
     app: stateless
     tier: backend
   ports:
-  - port: 80
+  - port: 3001
     name: http
     targetPort: http-stateless
 ---
