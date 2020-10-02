@@ -10,7 +10,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: session-management
+    app: sessionmgt
     tier: appserver
   ports:
   - port: 3004
@@ -55,12 +55,12 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: session-management
+      app: sessionmgt
       tier: appserver
   template:
     metadata:
       labels:
-        app: session-management
+        app: sessionmgt
         tier: appserver
     spec:
       imagePullSecrets:
