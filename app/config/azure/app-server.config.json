@@ -23,7 +23,7 @@
             "password": "P@ssw0rd",
             "host": "pg-svc",
             "port": 5432,
-            "database": "pock8sdb"
+            "database": "demok8sddata"
         }
     }
 }
