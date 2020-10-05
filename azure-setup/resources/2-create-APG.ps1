@@ -18,7 +18,7 @@ $DbName = $azConfig.db.name
 $ServerName = $DbName +".postgres.database.azure.com"
 
 Write-Host "Allowing all incoming requests from Azure"
-az postgres server firewall-rule create --resource-group $azConfig.group.name `
+az postgres server firewall-rule create --resource-group $DbName `
                                         --server-name $ServerName `
                                         --name AllowAllAzureIps `
                                         --start-ip-address 0.0.0.0 `
