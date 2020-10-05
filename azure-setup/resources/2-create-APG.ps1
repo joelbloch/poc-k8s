@@ -20,8 +20,8 @@ az postgres server update --name $azConfig.db.name `
                         --ssl-enforcement Disabled
 
 Write-Host "Allowing all incoming requests from Azure"
-az postgres server firewall-rule create --resource-group $azConfig.db.name `
-                                        --server-name $ServerName `
+az postgres server firewall-rule create --resource-group $azConfig.group.name `
+                                        --server-name $azConfig.db.name `
                                         --name AllowAllAzureIps `
                                         --start-ip-address 0.0.0.0 `
                                         --end-ip-address 0.0.0.0 `
