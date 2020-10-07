@@ -56,15 +56,15 @@ You can check the result as follow:
 3 - Git clone the project if not already done, by typing `git clone https://github.com/joelbloch/poc-k8s.git`  
 4 - Navigate to the `/POC-K8S/app/k8s/azure` directory  
     The following scripts are available:  
-    - `2-start-with-azure-pg.ps1` => Runs the Kubernetes Cluster and the modules containers are being ran as pods. The azure postgres instance is used.
-    - `3-stop.ps1`                => Stops the POC pod modules.
-    - `4-list-pods.ps1`           => Lists the pods currently being instantiated.
-    - `5-list-svc.ps1`            => List the services currently being instantiated.
-    - `6-list-pod.status.ps1`     => List the details of each pod.
-
+    - `2-start-with-azure-pg.ps1` => Runs the Kubernetes Cluster and the modules containers are being ran as pods. The azure postgres instance is used.  
+    - `3-stop.ps1`                => Stops the POC pod modules.  
+    - `4-list-pods.ps1`           => Lists the pods currently being instantiated.  
+    - `5-list-svc.ps1`            => List the services currently being instantiated.  
+    - `6-list-pod.status.ps1`     => List the details of each pod.  
+  
     Scripts are prefixed by disinct figures, so they are easy to execute : just type the figure, then tab and enter.  
-    Execute the `2-start-with-azure-pg.ps1` script to launch the POC.
-
+    Execute the `2-start-with-azure-pg.ps1` script to launch the POC.  
+  
 ## 4 - Check Deployment
   
 Use the script `5-list-svc.ps1` to get the list of services.  
