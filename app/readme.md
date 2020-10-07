@@ -6,5 +6,5 @@
 - `package.json` : defines scripts to quickly build docker images, and push them on Azure.
 
 Please proceed to either:
-- `k8s/local` readme.md : instructions for deploying and testing locally.
-- `k8s/azure` readme.md : instructions for deploying and testing on Azure.
+- `k8s/local/readme.md` : instructions for deploying and testing locally.
+- `k8s/azure/readme.md` : instructions for deploying and testing on Azure.
