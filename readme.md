@@ -7,4 +7,4 @@
 - `aks-ping` : simple project to test Azure Kubernetes Cluster.
 - `pg-test` : simple project to test connection to PG database.
 
-Please refer to the `app` readme.md to proceed.
+Please refer to the `app/readme.md` to proceed.
