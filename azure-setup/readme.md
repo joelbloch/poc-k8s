@@ -37,7 +37,7 @@ Most of the applications will use all these components, this is why they are use
     - Location  
     - skus of Kubernetes nodes, Postgres database  
     - etc.  
-(6 - If you modified values on the azure-poc.config.json, we need to change the templates and yaml files for the POC. It will be covered by a powershell script in further deliveries of this project, but not right now, so it is better not to change anything)  
+    (If you modified values on the azure-poc.config.json, we need to change the templates and yaml files for the POC. It will be covered by a powershell script in further deliveries of this project, but not right now, so it is better not to change anything)  
   
 6 - Execute `1-az-setup.ps1`  
         This script does everthing: create the resource group, the container registry, the kubernetes cluster, the postgres database, the fileshare, links everything.  

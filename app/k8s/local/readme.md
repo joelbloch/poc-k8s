@@ -168,21 +168,21 @@ The Powershell scripts use a module provided with this POC. This module needs to
 
 ## 2.3 - Test
 Once deployed, the following APIs can be accessed:
-
-`http://localhost/webserver/ping`           => "Pong from Web Server" from Web Server pod
-`http://localhost/stateless/ping`           => "Pong from Applicaiton Server" from App Server Stateless pod
-`http://localhost/stateless/counter`        => Get Counter value from App Server Stateless pod
-`http://localhost/stateless/db`             => Get DB connection Status from App Server Stateless pod
-`http://localhost/stateful/ping`            => "Pong from Applicaiton Server" from App Server Stateful pod
-`http://localhost/stateful/counter`         => Get Counter value from App Server Stateful pod
-`http://localhost/stateful/db`              => Get DB connection Status from App Server Stateful pod
-`http://localhost/session-mgt/ping`         => "Pong from Central Session Manager" from Central Session Manager pod
-`http://localhost/session-mgt/pods`         => Get all the stateful pods registered to the Central Session Manager
-`http://localhost/session-mgt/sessions`     => Get all stateful sessions registered to the Central Session Manager
-`http://localhost/session-mgt/sessioncount` => Get the number of stateful sessions
-
-Successive calls to `http://localhost/stateless/counter` should not return successive counter values.
-Successive calls to `http://localhost/stateful/counter` from the same browser window should return successive counter values.
+  
+`http://localhost/webserver/ping`           => "Pong from Web Server" from Web Server pod  
+`http://localhost/stateless/ping`           => "Pong from Applicaiton Server" from App Server Stateless pod  
+`http://localhost/stateless/counter`        => Get Counter value from App Server Stateless pod  
+`http://localhost/stateless/db`             => Get DB connection Status from App Server Stateless pod  
+`http://localhost/stateful/ping`            => "Pong from Applicaiton Server" from App Server Stateful pod  
+`http://localhost/stateful/counter`         => Get Counter value from App Server Stateful pod  
+`http://localhost/stateful/db`              => Get DB connection Status from App Server Stateful pod  
+`http://localhost/session-mgt/ping`         => "Pong from Central Session Manager" from Central Session Manager pod  
+`http://localhost/session-mgt/pods`         => Get all the stateful pods registered to the Central Session Manager  
+`http://localhost/session-mgt/sessions`     => Get all stateful sessions registered to the Central Session Manager  
+`http://localhost/session-mgt/sessioncount` => Get the number of stateful sessions  
+  
+Successive calls to `http://localhost/stateless/counter` should not return successive counter values.  
+Successive calls to `http://localhost/stateful/counter` from the same browser window should return successive counter values.  
 
 
 
