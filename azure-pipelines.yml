@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'e72f5b98-6ef4-4b98-a690-742331ad8d31'
-  imageRepository: 'aksping'
+  imageRepository: $(dockerimagename)
   containerRegistry: 'wynk8sacr.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/aks-ping/DOCKERFILE'
   tag: '$(Build.BuildId)'
