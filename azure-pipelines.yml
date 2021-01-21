@@ -38,4 +38,8 @@ stages:
         tags: |
           $(tag)
           
-
+- task: KubernetesManifest@0
+  inputs:
+    action: 'deploy'
+    kubernetesServiceConnection: 'Wynk8saks'
+    manifests: '$(Build.SourcesDirectory)/aks-ping/k8s/main.yaml'
