@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: aksping-svc
+spec:
+  type: LoadBalancer
+  selector:
+    app: aksping
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aksping
+spec:
+  selector:
+      matchLabels:
+        app: aksping
+  replicas: 1
+  template:
+      metadata:
+        labels:
+            app: aksping
+      spec:
+        containers:
+        - name: aksping
+          image: wynk8sacr.azurecr.io/aksping:1.0
+          imagePullPolicy: Always
